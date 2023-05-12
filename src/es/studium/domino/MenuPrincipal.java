@@ -9,7 +9,7 @@ public class MenuPrincipal extends Frame
 {
 	private static final long seriaVersionUTD = 1L;
 	
-	Image nuevaPartida, ayuda, ranking;
+	Image fondo, nuevaPartida, ayuda, ranking;
 	Toolkit herramienta;
 	
 	public MenuPrincipal()
@@ -18,6 +18,10 @@ public class MenuPrincipal extends Frame
 		setSize(1100, 700);
 		// Activamos la herramienta
 		herramienta = getToolkit();
+		fondo = herramienta.getImage("fondo.jpg");
+		nuevaPartida = herramienta.getImage(""); // cargar la imagen
+		ranking = herramienta.getImage("");
+		ayuda = herramienta.getImage("");
 		setResizable(false);
 		setLocationRelativeTo(null);
 		setVisible(true);
@@ -25,6 +29,7 @@ public class MenuPrincipal extends Frame
 	
 	public void paint(Graphics g)
 	{
-		
+	// Dibujar la imagen
+		g.drawImage(fondo, 0, 0, 1100, 800, this);	
 	}
 }
