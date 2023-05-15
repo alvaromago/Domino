@@ -12,6 +12,7 @@ public class Controlador implements WindowListener
 	{
 		this.modelo = m;
 		this.menuPrincipal = mp;
+		
 		this.menuPrincipal.addWindowListener(this);
 	}
 
