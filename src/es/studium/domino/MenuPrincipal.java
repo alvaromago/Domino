@@ -8,7 +8,7 @@ import java.awt.Toolkit;
 
 public class MenuPrincipal extends Frame
 {
-	private static final long seriaVersionUTD = 1L;
+	private static final long serialVersionUID = 1L;
 	
 	Image fondo, nuevaPartida, ayuda, ranking;
 	Toolkit herramienta;
