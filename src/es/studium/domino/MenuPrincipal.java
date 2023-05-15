@@ -18,7 +18,7 @@ public class MenuPrincipal extends Frame
 		setSize(1000, 600);
 		// Activamos la herramienta
 		herramienta = getToolkit();
-		fondo = herramienta.getImage("fondo.jpg");
+		fondo = herramienta.getImage("Inicio.jpg");
 		nuevaPartida = herramienta.getImage(""); // cargar la imagen
 		ranking = herramienta.getImage("");
 		ayuda = herramienta.getImage("");
@@ -30,6 +30,6 @@ public class MenuPrincipal extends Frame
 	public void paint(Graphics g)
 	{
 	// Dibujar la imagen
-		g.drawImage(fondo, 0, 0, 1000, 650, this);	
+		g.drawImage(fondo, 0, 0, 1000, 600, this);	
 	}
 }
