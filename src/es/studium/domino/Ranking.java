@@ -11,6 +11,6 @@ public class Ranking extends Frame
 		setTitle("Rankings");
 		setSize(1000, 600);
 		setLocationRelativeTo(null);
-		setVisible(true);
+		setVisible(false);
 	}
 }

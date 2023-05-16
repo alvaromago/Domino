@@ -11,6 +11,6 @@ public class Partida extends Frame
 		setTitle("Jugando...");
 		setSize(1000, 600);
 		setLocationRelativeTo(null);
-		setVisible(true);
+		setVisible(false);
 	}
 }

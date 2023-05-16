@@ -11,6 +11,6 @@ public class Ayuda extends Frame
 		setTitle("Ayuda");
 		setSize(1000, 600);
 		setLocationRelativeTo(null);
-		setVisible(true);
+		setVisible(false);
 	}
 }
