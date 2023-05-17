@@ -15,7 +15,7 @@ public class MenuPrincipal extends Frame
 	
 	public MenuPrincipal()
 	{
-		setTitle("Dominï¿½");
+		setTitle("Dominó");
 		setSize(1000, 600);
 		// Activamos la herramienta
 		herramienta = getToolkit();
@@ -38,5 +38,6 @@ public class MenuPrincipal extends Frame
 		g.drawRect(400, 150, 225, 65);
 		g.drawRect(400, 270, 225, 65);
 		g.drawRect(400, 390, 225, 65);
+		g.drawOval(720, 390, 100, 100);
 	}
 }
