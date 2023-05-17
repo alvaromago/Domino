@@ -29,18 +29,18 @@ public class Controlador implements WindowListener, MouseListener
 		
 		if(x>400&&x<625&&y>150&&y<215)
 		{
-			this.partida.setVisible(true);
-			this.partida.addWindowListener(this);
+			partida.setVisible(true);
+			partida.addWindowListener(this);
 		}
 		else if(x>400&&x<625&&y>270&&y<335)
 		{
-			this.ranking.setVisible(true);
-			this.ranking.addWindowListener(this);
+			ranking.setVisible(true);
+			ranking.addWindowListener(this);
 		}
 		else if(x>400&&x<625&&y>390&&y<455)
 		{
-			this.ayuda.setVisible(true);
-			this.ayuda.addWindowListener(this);
+			ayuda.setVisible(true);
+			ayuda.addWindowListener(this);
 		}
 	}
 	
@@ -54,19 +54,19 @@ public class Controlador implements WindowListener, MouseListener
 
 	public void windowClosing(WindowEvent e)
 	{
-		if(this.partida.isActive())
+		if(partida.isActive())
 		{
-			this.partida.setVisible(false);
+			partida.setVisible(false);
 		}
-		else if(this.ranking.isActive())
+		else if(ranking.isActive())
 		{
-			this.ranking.setVisible(false);
+			ranking.setVisible(false);
 		}
-		else if(this.ayuda.isActive())
+		else if(ayuda.isActive())
 		{
-			this.ayuda.setVisible(false);
+			ayuda.setVisible(false);
 		}
-		else if(this.menuPrincipal.isActive()) 
+		else if(menuPrincipal.isActive())
 		{			
 			System.exit(0);
 		}
