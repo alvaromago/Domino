@@ -10,6 +10,7 @@ public class Ranking extends Frame
 	{
 		setTitle("Rankings");
 		setSize(1000, 600);
+		setResizable(false);
 		setLocationRelativeTo(null);
 		setVisible(false);
 	}

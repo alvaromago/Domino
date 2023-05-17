@@ -10,6 +10,7 @@ public class Ayuda extends Frame
 	{
 		setTitle("Ayuda");
 		setSize(1000, 600);
+		setResizable(false);
 		setLocationRelativeTo(null);
 		setVisible(false);
 	}
