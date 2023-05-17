@@ -20,9 +20,9 @@ public class MenuPrincipal extends Frame
 		// Activamos la herramienta
 		herramienta = getToolkit();
 		fondo = herramienta.getImage("Inicio.jpg");
-		nuevaPartida = herramienta.getImage("");
-		ranking = herramienta.getImage("");
-		ayuda = herramienta.getImage("");
+		nuevaPartida = herramienta.getImage("NuevaPartida G.png");
+		ranking = herramienta.getImage("Ranking G.png");
+		ayuda = herramienta.getImage("Ayuda G.png");
 		setResizable(false);
 		setLocationRelativeTo(null);
 		setVisible(true);
@@ -33,11 +33,11 @@ public class MenuPrincipal extends Frame
 		// Dibujar el fondo
 		g.drawImage(fondo, 0, 0, 1000, 600, this);
 		// Dibujar botones
+		g.drawImage(nuevaPartida, 400, 150, 225, 65, this);
+		g.drawImage(ranking, 400, 270, 225, 65, this);
+		g.drawImage(ayuda, 400, 390, 225, 65, this);
 		Color color = new Color(181, 230, 29);
 		g.setColor(color);
-		g.drawRect(400, 150, 225, 65);
-		g.drawRect(400, 270, 225, 65);
-		g.drawRect(400, 390, 225, 65);
-		g.drawOval(720, 390, 100, 100);
+		g.drawRect(720, 390, 100, 100);
 	}
 }

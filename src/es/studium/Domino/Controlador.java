@@ -40,6 +40,10 @@ public class Controlador implements WindowListener, MouseListener
 		{
 			System.out.println("Ayuda");
 		}
+		else if(x>720&&x<820&&y>390&&y<490)
+		{
+			System.exit(0);
+		}
 	}
 	
 	public void mousePressed(MouseEvent me){}
