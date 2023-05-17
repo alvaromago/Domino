@@ -11,7 +11,6 @@ public class Controlador implements WindowListener, MouseListener
 	MenuPrincipal menuPrincipal;
 	Partida partida = new Partida();
 	Ranking ranking = new Ranking();
-	Ayuda ayuda = new Ayuda();
 	
 	public Controlador(Modelo m, MenuPrincipal mp)
 	{
@@ -39,8 +38,7 @@ public class Controlador implements WindowListener, MouseListener
 		}
 		else if(x>400&&x<625&&y>390&&y<455)
 		{
-			ayuda.setVisible(true);
-			ayuda.addWindowListener(this);
+			System.out.println("Ayuda");
 		}
 	}
 	
@@ -61,10 +59,6 @@ public class Controlador implements WindowListener, MouseListener
 		else if(ranking.isActive())
 		{
 			ranking.setVisible(false);
-		}
-		else if(ayuda.isActive())
-		{
-			ayuda.setVisible(false);
 		}
 		else if(menuPrincipal.isActive())
 		{			
