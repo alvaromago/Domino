@@ -1,4 +1,4 @@
-package es.studium.domino;
+package es.studium.Domino;
 
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;

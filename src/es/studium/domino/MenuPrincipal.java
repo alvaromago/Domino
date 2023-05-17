@@ -1,4 +1,4 @@
-package es.studium.domino;
+package es.studium.Domino;
 
 import java.awt.Color;
 import java.awt.Frame;
@@ -15,7 +15,7 @@ public class MenuPrincipal extends Frame
 	
 	public MenuPrincipal()
 	{
-		setTitle("Dominó");
+		setTitle("Dominï¿½");
 		setSize(1000, 600);
 		// Activamos la herramienta
 		herramienta = getToolkit();

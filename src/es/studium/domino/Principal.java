@@ -1,4 +1,4 @@
-package es.studium.domino;
+package es.studium.Domino;
 
 public class Principal
 {
