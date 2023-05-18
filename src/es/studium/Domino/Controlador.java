@@ -9,9 +9,10 @@ public class Controlador implements WindowListener, MouseListener
 {
 	Modelo modelo;
 	MenuPrincipal menuPrincipal;
-	Partida partida = new Partida();
 	Ranking ranking = new Ranking();
+	Partida partida;
 	ElegirJ elegirJ = new ElegirJ();
+	boolean haElegidoJugadores = false;
 	
 	public Controlador(Modelo m, MenuPrincipal mp, Partida p, Ranking r, ElegirJ ej)
 	{
@@ -52,17 +53,26 @@ public class Controlador implements WindowListener, MouseListener
 				System.exit(0);
 			}
 		}
-		else if(elegirJ.isActive()&&x>50&&x<200&&y>310&&y<345)
+		else if(elegirJ.isActive()&&x>50&&x<200&&y>310&&y<345&&elegirJ.choJugadores.getSelectedIndex()!=0)
 		{	
-			if(elegirJ.choJugadores.getSelectedIndex()==0){}
-			else if(elegirJ.choJugadores.getSelectedIndex()==1)
+			if(elegirJ.choJugadores.getSelectedIndex()==1&&haElegidoJugadores==false)
 			{
+				haElegidoJugadores = true;
+				System.out.println(haElegidoJugadores);
 				elegirJ.add(elegirJ.lblJ1);
 				elegirJ.add(elegirJ.txtJ1);
 				elegirJ.add(elegirJ.lblJ2);
 				elegirJ.add(elegirJ.txtJ2);
 				elegirJ.dispose();
 				elegirJ.setVisible(true);
+			}
+			else if(x>50 && x<200 && y>310 && y<345 && haElegidoJugadores==true && elegirJ.txtJ1.getText().length()!=0 && elegirJ.txtJ2.getText().length()!=0)
+			{
+				partida = new Partida();
+				partida.setVisible(true);
+				partida.addWindowListener(this);
+				partida.addMouseListener(this);
+			}
 			}
 			else if(elegirJ.choJugadores.getSelectedIndex()==2)
 			{
@@ -74,6 +84,12 @@ public class Controlador implements WindowListener, MouseListener
 				elegirJ.add(elegirJ.txtJ3);
 				elegirJ.dispose();
 				elegirJ.setVisible(true);
+				if(x>50&&x<200&&y>310&&y<345&&elegirJ.txtJ1.getText().equals(null)&&elegirJ.txtJ2.getText().equals(null)&&elegirJ.txtJ3.getText().equals(null))
+				{
+					partida.setVisible(true);
+					partida.addWindowListener(this);
+					partida.addMouseListener(this);
+				}
 			}
 			else if(elegirJ.choJugadores.getSelectedIndex()==3)
 			{
@@ -87,6 +103,12 @@ public class Controlador implements WindowListener, MouseListener
 				elegirJ.add(elegirJ.txtJ4);
 				elegirJ.dispose();
 				elegirJ.setVisible(true);
+				if(x>50&&x<200&&y>310&&y<345&&elegirJ.txtJ1.getText().equals(null)&&elegirJ.txtJ2.getText().equals(null)&&elegirJ.txtJ3.getText().equals(null)&&elegirJ.txtJ4.getText().equals(null))
+				{
+					partida.setVisible(true);
+					partida.addWindowListener(this);
+					partida.addMouseListener(this);
+				}
 			}
 		}
 		/*else if(partida.isActive())
@@ -96,7 +118,6 @@ public class Controlador implements WindowListener, MouseListener
 			partida.addMouseListener(this);
 		}
 		*/
-	}
 	
 	public void mousePressed(MouseEvent me){}
 	
