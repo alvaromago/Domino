@@ -8,6 +8,7 @@ public class Principal
 		MenuPrincipal menuPrincipal = new MenuPrincipal();
 		Partida partida = new Partida();
 		Ranking ranking = new Ranking();
-		new Controlador(modelo, menuPrincipal, partida, ranking);
+		ElegirJ elegirJ = new ElegirJ();
+		new Controlador(modelo, menuPrincipal, partida, ranking, elegirJ);
 	}
 }

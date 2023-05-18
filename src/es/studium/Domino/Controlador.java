@@ -1,6 +1,5 @@
 package es.studium.Domino;
 
-import java.awt.FlowLayout;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.awt.event.WindowEvent;
@@ -12,13 +11,15 @@ public class Controlador implements WindowListener, MouseListener
 	MenuPrincipal menuPrincipal;
 	Partida partida = new Partida();
 	Ranking ranking = new Ranking();
+	ElegirJ elegirJ = new ElegirJ();
 	
-	public Controlador(Modelo m, MenuPrincipal mp, Partida p, Ranking r)
+	public Controlador(Modelo m, MenuPrincipal mp, Partida p, Ranking r, ElegirJ ej)
 	{
 		this.modelo = m;
 		this.menuPrincipal = mp;
 		this.partida = p;
 		this.ranking = r;
+		this.elegirJ = ej;
 		
 		this.menuPrincipal.addWindowListener(this);
 		this.menuPrincipal.addMouseListener(this);
@@ -33,14 +34,9 @@ public class Controlador implements WindowListener, MouseListener
 		{			
 			if(x>400&&x<625&&y>150&&y<215)
 			{
-				partida.dlgElegirJ.setSize(250, 150);
-				partida.dlgElegirJ.setLayout(new FlowLayout());
-				partida.dlgElegirJ.add(partida.choJugadores);
-				partida.dlgElegirJ.setLocationRelativeTo(null);
-				partida.dlgElegirJ.addWindowListener(this);
-				partida.dlgElegirJ.addMouseListener(this);
-				partida.dlgElegirJ.setVisible(true);
-				
+				elegirJ.setVisible(true);
+				elegirJ.addWindowListener(this);
+				elegirJ.addMouseListener(this);
 			}
 			else if(x>400&&x<625&&y>270&&y<335)
 			{
@@ -54,6 +50,43 @@ public class Controlador implements WindowListener, MouseListener
 			else if(x>720&&x<820&&y>390&&y<490)
 			{
 				System.exit(0);
+			}
+		}
+		else if(elegirJ.isActive()&&x>50&&x<200&&y>310&&y<345)
+		{	
+			if(elegirJ.choJugadores.getSelectedIndex()==0){}
+			else if(elegirJ.choJugadores.getSelectedIndex()==1)
+			{
+				elegirJ.add(elegirJ.lblJ1);
+				elegirJ.add(elegirJ.txtJ1);
+				elegirJ.add(elegirJ.lblJ2);
+				elegirJ.add(elegirJ.txtJ2);
+				elegirJ.dispose();
+				elegirJ.setVisible(true);
+			}
+			else if(elegirJ.choJugadores.getSelectedIndex()==2)
+			{
+				elegirJ.add(elegirJ.lblJ1);
+				elegirJ.add(elegirJ.txtJ1);
+				elegirJ.add(elegirJ.lblJ2);
+				elegirJ.add(elegirJ.txtJ2);
+				elegirJ.add(elegirJ.lblJ3);
+				elegirJ.add(elegirJ.txtJ3);
+				elegirJ.dispose();
+				elegirJ.setVisible(true);
+			}
+			else if(elegirJ.choJugadores.getSelectedIndex()==3)
+			{
+				elegirJ.add(elegirJ.lblJ1);
+				elegirJ.add(elegirJ.txtJ1);
+				elegirJ.add(elegirJ.lblJ2);
+				elegirJ.add(elegirJ.txtJ2);
+				elegirJ.add(elegirJ.lblJ3);
+				elegirJ.add(elegirJ.txtJ3);
+				elegirJ.add(elegirJ.lblJ4);
+				elegirJ.add(elegirJ.txtJ4);
+				elegirJ.dispose();
+				elegirJ.setVisible(true);
 			}
 		}
 		/*else if(partida.isActive())
@@ -79,9 +112,9 @@ public class Controlador implements WindowListener, MouseListener
 		{
 			partida.setVisible(false);
 		}
-		else if(partida.dlgElegirJ.isActive())
+		else if(elegirJ.isActive())
 		{
-			partida.dlgElegirJ.setVisible(false);
+			elegirJ.setVisible(false);
 		}
 		else if(ranking.isActive())
 		{
