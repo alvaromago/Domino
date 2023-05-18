@@ -11,16 +11,18 @@ public class Controlador implements WindowListener, MouseListener
 	MenuPrincipal menuPrincipal;
 	Ranking ranking = new Ranking();
 	Partida partida;
+	FinPartida finPartida;
 	ElegirJ elegirJ = new ElegirJ();
 	boolean haElegidoJugadores = false;
 	
-	public Controlador(Modelo m, MenuPrincipal mp, Partida p, Ranking r, ElegirJ ej)
+	public Controlador(Modelo m, MenuPrincipal mp, Partida p, Ranking r, ElegirJ ej, FinPartida fp)
 	{
 		this.modelo = m;
 		this.menuPrincipal = mp;
 		this.partida = p;
 		this.ranking = r;
 		this.elegirJ = ej;
+		this.finPartida = fp;
 		
 		this.menuPrincipal.addWindowListener(this);
 		this.menuPrincipal.addMouseListener(this);
@@ -31,6 +33,7 @@ public class Controlador implements WindowListener, MouseListener
 		int x = me.getX();
 		int y = me.getY();
 		
+		// Botones de accesibilidad a Nueva Partida, Ranking, Ayuda y Exit
 		if(menuPrincipal.isActive())
 		{			
 			if(x>400&&x<625&&y>150&&y<215)
@@ -51,31 +54,42 @@ public class Controlador implements WindowListener, MouseListener
 			else if(x>720&&x<820&&y>390&&y<490)
 			{
 				System.exit(0);
-			}
+			}	
 		}
-		else if(elegirJ.isActive()&&x>50&&x<200&&y>310&&y<345&&elegirJ.choJugadores.getSelectedIndex()!=0)
+		
+		// Elegir jugadores para inicializar Nueva Partida
+		else if(elegirJ.isActive() && x>50&&x<200&&y>310&&y<345 && elegirJ.choJugadores.getSelectedIndex()!=0)
 		{	
-			if(elegirJ.choJugadores.getSelectedIndex()==1&&haElegidoJugadores==false)
+			// Si elegimos 2 jugadores
+			if(elegirJ.choJugadores.getSelectedIndex()==1 && haElegidoJugadores==false)
 			{
+				// Introducimos los nombres al darle al botón de Aceptar
 				haElegidoJugadores = true;
-				System.out.println(haElegidoJugadores);
 				elegirJ.add(elegirJ.lblJ1);
 				elegirJ.add(elegirJ.txtJ1);
 				elegirJ.add(elegirJ.lblJ2);
 				elegirJ.add(elegirJ.txtJ2);
 				elegirJ.dispose();
 				elegirJ.setVisible(true);
+				
+			// Abrir ventana de Nueva Partida para 2 jugadores
 			}
-			else if(x>50 && x<200 && y>310 && y<345 && haElegidoJugadores==true && elegirJ.txtJ1.getText().length()!=0 && elegirJ.txtJ2.getText().length()!=0)
+			else if(x>50&&x<200&&y>310&&y<345 && haElegidoJugadores==true && elegirJ.txtJ1.getText().length()!=0 && elegirJ.txtJ2.getText().length()!=0)
 			{
+				partida.jugador1 = elegirJ.txtJ1.getText();
+				partida.jugador2 = elegirJ.txtJ2.getText();
 				partida = new Partida();
 				partida.setVisible(true);
 				partida.addWindowListener(this);
 				partida.addMouseListener(this);
 			}
 			}
-			else if(elegirJ.choJugadores.getSelectedIndex()==2)
+		
+			// Si elegimos 3 jugadores
+			else if(elegirJ.choJugadores.getSelectedIndex()==2 && haElegidoJugadores==false)
 			{
+				// Introducimos los nombres al darle al botón de Aceptar
+				haElegidoJugadores = true;
 				elegirJ.add(elegirJ.lblJ1);
 				elegirJ.add(elegirJ.txtJ1);
 				elegirJ.add(elegirJ.lblJ2);
@@ -84,15 +98,25 @@ public class Controlador implements WindowListener, MouseListener
 				elegirJ.add(elegirJ.txtJ3);
 				elegirJ.dispose();
 				elegirJ.setVisible(true);
-				if(x>50&&x<200&&y>310&&y<345&&elegirJ.txtJ1.getText().equals(null)&&elegirJ.txtJ2.getText().equals(null)&&elegirJ.txtJ3.getText().equals(null))
-				{
-					partida.setVisible(true);
-					partida.addWindowListener(this);
-					partida.addMouseListener(this);
-				}
 			}
-			else if(elegirJ.choJugadores.getSelectedIndex()==3)
+		
+			// Abrir ventana de Nueva Partida para 3 jugadores
+			else if(x>50&&x<200&&y>310&&y<345 && haElegidoJugadores==true && elegirJ.txtJ1.getText().length()!=0 && elegirJ.txtJ2.getText().length()!=0 && elegirJ.txtJ3.getText().length()!=0)
 			{
+				partida.jugador1 = elegirJ.txtJ1.getText();
+				partida.jugador2 = elegirJ.txtJ2.getText();
+				partida.jugador3 = elegirJ.txtJ3.getText();
+				partida = new Partida();
+				partida.setVisible(true);
+				partida.addWindowListener(this);
+				partida.addMouseListener(this);
+			}
+		
+			// Si elegimos 4 jugadores
+			else if(elegirJ.choJugadores.getSelectedIndex()==3 && haElegidoJugadores==false)
+			{
+				// Introducimos los nombres al darle al botón de Aceptar
+				haElegidoJugadores = true;
 				elegirJ.add(elegirJ.lblJ1);
 				elegirJ.add(elegirJ.txtJ1);
 				elegirJ.add(elegirJ.lblJ2);
@@ -103,21 +127,21 @@ public class Controlador implements WindowListener, MouseListener
 				elegirJ.add(elegirJ.txtJ4);
 				elegirJ.dispose();
 				elegirJ.setVisible(true);
-				if(x>50&&x<200&&y>310&&y<345&&elegirJ.txtJ1.getText().equals(null)&&elegirJ.txtJ2.getText().equals(null)&&elegirJ.txtJ3.getText().equals(null)&&elegirJ.txtJ4.getText().equals(null))
-				{
-					partida.setVisible(true);
-					partida.addWindowListener(this);
-					partida.addMouseListener(this);
-				}
+			}
+		
+			// Abrir ventana de Nueva Partida para 4 jugadores
+			else if(x>50&&x<200&&y>310&&y<345 && haElegidoJugadores==true && elegirJ.txtJ1.getText().length()!=0 && elegirJ.txtJ2.getText().length()!=0 && elegirJ.txtJ3.getText().length()!=0 && elegirJ.txtJ4.getText().length()!=0)
+			{
+				partida.jugador1 = elegirJ.txtJ1.getText();
+				partida.jugador2 = elegirJ.txtJ2.getText();
+				partida.jugador3 = elegirJ.txtJ1.getText();
+				partida.jugador4 = elegirJ.txtJ2.getText();
+				partida = new Partida();
+				partida.setVisible(true);
+				partida.addWindowListener(this);
+				partida.addMouseListener(this);
 			}
 		}
-		/*else if(partida.isActive())
-		{
-			partida.setVisible(true);
-			partida.addWindowListener(this);
-			partida.addMouseListener(this);
-		}
-		*/
 	
 	public void mousePressed(MouseEvent me){}
 	

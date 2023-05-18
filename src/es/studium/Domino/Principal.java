@@ -9,6 +9,7 @@ public class Principal
 		Partida partida = new Partida();
 		Ranking ranking = new Ranking();
 		ElegirJ elegirJ = new ElegirJ();
-		new Controlador(modelo, menuPrincipal, partida, ranking, elegirJ);
+		FinPartida finPartida = new FinPartida();
+		new Controlador(modelo, menuPrincipal, partida, ranking, elegirJ, finPartida);
 	}
 }
