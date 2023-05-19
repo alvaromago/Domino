@@ -58,9 +58,8 @@ public class Controlador implements WindowListener, MouseListener
 		}
 		
 		// Elegir jugadores para inicializar Nueva Partida
-		else if(elegirJ.isActive() && x>50&&x<200&&y>310&&y<345)
+		else if(elegirJ.isActive() && x>50&&x<200&&y>310&&y<345 && elegirJ.choJugadores.getSelectedIndex()!=0)
 		{
-			partida.dispose();
 			// Si elegimos 2 jugadores
 			if(elegirJ.choJugadores.getSelectedIndex()==1 && haElegidoJugadores==false)
 			{
@@ -70,8 +69,7 @@ public class Controlador implements WindowListener, MouseListener
 				elegirJ.add(elegirJ.txtJ1);
 				elegirJ.add(elegirJ.lblJ2);
 				elegirJ.add(elegirJ.txtJ2);
-				elegirJ.dispose();
-				elegirJ.setVisible(true);				
+				elegirJ.setVisible(true);
 			}
 			// Abrir ventana de Nueva Partida para 2 jugadores
 			else if(x>50&&x<200&&y>310&&y<345 && haElegidoJugadores==true && elegirJ.txtJ1.getText().length()!=0 && elegirJ.txtJ2.getText().length()!=0)
@@ -83,6 +81,11 @@ public class Controlador implements WindowListener, MouseListener
 				partida.setVisible(true);
 				partida.addWindowListener(this);
 				partida.addMouseListener(this);
+				elegirJ.txtJ1.setText("");
+				elegirJ.txtJ2.setText("");
+				elegirJ.txtJ3.setText("");
+				elegirJ.txtJ4.setText("");
+				elegirJ.dispose();
 			}
 			// Si elegimos 3 jugadores
 			else if(elegirJ.choJugadores.getSelectedIndex()==2 && haElegidoJugadores==false)
@@ -95,7 +98,6 @@ public class Controlador implements WindowListener, MouseListener
 				elegirJ.add(elegirJ.txtJ2);
 				elegirJ.add(elegirJ.lblJ3);
 				elegirJ.add(elegirJ.txtJ3);
-				elegirJ.dispose();
 				elegirJ.setVisible(true);
 			}
 			// Abrir ventana de Nueva Partida para 3 jugadores
@@ -109,6 +111,11 @@ public class Controlador implements WindowListener, MouseListener
 				partida.setVisible(true);
 				partida.addWindowListener(this);
 				partida.addMouseListener(this);
+				elegirJ.txtJ1.setText("");
+				elegirJ.txtJ2.setText("");
+				elegirJ.txtJ3.setText("");
+				elegirJ.txtJ4.setText("");
+				elegirJ.dispose();
 			}
 			// Si elegimos 4 jugadores
 			else if(elegirJ.choJugadores.getSelectedIndex()==3 && haElegidoJugadores==false)
@@ -123,7 +130,6 @@ public class Controlador implements WindowListener, MouseListener
 				elegirJ.add(elegirJ.txtJ3);
 				elegirJ.add(elegirJ.lblJ4);
 				elegirJ.add(elegirJ.txtJ4);
-				elegirJ.dispose();
 				elegirJ.setVisible(true);
 			}
 			// Abrir ventana de Nueva Partida para 4 jugadores
@@ -138,6 +144,11 @@ public class Controlador implements WindowListener, MouseListener
 				partida.setVisible(true);
 				partida.addWindowListener(this);
 				partida.addMouseListener(this);
+				elegirJ.txtJ1.setText("");
+				elegirJ.txtJ2.setText("");
+				elegirJ.txtJ3.setText("");
+				elegirJ.txtJ4.setText("");
+				elegirJ.dispose();
 			}
 		}
 	}
@@ -154,6 +165,7 @@ public class Controlador implements WindowListener, MouseListener
 	{
 		if(partida.isActive())
 		{
+			elegirJ.setVisible(false);
 			partida.dispose();
 		}
 		else if(elegirJ.isActive())

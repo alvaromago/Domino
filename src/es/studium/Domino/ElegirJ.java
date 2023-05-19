@@ -5,8 +5,10 @@ import java.awt.Color;
 import java.awt.FlowLayout;
 import java.awt.Frame;
 import java.awt.Graphics;
+import java.awt.Image;
 import java.awt.Label;
 import java.awt.TextField;
+import java.awt.Toolkit;
 
 public class ElegirJ extends Frame
 {
@@ -21,11 +23,16 @@ public class ElegirJ extends Frame
 	TextField txtJ2 = new TextField(15);
 	TextField txtJ3 = new TextField(15);
 	TextField txtJ4 = new TextField(15);
+	Image aceptar;
+	Toolkit herramienta;
 	
 	ElegirJ()
 	{
 		setSize(250, 350);
 		setTitle("Eligiendo jugadores...");
+		// Activamos la herramienta
+		herramienta = getToolkit();
+		aceptar = herramienta.getImage("Aceptar.png");
 		setBackground(new Color(171, 139, 98));
 		setLayout(new FlowLayout());
 		choJugadores.add("Número de jugadores...");
@@ -39,8 +46,7 @@ public class ElegirJ extends Frame
 	
 	public void paint(Graphics g)
 	{
-		Color color1 = new Color(181, 230, 29);
-		g.setColor(color1);
-		g.drawRect(50, 300, 150, 35);
+		// Dibujar botones
+		g.drawImage(aceptar, 50, 300, 150, 35, this);
 	}
 }
