@@ -1,6 +1,5 @@
 package es.studium.Domino;
 
-import java.awt.Color;
 import java.awt.Frame;
 import java.awt.Graphics;
 import java.awt.Image;
@@ -10,7 +9,7 @@ public class MenuPrincipal extends Frame
 {
 	private static final long serialVersionUID = 1L;
 	
-	Image fondo, nuevaPartida, ayuda, ranking;
+	Image fondo, nuevaPartida, ayuda, ranking, salir;
 	Toolkit herramienta;
 	
 	public MenuPrincipal()
@@ -23,6 +22,7 @@ public class MenuPrincipal extends Frame
 		nuevaPartida = herramienta.getImage("NuevaPartida G.png");
 		ranking = herramienta.getImage("Ranking G.png");
 		ayuda = herramienta.getImage("Ayuda G.png");
+		salir = herramienta.getImage("Salir.png");
 		setResizable(false);
 		setLocationRelativeTo(null);
 		setVisible(true);
@@ -36,8 +36,6 @@ public class MenuPrincipal extends Frame
 		g.drawImage(nuevaPartida, 400, 150, 225, 65, this);
 		g.drawImage(ranking, 400, 270, 225, 65, this);
 		g.drawImage(ayuda, 400, 390, 225, 65, this);
-		Color color = new Color(181, 230, 29);
-		g.setColor(color);
-		g.drawRect(720, 390, 100, 100);
+		g.drawImage(salir, 720, 390, 100, 100, this);
 	}
 }
