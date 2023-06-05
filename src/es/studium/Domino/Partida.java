@@ -1,6 +1,7 @@
 package es.studium.Domino;
 
 import java.awt.Color;
+import java.awt.Font;
 import java.awt.Frame;
 import java.awt.Graphics;
 import java.awt.Image;
@@ -28,6 +29,11 @@ public class Partida extends Frame
 	
 	public void paint(Graphics g)
 	{
+		// Dibujamos el tablero
 		g.drawImage(tablero, 125, 107, 750, 400, this);
+		// Dibujamos el número de turnos
+		Font font = new Font("Arial", Font.BOLD, 25);
+        g.setFont(font);
+		g.drawString("Turno: ", 25, 70);
 	}
 }
