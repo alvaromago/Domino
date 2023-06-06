@@ -63,7 +63,7 @@ public class Controlador implements WindowListener, MouseListener
 			// Si elegimos 2 jugadores
 			if(elegirJ.choJugadores.getSelectedIndex()==1 && haElegidoJugadores==false)
 			{
-				// Introducimos los nombres al darle al botón de Aceptar
+				// Introducimos los nombres al darle al botï¿½n de Aceptar
 				haElegidoJugadores = true;
 				elegirJ.add(elegirJ.lblJ1);
 				elegirJ.add(elegirJ.txtJ1);
@@ -72,7 +72,7 @@ public class Controlador implements WindowListener, MouseListener
 				elegirJ.setVisible(true);
 			}
 			// Abrir ventana de Nueva Partida para 2 jugadores
-			else if(x>50&&x<200&&y>310&&y<345 && haElegidoJugadores==true && elegirJ.txtJ1.getText().length()!=0 && elegirJ.txtJ2.getText().length()!=0)
+			else if(x>50&&x<200&&y>310&&y<345 && haElegidoJugadores==true && elegirJ.txtJ1.getText().length()!=0 && elegirJ.txtJ2.getText().length()!=0 && elegirJ.choJugadores.getSelectedIndex()==1)
 			{
 				haElegidoJugadores = false;
 				partida.jugador1 = elegirJ.txtJ1.getText();
@@ -81,16 +81,17 @@ public class Controlador implements WindowListener, MouseListener
 				partida.setVisible(true);
 				partida.addWindowListener(this);
 				partida.addMouseListener(this);
-				elegirJ.txtJ1.setText("");
-				elegirJ.txtJ2.setText("");
+				elegirJ.txtJ1.setText(elegirJ.txtJ1.getText());
+				elegirJ.txtJ2.setText(elegirJ.txtJ2.getText());
 				elegirJ.txtJ3.setText("");
 				elegirJ.txtJ4.setText("");
+				System.out.println(this.modelo.crearPartida(2));
 				elegirJ.dispose();
 			}
 			// Si elegimos 3 jugadores
 			else if(elegirJ.choJugadores.getSelectedIndex()==2 && haElegidoJugadores==false)
 			{
-				// Introducimos los nombres al darle al botón de Aceptar
+				// Introducimos los nombres al darle al botï¿½n de Aceptar
 				haElegidoJugadores = true;
 				elegirJ.add(elegirJ.lblJ1);
 				elegirJ.add(elegirJ.txtJ1);
@@ -101,7 +102,7 @@ public class Controlador implements WindowListener, MouseListener
 				elegirJ.setVisible(true);
 			}
 			// Abrir ventana de Nueva Partida para 3 jugadores
-			else if(x>50&&x<200&&y>310&&y<345 && haElegidoJugadores==true && elegirJ.txtJ1.getText().length()!=0 && elegirJ.txtJ2.getText().length()!=0 && elegirJ.txtJ3.getText().length()!=0)
+			else if(x>50&&x<200&&y>310&&y<345 && haElegidoJugadores==true && elegirJ.txtJ1.getText().length()!=0 && elegirJ.txtJ2.getText().length()!=0 && elegirJ.txtJ3.getText().length()!=0 && elegirJ.choJugadores.getSelectedIndex()==2)
 			{
 				haElegidoJugadores = false;
 				partida.jugador1 = elegirJ.txtJ1.getText();
@@ -111,16 +112,17 @@ public class Controlador implements WindowListener, MouseListener
 				partida.setVisible(true);
 				partida.addWindowListener(this);
 				partida.addMouseListener(this);
-				elegirJ.txtJ1.setText("");
-				elegirJ.txtJ2.setText("");
-				elegirJ.txtJ3.setText("");
+				elegirJ.txtJ1.setText(elegirJ.txtJ1.getText());
+				elegirJ.txtJ2.setText(elegirJ.txtJ2.getText());
+				elegirJ.txtJ3.setText(elegirJ.txtJ3.getText());
 				elegirJ.txtJ4.setText("");
+				System.out.println(this.modelo.crearPartida(3));
 				elegirJ.dispose();
 			}
 			// Si elegimos 4 jugadores
 			else if(elegirJ.choJugadores.getSelectedIndex()==3 && haElegidoJugadores==false)
 			{
-				// Introducimos los nombres al darle al botón de Aceptar
+				// Introducimos los nombres al darle al botï¿½n de Aceptar
 				haElegidoJugadores = true;
 				elegirJ.add(elegirJ.lblJ1);
 				elegirJ.add(elegirJ.txtJ1);
@@ -144,10 +146,11 @@ public class Controlador implements WindowListener, MouseListener
 				partida.setVisible(true);
 				partida.addWindowListener(this);
 				partida.addMouseListener(this);
-				elegirJ.txtJ1.setText("");
-				elegirJ.txtJ2.setText("");
-				elegirJ.txtJ3.setText("");
-				elegirJ.txtJ4.setText("");
+				elegirJ.txtJ1.setText(elegirJ.txtJ1.getText());
+				elegirJ.txtJ2.setText(elegirJ.txtJ2.getText());
+				elegirJ.txtJ3.setText(elegirJ.txtJ3.getText());
+				elegirJ.txtJ4.setText(elegirJ.txtJ4.getText());
+				System.out.println(this.modelo.crearPartida(4));
 				elegirJ.dispose();
 			}
 		}

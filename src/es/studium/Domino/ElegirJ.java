@@ -32,7 +32,7 @@ public class ElegirJ extends Frame
 		setTitle("Eligiendo jugadores...");
 		// Activamos la herramienta
 		herramienta = getToolkit();
-		aceptar = herramienta.getImage("Aceptar.png");
+		aceptar = herramienta.getImage("./imagesMenus/Aceptar.png");
 		setBackground(new Color(171, 139, 98));
 		setLayout(new FlowLayout());
 		choJugadores.add("Número de jugadores...");

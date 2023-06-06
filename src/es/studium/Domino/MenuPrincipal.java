@@ -14,15 +14,15 @@ public class MenuPrincipal extends Frame
 	
 	public MenuPrincipal()
 	{
-		setTitle("Dominó");
+		setTitle("Dominï¿½");
 		setSize(1000, 600);
 		// Activamos la herramienta
 		herramienta = getToolkit();
-		fondo = herramienta.getImage("Inicio.jpg");
-		nuevaPartida = herramienta.getImage("NuevaPartida G.png");
-		ranking = herramienta.getImage("Ranking G.png");
-		ayuda = herramienta.getImage("Ayuda G.png");
-		salir = herramienta.getImage("Salir.png");
+		fondo = herramienta.getImage("./imagesMenus/Inicio.jpg");
+		nuevaPartida = herramienta.getImage("./imagesMenus/NuevaPartida G.png");
+		ranking = herramienta.getImage("./imagesMenus/Ranking G.png");
+		ayuda = herramienta.getImage("./imagesMenus/Ayuda G.png");
+		salir = herramienta.getImage("./imagesMenus/Salir.png");
 		setResizable(false);
 		setLocationRelativeTo(null);
 		setVisible(true);
