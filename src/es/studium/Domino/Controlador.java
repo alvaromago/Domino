@@ -29,7 +29,7 @@ public class Controlador implements WindowListener, MouseListener
 	}
 	
 	public void mouseClicked(MouseEvent me)
-	{
+	{		
 		int x = me.getX();
 		int y = me.getY();
 		
@@ -38,21 +38,25 @@ public class Controlador implements WindowListener, MouseListener
 		{			
 			if(x>400&&x<625&&y>150&&y<215)
 			{
+				this.modelo.reproducirSonido("./sonidos/click.wav");
 				elegirJ.setVisible(true);
 				elegirJ.addWindowListener(this);
 				elegirJ.addMouseListener(this);
 			}
 			else if(x>400&&x<625&&y>270&&y<335)
 			{
+				this.modelo.reproducirSonido("./sonidos/click.wav");
 				ranking.setVisible(true);
 				ranking.addWindowListener(this);
 			}
 			else if(x>400&&x<625&&y>390&&y<455)
 			{
+				this.modelo.reproducirSonido("./sonidos/click.wav");
 				System.out.println("Ayuda");
 			}
 			else if(x>720&&x<820&&y>390&&y<490)
 			{
+				this.modelo.reproducirSonido("./sonidos/click.wav");
 				System.exit(0);
 			}	
 		}
@@ -63,6 +67,7 @@ public class Controlador implements WindowListener, MouseListener
 			// Si elegimos 2 jugadores
 			if(elegirJ.choJugadores.getSelectedIndex()==1 && haElegidoJugadores==false)
 			{
+				this.modelo.reproducirSonido("./sonidos/click.wav");
 				// Introducimos los nombres al darle al bot�n de Aceptar
 				haElegidoJugadores = true;
 				elegirJ.add(elegirJ.lblJ1);
@@ -74,6 +79,7 @@ public class Controlador implements WindowListener, MouseListener
 			// Abrir ventana de Nueva Partida para 2 jugadores
 			else if(x>50&&x<200&&y>310&&y<345 && haElegidoJugadores==true && elegirJ.txtJ1.getText().length()!=0 && elegirJ.txtJ2.getText().length()!=0 && elegirJ.choJugadores.getSelectedIndex()==1)
 			{
+				this.modelo.reproducirSonido("./sonidos/click.wav");
 				haElegidoJugadores = false;
 				partida.jugador1 = elegirJ.txtJ1.getText();
 				partida.jugador2 = elegirJ.txtJ2.getText();
@@ -91,6 +97,7 @@ public class Controlador implements WindowListener, MouseListener
 			// Si elegimos 3 jugadores
 			else if(elegirJ.choJugadores.getSelectedIndex()==2 && haElegidoJugadores==false)
 			{
+				this.modelo.reproducirSonido("./sonidos/click.wav");
 				// Introducimos los nombres al darle al bot�n de Aceptar
 				haElegidoJugadores = true;
 				elegirJ.add(elegirJ.lblJ1);
@@ -104,6 +111,7 @@ public class Controlador implements WindowListener, MouseListener
 			// Abrir ventana de Nueva Partida para 3 jugadores
 			else if(x>50&&x<200&&y>310&&y<345 && haElegidoJugadores==true && elegirJ.txtJ1.getText().length()!=0 && elegirJ.txtJ2.getText().length()!=0 && elegirJ.txtJ3.getText().length()!=0 && elegirJ.choJugadores.getSelectedIndex()==2)
 			{
+				this.modelo.reproducirSonido("./sonidos/click.wav");
 				haElegidoJugadores = false;
 				partida.jugador1 = elegirJ.txtJ1.getText();
 				partida.jugador2 = elegirJ.txtJ2.getText();
@@ -122,6 +130,7 @@ public class Controlador implements WindowListener, MouseListener
 			// Si elegimos 4 jugadores
 			else if(elegirJ.choJugadores.getSelectedIndex()==3 && haElegidoJugadores==false)
 			{
+				this.modelo.reproducirSonido("./sonidos/click.wav");
 				// Introducimos los nombres al darle al bot�n de Aceptar
 				haElegidoJugadores = true;
 				elegirJ.add(elegirJ.lblJ1);
@@ -137,6 +146,7 @@ public class Controlador implements WindowListener, MouseListener
 			// Abrir ventana de Nueva Partida para 4 jugadores
 			else if(x>50&&x<200&&y>310&&y<345 && haElegidoJugadores==true && elegirJ.txtJ1.getText().length()!=0 && elegirJ.txtJ2.getText().length()!=0 && elegirJ.txtJ3.getText().length()!=0 && elegirJ.txtJ4.getText().length()!=0 && elegirJ.choJugadores.getSelectedIndex()==3)
 			{
+				this.modelo.reproducirSonido("./sonidos/click.wav");
 				haElegidoJugadores = false;
 				partida.jugador1 = elegirJ.txtJ1.getText();
 				partida.jugador2 = elegirJ.txtJ2.getText();
@@ -153,6 +163,10 @@ public class Controlador implements WindowListener, MouseListener
 				System.out.println(this.modelo.crearPartida(4));
 				elegirJ.dispose();
 			}
+		}
+		else if (partida.isActive())
+		{
+			
 		}
 	}
 	
