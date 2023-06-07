@@ -81,8 +81,6 @@ public class Controlador implements WindowListener, MouseListener
 			{
 				this.modelo.reproducirSonido("./sonidos/click.wav");
 				haElegidoJugadores = false;
-				partida.jugador1 = elegirJ.txtJ1.getText();
-				partida.jugador2 = elegirJ.txtJ2.getText();
 				partida = new Partida();
 				partida.setVisible(true);
 				partida.addWindowListener(this);
@@ -113,9 +111,6 @@ public class Controlador implements WindowListener, MouseListener
 			{
 				this.modelo.reproducirSonido("./sonidos/click.wav");
 				haElegidoJugadores = false;
-				partida.jugador1 = elegirJ.txtJ1.getText();
-				partida.jugador2 = elegirJ.txtJ2.getText();
-				partida.jugador3 = elegirJ.txtJ3.getText();
 				partida = new Partida();
 				partida.setVisible(true);
 				partida.addWindowListener(this);
@@ -148,10 +143,6 @@ public class Controlador implements WindowListener, MouseListener
 			{
 				this.modelo.reproducirSonido("./sonidos/click.wav");
 				haElegidoJugadores = false;
-				partida.jugador1 = elegirJ.txtJ1.getText();
-				partida.jugador2 = elegirJ.txtJ2.getText();
-				partida.jugador3 = elegirJ.txtJ1.getText();
-				partida.jugador4 = elegirJ.txtJ2.getText();
 				partida = new Partida();
 				partida.setVisible(true);
 				partida.addWindowListener(this);
@@ -163,6 +154,10 @@ public class Controlador implements WindowListener, MouseListener
 				System.out.println(this.modelo.crearPartida(4));
 				elegirJ.dispose();
 			}
+			this.partida.nombreJugador1(elegirJ.txtJ1.getText());
+			this.partida.nombreJugador2(elegirJ.txtJ2.getText());
+			this.partida.nombreJugador3(elegirJ.txtJ3.getText());
+			this.partida.nombreJugador4(elegirJ.txtJ4.getText());
 		}
 		else if (partida.isActive())
 		{
