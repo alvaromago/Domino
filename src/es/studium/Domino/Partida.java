@@ -13,6 +13,9 @@ public class Partida extends Frame
 	
 	String jugador1, jugador2, jugador3, jugador4;
 	Image tablero;
+	Image f00, f01, f02, f03, f04, f05, f06;
+	Image f11, f12, f13, f14, f15, f16, f22, f23, f24, f25, f26;
+	Image f33, f34, f35, f36, f44, f45, f46, f55, f56, f66;
 	Toolkit herramienta;
 	
 	Partida()
