@@ -16,6 +16,11 @@ public class Modelo
 {
 	List<String> fichas = generarFichas();
 	Clip click;
+	List<String> manoJ1;
+	List<String> manoJ2;
+	List<String> manoJ3;
+	List<String> manoJ4;
+	List<String> pozo;
 	
 	void reproducirSonido(String rutaSonido) {
 	    try
@@ -39,7 +44,7 @@ public class Modelo
 
 		for (int i = 0; i < numeroJugadores; i++)
 		{
-			fichas.add("Jugador " + (i + 1) + ": " + jugadores.get(i));
+			fichas.add("" + jugadores.get(i));
 		}
 		return fichas;
 	}
@@ -61,7 +66,7 @@ public class Modelo
 	List<List<String>> repartirFichas(List<String> fichas, int numeroJugadores, int fichasPorJugador)
 	{
 		List<List<String>> jugadores = new ArrayList<>();
-		List<String> pozo = new ArrayList<>();
+		pozo = new ArrayList<>();
 
 		for (int i = 0; i < numeroJugadores; i++)
 	    {
@@ -88,6 +93,20 @@ public class Modelo
 	    if (numeroJugadores < 4) {
 	        jugadores.add(pozo);
 	    }
+	    
+	    if(jugadores.size() == 3)
+	    {	    	
+	    	manoJ1 = jugadores.get(0);
+	    	manoJ2 = jugadores.get(1);
+	    }
+	    else if(jugadores.size() == 4)
+	    {
+	    	manoJ1 = jugadores.get(0);
+	    	manoJ2 = jugadores.get(1);
+	    	manoJ3 = jugadores.get(2);
+	    	manoJ4 = jugadores.get(3);
+	    }
 	    return jugadores;
 	}
+
 }

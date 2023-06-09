@@ -13,6 +13,7 @@ public class Partida extends Frame
 	
 	String jugador1, jugador2, jugador3, jugador4;
 	Image tablero;
+	int ronda = 0;
 	Image f00, f01, f02, f03, f04, f05, f06;
 	Image f11, f12, f13, f14, f15, f16, f22, f23, f24, f25, f26;
 	Image f33, f34, f35, f36, f44, f45, f46, f55, f56, f66;
@@ -38,11 +39,13 @@ public class Partida extends Frame
 		Font font = new Font("Arial", Font.BOLD, 25);
         g.setFont(font);
         g.setColor(Color.WHITE);
-        g.drawString("Turno: ", 25, 70);
+        g.drawString("Turno: " + ronda, 25, 70);
 		g.drawString(nombreJugador1(jugador1), 600, 65);
 		g.drawString(nombreJugador2(jugador2), 40, 200);
 		g.drawString(nombreJugador3(jugador3), 1170, 200);
 		g.drawString(nombreJugador4(jugador4), 600, 770);
+		
+		
 	}
 	
 	public void cargarCartas() 
@@ -99,5 +102,11 @@ public class Partida extends Frame
 	{
 		jugador4 = nombrejugador4;
 		return jugador4;
+	}
+	
+	public void numTurno()
+	{
+		ronda++;
+		repaint();
 	}
 }

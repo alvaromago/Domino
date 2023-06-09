@@ -89,7 +89,7 @@ public class Controlador implements WindowListener, MouseListener
 				elegirJ.txtJ2.setText(elegirJ.txtJ2.getText());
 				elegirJ.txtJ3.setText("");
 				elegirJ.txtJ4.setText("");
-				System.out.println(this.modelo.crearPartida(2));
+				this.modelo.crearPartida(2);
 				elegirJ.dispose();
 			}
 			// Si elegimos 3 jugadores
@@ -119,7 +119,7 @@ public class Controlador implements WindowListener, MouseListener
 				elegirJ.txtJ2.setText(elegirJ.txtJ2.getText());
 				elegirJ.txtJ3.setText(elegirJ.txtJ3.getText());
 				elegirJ.txtJ4.setText("");
-				System.out.println(this.modelo.crearPartida(3));
+				this.modelo.crearPartida(3);
 				elegirJ.dispose();
 			}
 			// Si elegimos 4 jugadores
@@ -152,6 +152,7 @@ public class Controlador implements WindowListener, MouseListener
 				elegirJ.txtJ3.setText(elegirJ.txtJ3.getText());
 				elegirJ.txtJ4.setText(elegirJ.txtJ4.getText());
 				System.out.println(this.modelo.crearPartida(4));
+				
 				elegirJ.dispose();
 			}
 			this.partida.nombreJugador1(elegirJ.txtJ1.getText());
@@ -159,9 +160,18 @@ public class Controlador implements WindowListener, MouseListener
 			this.partida.nombreJugador3(elegirJ.txtJ3.getText());
 			this.partida.nombreJugador4(elegirJ.txtJ4.getText());
 		}
-		else if (partida.isActive())
+		else if (partida.isActive() && x>0&&x<1300&&y>0&&y<800)
 		{
+			// Repartir fichas
 			
+			// Empieza el Jugador 1
+			
+			// Comprobar que puedes poner una ficha
+			
+			// Donde se pone la ficha
+			
+			// Turno++
+			this.partida.numTurno();
 		}
 	}
 	
