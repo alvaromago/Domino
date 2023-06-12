@@ -1650,6 +1650,7 @@ public class Partida extends Frame
 			j27 = f66;
 		}
 		
+		
 		// Dibujar Fichas Jugador 1
 		if(ronda==1)
 		{
@@ -1662,7 +1663,7 @@ public class Partida extends Frame
 			g.drawImage(j16, 715, 73, null);
 			g.drawImage(j17, 760, 73, null);
 		
-			// Mostrar Ocultas Fichas Resto
+			// Mostrar Fichas 2
 			g.drawImage(j21, 490, 660, null);
 			g.drawImage(j22, 535, 660, null);
 			g.drawImage(j23, 580, 660, null);
@@ -1670,6 +1671,15 @@ public class Partida extends Frame
 			g.drawImage(j25, 670, 660, null);
 			g.drawImage(j26, 715, 660, null);
 			g.drawImage(j27, 760, 660, null);
+			
+			// Mostrar Ocultas Fichas Resto
+						/*g.drawImage(fWhite, 490, 660, null);
+						g.drawImage(fWhite, 535, 660, null);
+						g.drawImage(fWhite, 580, 660, null);
+						g.drawImage(fWhite, 625, 660, null);
+						g.drawImage(fWhite, 670, 660, null);
+						g.drawImage(fWhite, 715, 660, null);
+						g.drawImage(fWhite, 760, 660, null);*/
 		}
 		
 	}
