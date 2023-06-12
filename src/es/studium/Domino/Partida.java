@@ -6,6 +6,7 @@ import java.awt.Frame;
 import java.awt.Graphics;
 import java.awt.Image;
 import java.awt.Toolkit;
+import java.util.List;
 
 public class Partida extends Frame
 {
@@ -13,11 +14,17 @@ public class Partida extends Frame
 	
 	String jugador1, jugador2, jugador3, jugador4;
 	Image tablero;
-	int ronda = 0;
+	int ronda = 1;
 	Image f00, f01, f02, f03, f04, f05, f06;
 	Image f11, f12, f13, f14, f15, f16, f22, f23, f24, f25, f26;
 	Image f33, f34, f35, f36, f44, f45, f46, f55, f56, f66;
+	
+	Image ficha11;
 	Toolkit herramienta;
+	List<String> manoJ1;
+	List<String> manoJ2;
+	List<String> manoJ3;
+	List<String> manoJ4;
 	
 	Partida()
 	{
@@ -29,6 +36,7 @@ public class Partida extends Frame
 		setResizable(false);
 		setLocationRelativeTo(null);
 		setVisible(false);
+		cargarFichas();
 	}
 	
 	public void paint(Graphics g)
@@ -45,39 +53,57 @@ public class Partida extends Frame
 		g.drawString(nombreJugador3(jugador3), 1170, 200);
 		g.drawString(nombreJugador4(jugador4), 600, 770);
 		
+		//if(manoJ1.get(0).equals("f00"))
+		//{
+			ficha11 = f00;
+		//}
+		// Dibujar Fichas Jugador 1
+		if(ronda==1)
+		{
+			// Mostrar Fichas 1				
+			g.drawImage(ficha11, 490, 73, null);
+			g.drawImage(f46, 535, 73, null);
+			g.drawImage(f46, 580, 73, null);
+			g.drawImage(f46, 625, 73, null);
+			g.drawImage(f46, 670, 73, null);
+			g.drawImage(f46, 715, 73, null);
+			g.drawImage(f46, 760, 73, null);
+		
+			// Mostrar Ocultas Fichas Resto
+		}
 		
 	}
 	
-	public void cargarCartas() 
+	public void cargarFichas() 
 	{
-		f00 = herramienta.getImage("./imagesFichas/00.png");
-		f01 = herramienta.getImage("./imagesFichas/01.png");
-		f02 = herramienta.getImage("./imagesFichas/02.png");
-		f03 = herramienta.getImage("./imagesFichas/03.png");
-		f04 = herramienta.getImage("./imagesFichas/04.png");
-		f05 = herramienta.getImage("./imagesFichas/05.png");
-		f06 = herramienta.getImage("./imagesFichas/06.png");
-		f11 = herramienta.getImage("./imagesFichas/11.png");
-		f12 = herramienta.getImage("./imagesFichas/12.png");
-		f13 = herramienta.getImage("./imagesFichas/13.png");
-		f14 = herramienta.getImage("./imagesFichas/14.png");
-		f15 = herramienta.getImage("./imagesFichas/15.png");
-		f16 = herramienta.getImage("./imagesFichas/16.png");
-		f22 = herramienta.getImage("./imagesFichas/22.png");
-		f23 = herramienta.getImage("./imagesFichas/23.png");
-		f24 = herramienta.getImage("./imagesFichas/24.png");
-		f25 = herramienta.getImage("./imagesFichas/25.png");
-		f26 = herramienta.getImage("./imagesFichas/26.png");
-		f33 = herramienta.getImage("./imagesFichas/33.png");
-		f34 = herramienta.getImage("./imagesFichas/34.png");
-		f35 = herramienta.getImage("./imagesFichas/35.png");
-		f36 = herramienta.getImage("./imagesFichas/36.png");
-		f44 = herramienta.getImage("./imagesFichas/44.png");
-		f45 = herramienta.getImage("./imagesFichas/45.png");
-		f46 = herramienta.getImage("./imagesFichas/46.png");
-		f55 = herramienta.getImage("./imagesFichas/55.png");
-		f56 = herramienta.getImage("./imagesFichas/56.png");
-		f66 = herramienta.getImage("./imagesFichas/66.png");
+		f00 = herramienta.getImage("./imagesFichas/f00.png");
+		f01 = herramienta.getImage("./imagesFichas/f01.png");
+		f02 = herramienta.getImage("./imagesFichas/f02.png");
+		f03 = herramienta.getImage("./imagesFichas/f03.png");
+		f04 = herramienta.getImage("./imagesFichas/f04.png");
+		f05 = herramienta.getImage("./imagesFichas/f05.png");
+		f06 = herramienta.getImage("./imagesFichas/f06.png");
+		f11 = herramienta.getImage("./imagesFichas/f11.png");
+		f12 = herramienta.getImage("./imagesFichas/f12.png");
+		f13 = herramienta.getImage("./imagesFichas/f13.png");
+		f14 = herramienta.getImage("./imagesFichas/f14.png");
+		f15 = herramienta.getImage("./imagesFichas/f15.png");
+		f16 = herramienta.getImage("./imagesFichas/f16.png");
+		f22 = herramienta.getImage("./imagesFichas/f22.png");
+		f23 = herramienta.getImage("./imagesFichas/f23.png");
+		f24 = herramienta.getImage("./imagesFichas/f24.png");
+		f25 = herramienta.getImage("./imagesFichas/f25.png");
+		f26 = herramienta.getImage("./imagesFichas/f26.png");
+		f33 = herramienta.getImage("./imagesFichas/f33.png");
+		f34 = herramienta.getImage("./imagesFichas/f34.png");
+		f35 = herramienta.getImage("./imagesFichas/f35.png");
+		f36 = herramienta.getImage("./imagesFichas/f36.png");
+		f44 = herramienta.getImage("./imagesFichas/f44.png");
+		f45 = herramienta.getImage("./imagesFichas/f45.png");
+		f46 = herramienta.getImage("./imagesFichas/f46.png");
+		f55 = herramienta.getImage("./imagesFichas/f55.png");
+		f56 = herramienta.getImage("./imagesFichas/f56.png");
+		f66 = herramienta.getImage("./imagesFichas/f66.png");
 	}
 	
 	public String nombreJugador1(String nombrejugador1)
@@ -108,5 +134,9 @@ public class Partida extends Frame
 	{
 		ronda++;
 		repaint();
+	}
+	public void leerJ1(List<String> m1)
+	{
+		manoJ1 = m1;
 	}
 }

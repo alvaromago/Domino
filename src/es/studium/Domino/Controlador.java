@@ -172,6 +172,12 @@ public class Controlador implements WindowListener, MouseListener
 			
 			// Turno++
 			this.partida.numTurno();
+			partida.leerJ1(this.modelo.manoJ1);
+			System.out.println("Mano Jugador 1: " + this.modelo.manoJ1);
+			System.out.println("Mano Jugador 2: " + this.modelo.manoJ2);
+			System.out.println("Mano Jugador 3: " + this.modelo.manoJ3);
+			System.out.println("Mano Jugador 4: " + this.modelo.manoJ4);
+			System.out.println("Pozo: " + this.modelo.pozo);
 		}
 	}
 	
