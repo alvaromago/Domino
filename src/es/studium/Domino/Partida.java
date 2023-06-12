@@ -53,7 +53,7 @@ public class Partida extends Frame
 		g.drawString(nombreJugador4(jugador4), 1170, 200);
 		g.drawString(nombreJugador2(jugador2), 600, 770);
 		
-		 									/*FICHAS JUGADOR 1*/
+		 													/*FICHAS JUGADOR 1*/
 		// Ficha 1 Jugador 1
 		if(manoJ1.get(0).equals("00"))
 		{
@@ -845,7 +845,7 @@ public class Partida extends Frame
 		{
 			j17 = f66;
 		}
-		                               /*FICHAS JUGADOR 2*/
+		                               						/*FICHAS JUGADOR 2*/
 		// Ficha 1 Jugador 2
 		if(manoJ2.get(0).equals("00"))
 		{
@@ -1637,35 +1637,1565 @@ public class Partida extends Frame
 		{
 			j27 = f66;
 		}
+		
+															/*FICHAS JUGADOR 3*/
 		// Ficha 1 Jugador 3
-		
+		if(manoJ3.get(0).equals("00"))
+		{
+			j31 = f00;
+		}
+		else if(manoJ3.get(0).equals("01"))
+		{
+			j31 = f01;
+		}
+		else if(manoJ3.get(0).equals("02"))
+		{
+			j31 = f02;
+		}
+		else if(manoJ3.get(0).equals("03"))
+		{
+			j31 = f03;
+		}
+		else if(manoJ3.get(0).equals("04"))
+		{
+			j31 = f04;
+		}
+		else if(manoJ3.get(0).equals("05"))
+		{
+			j31 = f05;
+		}
+		else if(manoJ3.get(0).equals("06"))
+		{
+			j31 = f06;
+		}
+		else if(manoJ3.get(0).equals("11"))
+		{
+			j31 = f11;
+		}
+		else if(manoJ3.get(0).equals("12"))
+		{
+			j31 = f12;
+		}
+		else if(manoJ3.get(0).equals("13"))
+		{
+			j31 = f13;
+		}
+		else if(manoJ3.get(0).equals("14"))
+		{
+			j31 = f14;
+		}
+		else if(manoJ3.get(0).equals("15"))
+		{
+			j31 = f15;
+		}
+		else if(manoJ3.get(0).equals("16"))
+		{
+			j31 = f16;
+		}
+		else if(manoJ3.get(0).equals("22"))
+		{
+			j31 = f22;
+		}
+		else if(manoJ3.get(0).equals("23"))
+		{
+			j31 = f23;
+		}
+		else if(manoJ3.get(0).equals("24"))
+		{
+			j31 = f24;
+		}
+		else if(manoJ3.get(0).equals("25"))
+		{
+			j31 = f25;
+		}
+		else if(manoJ3.get(0).equals("26"))
+		{
+			j31 = f26;
+		}
+		else if(manoJ3.get(0).equals("33"))
+		{
+			j31 = f33;
+		}
+		else if(manoJ3.get(0).equals("34"))
+		{
+			j31 = f34;
+		}
+		else if(manoJ3.get(0).equals("35"))
+		{
+			j31 = f35;
+		}
+		else if(manoJ3.get(0).equals("36"))
+		{
+			j31 = f36;
+		}
+		else if(manoJ3.get(0).equals("44"))
+		{
+			j31 = f44;
+		}
+		else if(manoJ3.get(0).equals("45"))
+		{
+			j31 = f45;
+		}
+		else if(manoJ3.get(0).equals("46"))
+		{
+			j31 = f46;
+		}
+		else if(manoJ3.get(0).equals("55"))
+		{
+			j31 = f55;
+		}
+		else if(manoJ3.get(0).equals("56"))
+		{
+			j31 = f56;
+		}
+		else if(manoJ3.get(0).equals("66"))
+		{
+			j31 = f66;
+		}
 		// Ficha 2 Jugador 3
-		
+		if(manoJ3.get(1).equals("00"))
+		{
+			j32 = f00;
+		}
+		else if(manoJ3.get(1).equals("01"))
+		{
+			j32 = f01;
+		}
+		else if(manoJ3.get(1).equals("02"))
+		{
+			j32 = f02;
+		}
+		else if(manoJ3.get(1).equals("03"))
+		{
+			j32 = f03;
+		}
+		else if(manoJ3.get(1).equals("04"))
+		{
+			j32 = f04;
+		}
+		else if(manoJ3.get(1).equals("05"))
+		{
+			j32 = f05;
+		}
+		else if(manoJ3.get(1).equals("06"))
+		{
+			j32 = f06;
+		}
+		else if(manoJ3.get(1).equals("11"))
+		{
+			j32 = f11;
+		}
+		else if(manoJ3.get(1).equals("12"))
+		{
+			j32 = f12;
+		}
+		else if(manoJ3.get(1).equals("13"))
+		{
+			j32 = f13;
+		}
+		else if(manoJ3.get(1).equals("14"))
+		{
+			j32 = f14;
+		}
+		else if(manoJ3.get(1).equals("15"))
+		{
+			j32 = f15;
+		}
+		else if(manoJ3.get(1).equals("16"))
+		{
+			j32 = f16;
+		}
+		else if(manoJ3.get(1).equals("22"))
+		{
+			j32 = f22;
+		}
+		else if(manoJ3.get(1).equals("23"))
+		{
+			j32 = f23;
+		}
+		else if(manoJ3.get(1).equals("24"))
+		{
+			j32 = f24;
+		}
+		else if(manoJ3.get(1).equals("25"))
+		{
+			j32 = f25;
+		}
+		else if(manoJ3.get(1).equals("26"))
+		{
+			j32 = f26;
+		}
+		else if(manoJ3.get(1).equals("33"))
+		{
+			j32 = f33;
+		}
+		else if(manoJ3.get(1).equals("34"))
+		{
+			j32 = f34;
+		}
+		else if(manoJ3.get(1).equals("35"))
+		{
+			j32 = f35;
+		}
+		else if(manoJ3.get(1).equals("36"))
+		{
+			j32 = f36;
+		}
+		else if(manoJ3.get(1).equals("44"))
+		{
+			j32 = f44;
+		}
+		else if(manoJ3.get(1).equals("45"))
+		{
+			j32 = f45;
+		}
+		else if(manoJ3.get(1).equals("46"))
+		{
+			j32 = f46;
+		}
+		else if(manoJ3.get(1).equals("55"))
+		{
+			j32 = f55;
+		}
+		else if(manoJ3.get(1).equals("56"))
+		{
+			j32 = f56;
+		}
+		else if(manoJ3.get(1).equals("66"))
+		{
+			j32 = f66;
+		}
 		// Ficha 3 Jugador 3
-		
+		if(manoJ3.get(2).equals("00"))
+		{
+			j33 = f00;
+		}
+		else if(manoJ3.get(2).equals("01"))
+		{
+			j33 = f01;
+		}
+		else if(manoJ3.get(2).equals("02"))
+		{
+			j33 = f02;
+		}
+		else if(manoJ3.get(2).equals("03"))
+		{
+			j33 = f03;
+		}
+		else if(manoJ3.get(2).equals("04"))
+		{
+			j33 = f04;
+		}
+		else if(manoJ3.get(2).equals("05"))
+		{
+			j33 = f05;
+		}
+		else if(manoJ3.get(2).equals("06"))
+		{
+			j33 = f06;
+		}
+		else if(manoJ3.get(2).equals("11"))
+		{
+			j33 = f11;
+		}
+		else if(manoJ3.get(2).equals("12"))
+		{
+			j33 = f12;
+		}
+		else if(manoJ3.get(2).equals("13"))
+		{
+			j33 = f13;
+		}
+		else if(manoJ3.get(2).equals("14"))
+		{
+			j33 = f14;
+		}
+		else if(manoJ3.get(2).equals("15"))
+		{
+			j33 = f15;
+		}
+		else if(manoJ3.get(2).equals("16"))
+		{
+			j33 = f16;
+		}
+		else if(manoJ3.get(2).equals("22"))
+		{
+			j33 = f22;
+		}
+		else if(manoJ3.get(2).equals("23"))
+		{
+			j33 = f23;
+		}
+		else if(manoJ3.get(2).equals("24"))
+		{
+			j33 = f24;
+		}
+		else if(manoJ3.get(2).equals("25"))
+		{
+			j33 = f25;
+		}
+		else if(manoJ3.get(2).equals("26"))
+		{
+			j33 = f26;
+		}
+		else if(manoJ3.get(2).equals("33"))
+		{
+			j33 = f33;
+		}
+		else if(manoJ3.get(2).equals("34"))
+		{
+			j33 = f34;
+		}
+		else if(manoJ3.get(2).equals("35"))
+		{
+			j33 = f35;
+		}
+		else if(manoJ3.get(2).equals("36"))
+		{
+			j33 = f36;
+		}
+		else if(manoJ3.get(2).equals("44"))
+		{
+			j33 = f44;
+		}
+		else if(manoJ3.get(2).equals("45"))
+		{
+			j33 = f45;
+		}
+		else if(manoJ3.get(2).equals("46"))
+		{
+			j33 = f46;
+		}
+		else if(manoJ3.get(2).equals("55"))
+		{
+			j33 = f55;
+		}
+		else if(manoJ3.get(2).equals("56"))
+		{
+			j33 = f56;
+		}
+		else if(manoJ3.get(2).equals("66"))
+		{
+			j33 = f66;
+		}
 		// Ficha 4 Jugador 3
-		
+		if(manoJ3.get(3).equals("00"))
+		{
+			j34 = f00;
+		}
+		else if(manoJ3.get(3).equals("01"))
+		{
+			j34 = f01;
+		}
+		else if(manoJ3.get(3).equals("02"))
+		{
+			j34 = f02;
+		}
+		else if(manoJ3.get(3).equals("03"))
+		{
+			j34 = f03;
+		}
+		else if(manoJ3.get(3).equals("04"))
+		{
+			j34 = f04;
+		}
+		else if(manoJ3.get(3).equals("05"))
+		{
+			j34 = f05;
+		}
+		else if(manoJ3.get(3).equals("06"))
+		{
+			j34 = f06;
+		}
+		else if(manoJ3.get(3).equals("11"))
+		{
+			j34 = f11;
+		}
+		else if(manoJ3.get(3).equals("12"))
+		{
+			j34 = f12;
+		}
+		else if(manoJ3.get(3).equals("13"))
+		{
+			j34 = f13;
+		}
+		else if(manoJ3.get(3).equals("14"))
+		{
+			j34 = f14;
+		}
+		else if(manoJ3.get(3).equals("15"))
+		{
+			j34 = f15;
+		}
+		else if(manoJ3.get(3).equals("16"))
+		{
+			j34 = f16;
+		}
+		else if(manoJ3.get(3).equals("22"))
+		{
+			j34 = f22;
+		}
+		else if(manoJ3.get(3).equals("23"))
+		{
+			j34 = f23;
+		}
+		else if(manoJ3.get(3).equals("24"))
+		{
+			j34 = f24;
+		}
+		else if(manoJ3.get(3).equals("25"))
+		{
+			j34 = f25;
+		}
+		else if(manoJ3.get(3).equals("26"))
+		{
+			j34 = f26;
+		}
+		else if(manoJ3.get(3).equals("33"))
+		{
+			j34 = f33;
+		}
+		else if(manoJ3.get(3).equals("34"))
+		{
+			j34 = f34;
+		}
+		else if(manoJ3.get(3).equals("35"))
+		{
+			j34 = f35;
+		}
+		else if(manoJ3.get(3).equals("36"))
+		{
+			j34 = f36;
+		}
+		else if(manoJ3.get(3).equals("44"))
+		{
+			j34 = f44;
+		}
+		else if(manoJ3.get(3).equals("45"))
+		{
+			j34 = f45;
+		}
+		else if(manoJ3.get(3).equals("46"))
+		{
+			j34 = f46;
+		}
+		else if(manoJ3.get(3).equals("55"))
+		{
+			j34 = f55;
+		}
+		else if(manoJ3.get(3).equals("56"))
+		{
+			j34 = f56;
+		}
+		else if(manoJ3.get(3).equals("66"))
+		{
+			j34 = f66;
+		}
 		// Ficha 5 Jugador 3
-		
+		if(manoJ3.get(4).equals("00"))
+		{
+			j35 = f00;
+		}
+		else if(manoJ3.get(4).equals("01"))
+		{
+			j35 = f01;
+		}
+		else if(manoJ3.get(4).equals("02"))
+		{
+			j35 = f02;
+		}
+		else if(manoJ3.get(4).equals("03"))
+		{
+			j35 = f03;
+		}
+		else if(manoJ3.get(4).equals("04"))
+		{
+			j35 = f04;
+		}
+		else if(manoJ3.get(4).equals("05"))
+		{
+			j35 = f05;
+		}
+		else if(manoJ3.get(4).equals("06"))
+		{
+			j35 = f06;
+		}
+		else if(manoJ3.get(4).equals("11"))
+		{
+			j35 = f11;
+		}
+		else if(manoJ3.get(4).equals("12"))
+		{
+			j35 = f12;
+		}
+		else if(manoJ3.get(4).equals("13"))
+		{
+			j35 = f13;
+		}
+		else if(manoJ3.get(4).equals("14"))
+		{
+			j35 = f14;
+		}
+		else if(manoJ3.get(4).equals("15"))
+		{
+			j35 = f15;
+		}
+		else if(manoJ3.get(4).equals("16"))
+		{
+			j35 = f16;
+		}
+		else if(manoJ3.get(4).equals("22"))
+		{
+			j35 = f22;
+		}
+		else if(manoJ3.get(4).equals("23"))
+		{
+			j35 = f23;
+		}
+		else if(manoJ3.get(4).equals("24"))
+		{
+			j35 = f24;
+		}
+		else if(manoJ3.get(4).equals("25"))
+		{
+			j35 = f25;
+		}
+		else if(manoJ3.get(4).equals("26"))
+		{
+			j35 = f26;
+		}
+		else if(manoJ3.get(4).equals("33"))
+		{
+			j35 = f33;
+		}
+		else if(manoJ3.get(4).equals("34"))
+		{
+			j35 = f34;
+		}
+		else if(manoJ3.get(4).equals("35"))
+		{
+			j35 = f35;
+		}
+		else if(manoJ3.get(4).equals("36"))
+		{
+			j35 = f36;
+		}
+		else if(manoJ3.get(4).equals("44"))
+		{
+			j35 = f44;
+		}
+		else if(manoJ3.get(4).equals("45"))
+		{
+			j35 = f45;
+		}
+		else if(manoJ3.get(4).equals("46"))
+		{
+			j35 = f46;
+		}
+		else if(manoJ3.get(4).equals("55"))
+		{
+			j35 = f55;
+		}
+		else if(manoJ3.get(4).equals("56"))
+		{
+			j35 = f56;
+		}
+		else if(manoJ3.get(4).equals("66"))
+		{
+			j35 = f66;
+		}
 		// Ficha 6 Jugador 3
-		
+		if(manoJ3.get(5).equals("00"))
+		{
+			j36 = f00;
+		}
+		else if(manoJ3.get(5).equals("01"))
+		{
+			j36 = f01;
+		}
+		else if(manoJ3.get(5).equals("02"))
+		{
+			j36 = f02;
+		}
+		else if(manoJ3.get(5).equals("03"))
+		{
+			j36 = f03;
+		}
+		else if(manoJ3.get(5).equals("04"))
+		{
+			j36 = f04;
+		}
+		else if(manoJ3.get(5).equals("05"))
+		{
+			j36 = f05;
+		}
+		else if(manoJ3.get(5).equals("06"))
+		{
+			j36 = f06;
+		}
+		else if(manoJ3.get(5).equals("11"))
+		{
+			j36 = f11;
+		}
+		else if(manoJ3.get(5).equals("12"))
+		{
+			j36 = f12;
+		}
+		else if(manoJ3.get(5).equals("13"))
+		{
+			j36 = f13;
+		}
+		else if(manoJ3.get(5).equals("14"))
+		{
+			j36 = f14;
+		}
+		else if(manoJ3.get(5).equals("15"))
+		{
+			j36 = f15;
+		}
+		else if(manoJ3.get(5).equals("16"))
+		{
+			j36 = f16;
+		}
+		else if(manoJ3.get(5).equals("22"))
+		{
+			j36 = f22;
+		}
+		else if(manoJ3.get(5).equals("23"))
+		{
+			j36 = f23;
+		}
+		else if(manoJ3.get(5).equals("24"))
+		{
+			j36 = f24;
+		}
+		else if(manoJ3.get(5).equals("25"))
+		{
+			j36 = f25;
+		}
+		else if(manoJ3.get(5).equals("26"))
+		{
+			j36 = f26;
+		}
+		else if(manoJ3.get(5).equals("33"))
+		{
+			j36 = f33;
+		}
+		else if(manoJ3.get(5).equals("34"))
+		{
+			j36 = f34;
+		}
+		else if(manoJ3.get(5).equals("35"))
+		{
+			j36 = f35;
+		}
+		else if(manoJ3.get(5).equals("36"))
+		{
+			j36 = f36;
+		}
+		else if(manoJ3.get(5).equals("44"))
+		{
+			j36 = f44;
+		}
+		else if(manoJ3.get(5).equals("45"))
+		{
+			j36 = f45;
+		}
+		else if(manoJ3.get(5).equals("46"))
+		{
+			j36 = f46;
+		}
+		else if(manoJ3.get(5).equals("55"))
+		{
+			j36 = f55;
+		}
+		else if(manoJ3.get(5).equals("56"))
+		{
+			j36 = f56;
+		}
+		else if(manoJ3.get(5).equals("66"))
+		{
+			j36 = f66;
+		}
 		// Ficha 7 Jugador 3
+		if(manoJ3.get(6).equals("00"))
+		{
+			j37 = f00;
+		}
+		else if(manoJ3.get(6).equals("01"))
+		{
+			j37 = f01;
+		}
+		else if(manoJ3.get(6).equals("02"))
+		{
+			j37 = f02;
+		}
+		else if(manoJ3.get(6).equals("03"))
+		{
+			j37 = f03;
+		}
+		else if(manoJ3.get(6).equals("04"))
+		{
+			j37 = f04;
+		}
+		else if(manoJ3.get(6).equals("05"))
+		{
+			j37 = f05;
+		}
+		else if(manoJ3.get(6).equals("06"))
+		{
+			j37 = f06;
+		}
+		else if(manoJ3.get(6).equals("11"))
+		{
+			j37 = f11;
+		}
+		else if(manoJ3.get(6).equals("12"))
+		{
+			j37 = f12;
+		}
+		else if(manoJ3.get(6).equals("13"))
+		{
+			j37 = f13;
+		}
+		else if(manoJ3.get(6).equals("14"))
+		{
+			j37 = f14;
+		}
+		else if(manoJ3.get(6).equals("15"))
+		{
+			j37 = f15;
+		}
+		else if(manoJ3.get(6).equals("16"))
+		{
+			j37 = f16;
+		}
+		else if(manoJ3.get(6).equals("22"))
+		{
+			j37 = f22;
+		}
+		else if(manoJ3.get(6).equals("23"))
+		{
+			j37 = f23;
+		}
+		else if(manoJ3.get(6).equals("24"))
+		{
+			j37 = f24;
+		}
+		else if(manoJ3.get(6).equals("25"))
+		{
+			j37 = f25;
+		}
+		else if(manoJ3.get(6).equals("26"))
+		{
+			j37 = f26;
+		}
+		else if(manoJ3.get(6).equals("33"))
+		{
+			j37 = f33;
+		}
+		else if(manoJ3.get(6).equals("34"))
+		{
+			j37 = f34;
+		}
+		else if(manoJ3.get(6).equals("35"))
+		{
+			j37 = f35;
+		}
+		else if(manoJ3.get(6).equals("36"))
+		{
+			j37 = f36;
+		}
+		else if(manoJ3.get(6).equals("44"))
+		{
+			j37 = f44;
+		}
+		else if(manoJ3.get(6).equals("45"))
+		{
+			j37 = f45;
+		}
+		else if(manoJ3.get(6).equals("46"))
+		{
+			j37 = f46;
+		}
+		else if(manoJ3.get(6).equals("55"))
+		{
+			j37 = f55;
+		}
+		else if(manoJ3.get(6).equals("56"))
+		{
+			j37 = f56;
+		}
+		else if(manoJ3.get(6).equals("66"))
+		{
+			j37 = f66;
+		}
 		
-		
+														/*FICHAS JUGADOR 4*/
 		// Ficha 1 Jugador 4
-		
+		if (manoJ4.get(0).equals("00"))
+		{
+			j41 = f00;
+		} else if (manoJ4.get(0).equals("01"))
+		{
+			j41 = f01;
+		} else if (manoJ4.get(0).equals("02"))
+		{
+			j41 = f02;
+		} else if (manoJ4.get(0).equals("03"))
+		{
+			j41 = f03;
+		} else if (manoJ4.get(0).equals("04"))
+		{
+			j41 = f04;
+		} else if (manoJ4.get(0).equals("05"))
+		{
+			j41 = f05;
+		} else if (manoJ4.get(0).equals("06"))
+		{
+			j41 = f06;
+		} else if (manoJ4.get(0).equals("11"))
+		{
+			j41 = f11;
+		} else if (manoJ4.get(0).equals("12"))
+		{
+			j41 = f12;
+		} else if (manoJ4.get(0).equals("13"))
+		{
+			j41 = f13;
+		} else if (manoJ4.get(0).equals("14"))
+		{
+			j41 = f14;
+		} else if (manoJ4.get(0).equals("15"))
+		{
+			j41 = f15;
+		} else if (manoJ4.get(0).equals("16"))
+		{
+			j41 = f16;
+		} else if (manoJ4.get(0).equals("22"))
+		{
+			j41 = f22;
+		} else if (manoJ4.get(0).equals("23"))
+		{
+			j41 = f23;
+		} else if (manoJ4.get(0).equals("24"))
+		{
+			j41 = f24;
+		} else if (manoJ4.get(0).equals("25"))
+		{
+			j41 = f25;
+		} else if (manoJ4.get(0).equals("26"))
+		{
+			j41 = f26;
+		} else if (manoJ4.get(0).equals("33"))
+		{
+			j41 = f33;
+		} else if (manoJ4.get(0).equals("34"))
+		{
+			j41 = f34;
+		} else if (manoJ4.get(0).equals("35"))
+		{
+			j41 = f35;
+		} else if (manoJ4.get(0).equals("36"))
+		{
+			j41 = f36;
+		} else if (manoJ4.get(0).equals("44"))
+		{
+			j41 = f44;
+		} else if (manoJ4.get(0).equals("45"))
+		{
+			j41 = f45;
+		} else if (manoJ4.get(0).equals("46"))
+		{
+			j41 = f46;
+		} else if (manoJ4.get(0).equals("55"))
+		{
+			j41 = f55;
+		} else if (manoJ4.get(0).equals("56"))
+		{
+			j41 = f56;
+		} else if (manoJ4.get(0).equals("66"))
+		{
+			j41 = f66;
+		}
 		// Ficha 2 Jugador 4
-		
+		if(manoJ4.get(1).equals("00"))
+		{
+			j42 = f00;
+		}
+		else if(manoJ4.get(1).equals("01"))
+		{
+			j42 = f01;
+		}
+		else if(manoJ4.get(1).equals("02"))
+		{
+			j42 = f02;
+		}
+		else if(manoJ4.get(1).equals("03"))
+		{
+			j42 = f03;
+		}
+		else if(manoJ4.get(1).equals("04"))
+		{
+			j42 = f04;
+		}
+		else if(manoJ4.get(1).equals("05"))
+		{
+			j42 = f05;
+		}
+		else if(manoJ4.get(1).equals("06"))
+		{
+			j42 = f06;
+		}
+		else if(manoJ4.get(1).equals("11"))
+		{
+			j42 = f11;
+		}
+		else if(manoJ4.get(1).equals("12"))
+		{
+			j42 = f12;
+		}
+		else if(manoJ4.get(1).equals("13"))
+		{
+			j42 = f13;
+		}
+		else if(manoJ4.get(1).equals("14"))
+		{
+			j42 = f14;
+		}
+		else if(manoJ4.get(1).equals("15"))
+		{
+			j42 = f15;
+		}
+		else if(manoJ4.get(1).equals("16"))
+		{
+			j42 = f16;
+		}
+		else if(manoJ4.get(1).equals("22"))
+		{
+			j42 = f22;
+		}
+		else if(manoJ4.get(1).equals("23"))
+		{
+			j42 = f23;
+		}
+		else if(manoJ4.get(1).equals("24"))
+		{
+			j42 = f24;
+		}
+		else if(manoJ4.get(1).equals("25"))
+		{
+			j42 = f25;
+		}
+		else if(manoJ4.get(1).equals("26"))
+		{
+			j42 = f26;
+		}
+		else if(manoJ4.get(1).equals("33"))
+		{
+			j42 = f33;
+		}
+		else if(manoJ4.get(1).equals("34"))
+		{
+			j42 = f34;
+		}
+		else if(manoJ4.get(1).equals("35"))
+		{
+			j42 = f35;
+		}
+		else if(manoJ4.get(1).equals("36"))
+		{
+			j42 = f36;
+		}
+		else if(manoJ4.get(1).equals("44"))
+		{
+			j42 = f44;
+		}
+		else if(manoJ4.get(1).equals("45"))
+		{
+			j42 = f45;
+		}
+		else if(manoJ4.get(1).equals("46"))
+		{
+			j42 = f46;
+		}
+		else if(manoJ4.get(1).equals("55"))
+		{
+			j42 = f55;
+		}
+		else if(manoJ4.get(1).equals("56"))
+		{
+			j42 = f56;
+		}
+		else if(manoJ4.get(1).equals("66"))
+		{
+			j42 = f66;
+		}
 		// Ficha 3 Jugador 4
-		
+		if(manoJ4.get(2).equals("00"))
+		{
+			j43 = f00;
+		}
+		else if(manoJ4.get(2).equals("01"))
+		{
+			j43 = f01;
+		}
+		else if(manoJ4.get(2).equals("02"))
+		{
+			j43 = f02;
+		}
+		else if(manoJ4.get(2).equals("03"))
+		{
+			j43 = f03;
+		}
+		else if(manoJ4.get(2).equals("04"))
+		{
+			j43 = f04;
+		}
+		else if(manoJ4.get(2).equals("05"))
+		{
+			j43 = f05;
+		}
+		else if(manoJ4.get(2).equals("06"))
+		{
+			j43 = f06;
+		}
+		else if(manoJ4.get(2).equals("11"))
+		{
+			j43 = f11;
+		}
+		else if(manoJ4.get(2).equals("12"))
+		{
+			j43 = f12;
+		}
+		else if(manoJ4.get(2).equals("13"))
+		{
+			j43 = f13;
+		}
+		else if(manoJ4.get(2).equals("14"))
+		{
+			j43 = f14;
+		}
+		else if(manoJ4.get(2).equals("15"))
+		{
+			j43 = f15;
+		}
+		else if(manoJ4.get(2).equals("16"))
+		{
+			j43 = f16;
+		}
+		else if(manoJ4.get(2).equals("22"))
+		{
+			j43 = f22;
+		}
+		else if(manoJ4.get(2).equals("23"))
+		{
+			j43 = f23;
+		}
+		else if(manoJ4.get(2).equals("24"))
+		{
+			j43 = f24;
+		}
+		else if(manoJ4.get(2).equals("25"))
+		{
+			j43 = f25;
+		}
+		else if(manoJ4.get(2).equals("26"))
+		{
+			j43 = f26;
+		}
+		else if(manoJ4.get(2).equals("33"))
+		{
+			j43 = f33;
+		}
+		else if(manoJ4.get(2).equals("34"))
+		{
+			j43 = f34;
+		}
+		else if(manoJ4.get(2).equals("35"))
+		{
+			j43 = f35;
+		}
+		else if(manoJ4.get(2).equals("36"))
+		{
+			j43 = f36;
+		}
+		else if(manoJ4.get(2).equals("44"))
+		{
+			j43 = f44;
+		}
+		else if(manoJ4.get(2).equals("45"))
+		{
+			j43 = f45;
+		}
+		else if(manoJ4.get(2).equals("46"))
+		{
+			j43 = f46;
+		}
+		else if(manoJ4.get(2).equals("55"))
+		{
+			j43 = f55;
+		}
+		else if(manoJ4.get(2).equals("56"))
+		{
+			j43 = f56;
+		}
+		else if(manoJ4.get(2).equals("66"))
+		{
+			j43 = f66;
+		}
 		// Ficha 4 Jugador 4
-		
+		if(manoJ4.get(3).equals("00"))
+		{
+			j44 = f00;
+		}
+		else if(manoJ4.get(3).equals("01"))
+		{
+			j44 = f01;
+		}
+		else if(manoJ4.get(3).equals("02"))
+		{
+			j44 = f02;
+		}
+		else if(manoJ4.get(3).equals("03"))
+		{
+			j44 = f03;
+		}
+		else if(manoJ4.get(3).equals("04"))
+		{
+			j44 = f04;
+		}
+		else if(manoJ4.get(3).equals("05"))
+		{
+			j44 = f05;
+		}
+		else if(manoJ4.get(3).equals("06"))
+		{
+			j44 = f06;
+		}
+		else if(manoJ4.get(3).equals("11"))
+		{
+			j44 = f11;
+		}
+		else if(manoJ4.get(3).equals("12"))
+		{
+			j44 = f12;
+		}
+		else if(manoJ4.get(3).equals("13"))
+		{
+			j44 = f13;
+		}
+		else if(manoJ4.get(3).equals("14"))
+		{
+			j44 = f14;
+		}
+		else if(manoJ4.get(3).equals("15"))
+		{
+			j44 = f15;
+		}
+		else if(manoJ4.get(3).equals("16"))
+		{
+			j44 = f16;
+		}
+		else if(manoJ4.get(3).equals("22"))
+		{
+			j44 = f22;
+		}
+		else if(manoJ4.get(3).equals("23"))
+		{
+			j44 = f23;
+		}
+		else if(manoJ4.get(3).equals("24"))
+		{
+			j44 = f24;
+		}
+		else if(manoJ4.get(3).equals("25"))
+		{
+			j44 = f25;
+		}
+		else if(manoJ4.get(3).equals("26"))
+		{
+			j44 = f26;
+		}
+		else if(manoJ4.get(3).equals("33"))
+		{
+			j44 = f33;
+		}
+		else if(manoJ4.get(3).equals("34"))
+		{
+			j44 = f34;
+		}
+		else if(manoJ4.get(3).equals("35"))
+		{
+			j44 = f35;
+		}
+		else if(manoJ4.get(3).equals("36"))
+		{
+			j44 = f36;
+		}
+		else if(manoJ4.get(3).equals("44"))
+		{
+			j44 = f44;
+		}
+		else if(manoJ4.get(3).equals("45"))
+		{
+			j44 = f45;
+		}
+		else if(manoJ4.get(3).equals("46"))
+		{
+			j44 = f46;
+		}
+		else if(manoJ4.get(3).equals("55"))
+		{
+			j44 = f55;
+		}
+		else if(manoJ4.get(3).equals("56"))
+		{
+			j44 = f56;
+		}
+		else if(manoJ4.get(3).equals("66"))
+		{
+			j44 = f66;
+		}
 		// Ficha 5 Jugador 4
-		
+		if(manoJ4.get(4).equals("00"))
+		{
+			j45 = f00;
+		}
+		else if(manoJ4.get(4).equals("01"))
+		{
+			j45 = f01;
+		}
+		else if(manoJ4.get(4).equals("02"))
+		{
+			j45 = f02;
+		}
+		else if(manoJ4.get(4).equals("03"))
+		{
+			j45 = f03;
+		}
+		else if(manoJ4.get(4).equals("04"))
+		{
+			j45 = f04;
+		}
+		else if(manoJ4.get(4).equals("05"))
+		{
+			j45 = f05;
+		}
+		else if(manoJ4.get(4).equals("06"))
+		{
+			j45 = f06;
+		}
+		else if(manoJ4.get(4).equals("11"))
+		{
+			j45 = f11;
+		}
+		else if(manoJ4.get(4).equals("12"))
+		{
+			j45 = f12;
+		}
+		else if(manoJ4.get(4).equals("13"))
+		{
+			j45 = f13;
+		}
+		else if(manoJ4.get(4).equals("14"))
+		{
+			j45 = f14;
+		}
+		else if(manoJ4.get(4).equals("15"))
+		{
+			j45 = f15;
+		}
+		else if(manoJ4.get(4).equals("16"))
+		{
+			j45 = f16;
+		}
+		else if(manoJ4.get(4).equals("22"))
+		{
+			j45 = f22;
+		}
+		else if(manoJ4.get(4).equals("23"))
+		{
+			j45 = f23;
+		}
+		else if(manoJ4.get(4).equals("24"))
+		{
+			j45 = f24;
+		}
+		else if(manoJ4.get(4).equals("25"))
+		{
+			j45 = f25;
+		}
+		else if(manoJ4.get(4).equals("26"))
+		{
+			j45 = f26;
+		}
+		else if(manoJ4.get(4).equals("33"))
+		{
+			j45 = f33;
+		}
+		else if(manoJ4.get(4).equals("34"))
+		{
+			j45 = f34;
+		}
+		else if(manoJ4.get(4).equals("35"))
+		{
+			j45 = f35;
+		}
+		else if(manoJ4.get(4).equals("36"))
+		{
+			j45 = f36;
+		}
+		else if(manoJ4.get(4).equals("44"))
+		{
+			j45 = f44;
+		}
+		else if(manoJ4.get(4).equals("45"))
+		{
+			j45 = f45;
+		}
+		else if(manoJ4.get(4).equals("46"))
+		{
+			j45 = f46;
+		}
+		else if(manoJ4.get(4).equals("55"))
+		{
+			j45 = f55;
+		}
+		else if(manoJ4.get(4).equals("56"))
+		{
+			j45 = f56;
+		}
+		else if(manoJ4.get(4).equals("66"))
+		{
+			j45 = f66;
+		}
 		// Ficha 6 Jugador 4
-		
+		if(manoJ4.get(5).equals("00"))
+		{
+			j46 = f00;
+		}
+		else if(manoJ4.get(5).equals("01"))
+		{
+			j46 = f01;
+		}
+		else if(manoJ4.get(5).equals("02"))
+		{
+			j46 = f02;
+		}
+		else if(manoJ4.get(5).equals("03"))
+		{
+			j46 = f03;
+		}
+		else if(manoJ4.get(5).equals("04"))
+		{
+			j46 = f04;
+		}
+		else if(manoJ4.get(5).equals("05"))
+		{
+			j46 = f05;
+		}
+		else if(manoJ4.get(5).equals("06"))
+		{
+			j46 = f06;
+		}
+		else if(manoJ4.get(5).equals("11"))
+		{
+			j46 = f11;
+		}
+		else if(manoJ4.get(5).equals("12"))
+		{
+			j46 = f12;
+		}
+		else if(manoJ4.get(5).equals("13"))
+		{
+			j46 = f13;
+		}
+		else if(manoJ4.get(5).equals("14"))
+		{
+			j46 = f14;
+		}
+		else if(manoJ4.get(5).equals("15"))
+		{
+			j46 = f15;
+		}
+		else if(manoJ4.get(5).equals("16"))
+		{
+			j46 = f16;
+		}
+		else if(manoJ4.get(5).equals("22"))
+		{
+			j46 = f22;
+		}
+		else if(manoJ4.get(5).equals("23"))
+		{
+			j46 = f23;
+		}
+		else if(manoJ4.get(5).equals("24"))
+		{
+			j46 = f24;
+		}
+		else if(manoJ4.get(5).equals("25"))
+		{
+			j46 = f25;
+		}
+		else if(manoJ4.get(5).equals("26"))
+		{
+			j46 = f26;
+		}
+		else if(manoJ4.get(5).equals("33"))
+		{
+			j46 = f33;
+		}
+		else if(manoJ4.get(5).equals("34"))
+		{
+			j46 = f34;
+		}
+		else if(manoJ4.get(5).equals("35"))
+		{
+			j46 = f35;
+		}
+		else if(manoJ4.get(5).equals("36"))
+		{
+			j46 = f36;
+		}
+		else if(manoJ4.get(5).equals("44"))
+		{
+			j46 = f44;
+		}
+		else if(manoJ4.get(5).equals("45"))
+		{
+			j46 = f45;
+		}
+		else if(manoJ4.get(5).equals("46"))
+		{
+			j46 = f46;
+		}
+		else if(manoJ4.get(5).equals("55"))
+		{
+			j46 = f55;
+		}
+		else if(manoJ4.get(5).equals("56"))
+		{
+			j46 = f56;
+		}
+		else if(manoJ4.get(5).equals("66"))
+		{
+			j46 = f66;
+		}
 		// Ficha 7 Jugador 4
-		
+		if(manoJ4.get(6).equals("00"))
+		{
+			j47 = f00;
+		}
+		else if(manoJ4.get(6).equals("01"))
+		{
+			j47 = f01;
+		}
+		else if(manoJ4.get(6).equals("02"))
+		{
+			j47 = f02;
+		}
+		else if(manoJ4.get(6).equals("03"))
+		{
+			j47 = f03;
+		}
+		else if(manoJ4.get(6).equals("04"))
+		{
+			j47 = f04;
+		}
+		else if(manoJ4.get(6).equals("05"))
+		{
+			j47 = f05;
+		}
+		else if(manoJ4.get(6).equals("06"))
+		{
+			j47 = f06;
+		}
+		else if(manoJ4.get(6).equals("11"))
+		{
+			j47 = f11;
+		}
+		else if(manoJ4.get(6).equals("12"))
+		{
+			j47 = f12;
+		}
+		else if(manoJ4.get(6).equals("13"))
+		{
+			j47 = f13;
+		}
+		else if(manoJ4.get(6).equals("14"))
+		{
+			j47 = f14;
+		}
+		else if(manoJ4.get(6).equals("15"))
+		{
+			j47 = f15;
+		}
+		else if(manoJ4.get(6).equals("16"))
+		{
+			j47 = f16;
+		}
+		else if(manoJ4.get(6).equals("22"))
+		{
+			j47 = f22;
+		}
+		else if(manoJ4.get(6).equals("23"))
+		{
+			j47 = f23;
+		}
+		else if(manoJ4.get(6).equals("24"))
+		{
+			j47 = f24;
+		}
+		else if(manoJ4.get(6).equals("25"))
+		{
+			j47 = f25;
+		}
+		else if(manoJ4.get(6).equals("26"))
+		{
+			j47 = f26;
+		}
+		else if(manoJ4.get(6).equals("33"))
+		{
+			j47 = f33;
+		}
+		else if(manoJ4.get(6).equals("34"))
+		{
+			j47 = f34;
+		}
+		else if(manoJ4.get(6).equals("35"))
+		{
+			j47 = f35;
+		}
+		else if(manoJ4.get(6).equals("36"))
+		{
+			j47 = f36;
+		}
+		else if(manoJ4.get(6).equals("44"))
+		{
+			j47 = f44;
+		}
+		else if(manoJ4.get(6).equals("45"))
+		{
+			j47 = f45;
+		}
+		else if(manoJ4.get(6).equals("46"))
+		{
+			j47 = f46;
+		}
+		else if(manoJ4.get(6).equals("55"))
+		{
+			j47 = f55;
+		}
+		else if(manoJ4.get(6).equals("56"))
+		{
+			j47 = f56;
+		}
+		else if(manoJ4.get(6).equals("66"))
+		{
+			j47 = f66;
+		}
 		
 		// Dibujar Fichas Jugador 1
 		if(ronda==1)
@@ -1691,25 +3221,25 @@ public class Partida extends Frame
 			// Comprobar que Jugador 3 existe
 			if(manoJ3 != null)
 			{
-				g.drawImage(j21, 25, 220, null);
-				g.drawImage(j22, 75, 220, null);
-				g.drawImage(j23, 25, 310, null);
-				g.drawImage(j24, 75, 310, null);
-				g.drawImage(j25, 25, 400, null);
-				g.drawImage(j26, 75, 400, null);
-				g.drawImage(j27, 25, 490, null);
+				g.drawImage(j31, 25, 220, null);
+				g.drawImage(j32, 75, 220, null);
+				g.drawImage(j33, 25, 310, null);
+				g.drawImage(j34, 75, 310, null);
+				g.drawImage(j35, 25, 400, null);
+				g.drawImage(j36, 75, 400, null);
+				g.drawImage(j37, 25, 490, null);
 			}
 			
 			// Comprobar que Jugador 4 existe
 			if(manoJ4 != null)
 			{
-				g.drawImage(j21, 1190, 220, null);
-				g.drawImage(j22, 1240, 220, null);
-				g.drawImage(j23, 1190, 310, null);
-				g.drawImage(j24, 1240, 310, null);
-				g.drawImage(j25, 1190, 400, null);
-				g.drawImage(j26, 1240, 400, null);
-				g.drawImage(j27, 1190, 490, null);
+				g.drawImage(j41, 1190, 220, null);
+				g.drawImage(j42, 1240, 220, null);
+				g.drawImage(j43, 1190, 310, null);
+				g.drawImage(j44, 1240, 310, null);
+				g.drawImage(j45, 1190, 400, null);
+				g.drawImage(j46, 1240, 400, null);
+				g.drawImage(j47, 1190, 490, null);
 			}
 			// Mostrar Ocultas Fichas Resto
 						/*g.drawImage(fWhite, 490, 660, null);
