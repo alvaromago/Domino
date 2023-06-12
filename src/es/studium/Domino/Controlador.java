@@ -151,14 +151,14 @@ public class Controlador implements WindowListener, MouseListener
 				elegirJ.txtJ2.setText(elegirJ.txtJ2.getText());
 				elegirJ.txtJ3.setText(elegirJ.txtJ3.getText());
 				elegirJ.txtJ4.setText(elegirJ.txtJ4.getText());
-				System.out.println(this.modelo.crearPartida(4));
-				
+				this.modelo.crearPartida(4);
 				elegirJ.dispose();
 			}
 			this.partida.nombreJugador1(elegirJ.txtJ1.getText());
 			this.partida.nombreJugador2(elegirJ.txtJ2.getText());
 			this.partida.nombreJugador3(elegirJ.txtJ3.getText());
 			this.partida.nombreJugador4(elegirJ.txtJ4.getText());
+			this.partida.leerJ1(this.modelo.manoJ1);
 		}
 		else if (partida.isActive() && x>0&&x<1300&&y>0&&y<800)
 		{
@@ -171,13 +171,13 @@ public class Controlador implements WindowListener, MouseListener
 			// Donde se pone la ficha
 			
 			// Turno++
+			System.out.println(this.modelo.manoJ1);
+			System.out.println(this.modelo.manoJ1.get(0));
+			this.partida.leerJ1(this.modelo.manoJ2);
+			this.partida.leerJ1(this.modelo.manoJ3);
+			this.partida.leerJ1(this.modelo.manoJ4);
+			this.partida.leerJ1(this.modelo.pozo);
 			this.partida.numTurno();
-			partida.leerJ1(this.modelo.manoJ1);
-			System.out.println("Mano Jugador 1: " + this.modelo.manoJ1);
-			System.out.println("Mano Jugador 2: " + this.modelo.manoJ2);
-			System.out.println("Mano Jugador 3: " + this.modelo.manoJ3);
-			System.out.println("Mano Jugador 4: " + this.modelo.manoJ4);
-			System.out.println("Pozo: " + this.modelo.pozo);
 		}
 	}
 	
