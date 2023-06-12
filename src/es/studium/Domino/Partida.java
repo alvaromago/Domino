@@ -6,7 +6,6 @@ import java.awt.Frame;
 import java.awt.Graphics;
 import java.awt.Image;
 import java.awt.Toolkit;
-import java.util.ArrayList;
 import java.util.List;
 
 public class Partida extends Frame
@@ -168,7 +167,6 @@ public class Partida extends Frame
 		{
 			j11 = f66;
 		}
-		
 		// Ficha 2 Jugador 1
 		if(manoJ1.get(1).equals("00"))
 		{
@@ -282,7 +280,6 @@ public class Partida extends Frame
 		{
 			j12 = f66;
 		}
-		
 		// Ficha 3 Jugador 1
 		if(manoJ1.get(2).equals("00"))
 		{
@@ -396,7 +393,6 @@ public class Partida extends Frame
 		{
 			j13 = f66;
 		}
-		
 		// Ficha 4 Jugador 1
 		if(manoJ1.get(3).equals("00"))
 		{
@@ -510,7 +506,6 @@ public class Partida extends Frame
 		{
 			j14 = f66;
 		}
-		
 		// Ficha 5 Jugador 1
 		if(manoJ1.get(4).equals("00"))
 		{
@@ -624,7 +619,6 @@ public class Partida extends Frame
 		{
 			j15 = f66;
 		}
-		
 		// Ficha 6 Jugador 1
 		if(manoJ1.get(5).equals("00"))
 		{
@@ -738,7 +732,6 @@ public class Partida extends Frame
 		{
 			j16 = f66;
 		}
-		
 		// Ficha 7 Jugador 1
 		if(manoJ1.get(6).equals("00"))
 		{
@@ -966,7 +959,6 @@ public class Partida extends Frame
 		{
 			j21 = f66;
 		}
-		
 		// Ficha 2 Jugador 2
 		if(manoJ2.get(1).equals("00"))
 		{
@@ -1080,7 +1072,6 @@ public class Partida extends Frame
 		{
 			j22 = f66;
 		}
-		
 		// Ficha 3 Jugador 2
 		if(manoJ2.get(2).equals("00"))
 		{
@@ -1194,7 +1185,6 @@ public class Partida extends Frame
 		{
 			j23 = f66;
 		}
-		
 		// Ficha 4 Jugador 2
 		if(manoJ2.get(3).equals("00"))
 		{
@@ -1421,7 +1411,6 @@ public class Partida extends Frame
 		{
 			j25 = f66;
 		}
-		
 		// Ficha 6 Jugador 2
 		if(manoJ2.get(5).equals("00"))
 		{
@@ -1535,7 +1524,6 @@ public class Partida extends Frame
 		{
 			j26 = f66;
 		}
-		
 		// Ficha 7 Jugador 2
 		if(manoJ2.get(6).equals("00"))
 		{
@@ -1649,6 +1637,34 @@ public class Partida extends Frame
 		{
 			j27 = f66;
 		}
+		// Ficha 1 Jugador 3
+		
+		// Ficha 2 Jugador 3
+		
+		// Ficha 3 Jugador 3
+		
+		// Ficha 4 Jugador 3
+		
+		// Ficha 5 Jugador 3
+		
+		// Ficha 6 Jugador 3
+		
+		// Ficha 7 Jugador 3
+		
+		
+		// Ficha 1 Jugador 4
+		
+		// Ficha 2 Jugador 4
+		
+		// Ficha 3 Jugador 4
+		
+		// Ficha 4 Jugador 4
+		
+		// Ficha 5 Jugador 4
+		
+		// Ficha 6 Jugador 4
+		
+		// Ficha 7 Jugador 4
 		
 		
 		// Dibujar Fichas Jugador 1
@@ -1672,6 +1688,29 @@ public class Partida extends Frame
 			g.drawImage(j26, 715, 660, null);
 			g.drawImage(j27, 760, 660, null);
 			
+			// Comprobar que Jugador 3 existe
+			if(manoJ3 != null)
+			{
+				g.drawImage(j21, 25, 220, null);
+				g.drawImage(j22, 75, 220, null);
+				g.drawImage(j23, 25, 310, null);
+				g.drawImage(j24, 75, 310, null);
+				g.drawImage(j25, 25, 400, null);
+				g.drawImage(j26, 75, 400, null);
+				g.drawImage(j27, 25, 490, null);
+			}
+			
+			// Comprobar que Jugador 4 existe
+			if(manoJ4 != null)
+			{
+				g.drawImage(j21, 1190, 220, null);
+				g.drawImage(j22, 1240, 220, null);
+				g.drawImage(j23, 1190, 310, null);
+				g.drawImage(j24, 1240, 310, null);
+				g.drawImage(j25, 1190, 400, null);
+				g.drawImage(j26, 1240, 400, null);
+				g.drawImage(j27, 1190, 490, null);
+			}
 			// Mostrar Ocultas Fichas Resto
 						/*g.drawImage(fWhite, 490, 660, null);
 						g.drawImage(fWhite, 535, 660, null);

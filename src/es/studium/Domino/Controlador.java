@@ -120,6 +120,7 @@ public class Controlador implements WindowListener, MouseListener
 				elegirJ.txtJ3.setText(elegirJ.txtJ3.getText());
 				elegirJ.txtJ4.setText("");
 				this.modelo.crearPartida(3);
+				this.partida.leerJ3(this.modelo.manoJ3);
 				elegirJ.dispose();
 			}
 			// Si elegimos 4 jugadores
@@ -152,6 +153,8 @@ public class Controlador implements WindowListener, MouseListener
 				elegirJ.txtJ3.setText(elegirJ.txtJ3.getText());
 				elegirJ.txtJ4.setText(elegirJ.txtJ4.getText());
 				this.modelo.crearPartida(4);
+				this.partida.leerJ3(this.modelo.manoJ3);
+				this.partida.leerJ4(this.modelo.manoJ4);
 				elegirJ.dispose();
 			}
 			this.partida.nombreJugador1(elegirJ.txtJ1.getText());
@@ -160,6 +163,7 @@ public class Controlador implements WindowListener, MouseListener
 			this.partida.nombreJugador4(elegirJ.txtJ4.getText());
 			this.partida.leerJ1(this.modelo.manoJ1);
 			this.partida.leerJ2(this.modelo.manoJ2);
+			
 		}
 		else if (partida.isActive() && x>0&&x<1300&&y>0&&y<800)
 		{
