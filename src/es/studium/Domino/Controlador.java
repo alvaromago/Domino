@@ -159,6 +159,7 @@ public class Controlador implements WindowListener, MouseListener
 			this.partida.nombreJugador3(elegirJ.txtJ3.getText());
 			this.partida.nombreJugador4(elegirJ.txtJ4.getText());
 			this.partida.leerJ1(this.modelo.manoJ1);
+			this.partida.leerJ2(this.modelo.manoJ2);
 		}
 		else if (partida.isActive() && x>0&&x<1300&&y>0&&y<800)
 		{
@@ -171,12 +172,6 @@ public class Controlador implements WindowListener, MouseListener
 			// Donde se pone la ficha
 			
 			// Turno++
-			System.out.println(this.modelo.manoJ1);
-			System.out.println(this.modelo.manoJ1.get(0));
-			this.partida.leerJ1(this.modelo.manoJ2);
-			this.partida.leerJ1(this.modelo.manoJ3);
-			this.partida.leerJ1(this.modelo.manoJ4);
-			this.partida.leerJ1(this.modelo.pozo);
 			this.partida.numTurno();
 		}
 	}

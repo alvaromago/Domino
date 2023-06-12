@@ -16,7 +16,7 @@ public class Partida extends Frame
 	String jugador1, jugador2, jugador3, jugador4;
 	Image tablero;
 	int ronda = 1;
-	Image f00, f01, f02, f03, f04, f05, f06, f11, f12, f13, f14, f15, f16, f22, f23, f24, f25, f26, f33, f34, f35, f36, f44, f45, f46, f55, f56, f66;
+	Image f00, f01, f02, f03, f04, f05, f06, f11, f12, f13, f14, f15, f16, f22, f23, f24, f25, f26, f33, f34, f35, f36, f44, f45, f46, f55, f56, f66, fWhite;
 	Image j11, j12, j13, j14, j15, j16, j17;
 	Image j21, j22, j23, j24, j25, j26, j27;
 	Image j31, j32, j33, j34, j35, j36, j37;
@@ -50,9 +50,9 @@ public class Partida extends Frame
         g.setColor(Color.WHITE);
         g.drawString("Turno: " + ronda, 25, 70);
 		g.drawString(nombreJugador1(jugador1), 600, 65);
-		g.drawString(nombreJugador2(jugador2), 40, 200);
-		g.drawString(nombreJugador3(jugador3), 1170, 200);
-		g.drawString(nombreJugador4(jugador4), 600, 770);
+		g.drawString(nombreJugador3(jugador3), 40, 200);
+		g.drawString(nombreJugador4(jugador4), 1170, 200);
+		g.drawString(nombreJugador2(jugador2), 600, 770);
 		
 		// Ficha 1 Jugador 1
 		if(manoJ1.get(0).equals("00"))
@@ -846,13 +846,457 @@ public class Partida extends Frame
 			j17 = f66;
 		}
 		// Ficha 1 Jugador 2
-		
+		if(manoJ2.get(0).equals("00"))
+		{
+			j21 = f00;
+		}
+		else if(manoJ2.get(0).equals("01"))
+		{
+			j21 = f01;
+		}
+		else if(manoJ2.get(0).equals("02"))
+		{
+			j21 = f02;
+		}
+		else if(manoJ2.get(0).equals("03"))
+		{
+			j21 = f03;
+		}
+		else if(manoJ2.get(0).equals("04"))
+		{
+			j21 = f04;
+		}
+		else if(manoJ2.get(0).equals("05"))
+		{
+			j21 = f05;
+		}
+		else if(manoJ2.get(0).equals("06"))
+		{
+			j21 = f06;
+		}
+		else if(manoJ2.get(0).equals("11"))
+		{
+			j21 = f11;
+		}
+		else if(manoJ2.get(0).equals("12"))
+		{
+			j21 = f12;
+		}
+		else if(manoJ2.get(0).equals("13"))
+		{
+			j21 = f13;
+		}
+		else if(manoJ2.get(0).equals("14"))
+		{
+			j21 = f14;
+		}
+		else if(manoJ2.get(0).equals("15"))
+		{
+			j21 = f15;
+		}
+		else if(manoJ2.get(0).equals("16"))
+		{
+			j21 = f16;
+		}
+		else if(manoJ2.get(0).equals("22"))
+		{
+			j21 = f22;
+		}
+		else if(manoJ2.get(0).equals("23"))
+		{
+			j21 = f23;
+		}
+		else if(manoJ2.get(0).equals("24"))
+		{
+			j21 = f24;
+		}
+		else if(manoJ2.get(0).equals("25"))
+		{
+			j21 = f25;
+		}
+		else if(manoJ2.get(0).equals("26"))
+		{
+			j21 = f26;
+		}
+		else if(manoJ2.get(0).equals("33"))
+		{
+			j21 = f33;
+		}
+		else if(manoJ2.get(0).equals("34"))
+		{
+			j21 = f34;
+		}
+		else if(manoJ2.get(0).equals("35"))
+		{
+			j21 = f35;
+		}
+		else if(manoJ2.get(0).equals("36"))
+		{
+			j21 = f36;
+		}
+		else if(manoJ2.get(0).equals("44"))
+		{
+			j21 = f44;
+		}
+		else if(manoJ2.get(0).equals("45"))
+		{
+			j21 = f45;
+		}
+		else if(manoJ2.get(0).equals("46"))
+		{
+			j21 = f46;
+		}
+		else if(manoJ2.get(0).equals("55"))
+		{
+			j21 = f55;
+		}
+		else if(manoJ2.get(0).equals("56"))
+		{
+			j21 = f56;
+		}
+		else if(manoJ2.get(0).equals("66"))
+		{
+			j21 = f66;
+		}
 		// Ficha 2 Jugador 2
-		
+		if(manoJ2.get(1).equals("00"))
+		{
+			j22 = f00;
+		}
+		else if(manoJ2.get(1).equals("01"))
+		{
+			j22 = f01;
+		}
+		else if(manoJ2.get(1).equals("02"))
+		{
+			j22 = f02;
+		}
+		else if(manoJ2.get(1).equals("03"))
+		{
+			j22 = f03;
+		}
+		else if(manoJ2.get(1).equals("04"))
+		{
+			j22 = f04;
+		}
+		else if(manoJ2.get(1).equals("05"))
+		{
+			j22 = f05;
+		}
+		else if(manoJ2.get(1).equals("06"))
+		{
+			j22 = f06;
+		}
+		else if(manoJ2.get(1).equals("11"))
+		{
+			j22 = f11;
+		}
+		else if(manoJ2.get(1).equals("12"))
+		{
+			j22 = f12;
+		}
+		else if(manoJ2.get(1).equals("13"))
+		{
+			j22 = f13;
+		}
+		else if(manoJ2.get(1).equals("14"))
+		{
+			j22 = f14;
+		}
+		else if(manoJ2.get(1).equals("15"))
+		{
+			j22 = f15;
+		}
+		else if(manoJ2.get(1).equals("16"))
+		{
+			j22 = f16;
+		}
+		else if(manoJ2.get(1).equals("22"))
+		{
+			j22 = f22;
+		}
+		else if(manoJ2.get(1).equals("23"))
+		{
+			j22 = f23;
+		}
+		else if(manoJ2.get(1).equals("24"))
+		{
+			j22 = f24;
+		}
+		else if(manoJ2.get(1).equals("25"))
+		{
+			j22 = f25;
+		}
+		else if(manoJ2.get(1).equals("26"))
+		{
+			j22 = f26;
+		}
+		else if(manoJ2.get(1).equals("33"))
+		{
+			j22 = f33;
+		}
+		else if(manoJ2.get(1).equals("34"))
+		{
+			j22 = f34;
+		}
+		else if(manoJ2.get(1).equals("35"))
+		{
+			j22 = f35;
+		}
+		else if(manoJ2.get(1).equals("36"))
+		{
+			j22 = f36;
+		}
+		else if(manoJ2.get(1).equals("44"))
+		{
+			j22 = f44;
+		}
+		else if(manoJ2.get(1).equals("45"))
+		{
+			j22 = f45;
+		}
+		else if(manoJ2.get(1).equals("46"))
+		{
+			j22 = f46;
+		}
+		else if(manoJ2.get(1).equals("55"))
+		{
+			j22 = f55;
+		}
+		else if(manoJ2.get(1).equals("56"))
+		{
+			j22 = f56;
+		}
+		else if(manoJ2.get(1).equals("66"))
+		{
+			j22 = f66;
+		}
 		// Ficha 3 Jugador 2
-		
+		if(manoJ2.get(2).equals("00"))
+		{
+			j23 = f00;
+		}
+		else if(manoJ2.get(2).equals("01"))
+		{
+			j23 = f01;
+		}
+		else if(manoJ2.get(2).equals("02"))
+		{
+			j23 = f02;
+		}
+		else if(manoJ2.get(2).equals("03"))
+		{
+			j23 = f03;
+		}
+		else if(manoJ2.get(2).equals("04"))
+		{
+			j23 = f04;
+		}
+		else if(manoJ2.get(2).equals("05"))
+		{
+			j23 = f05;
+		}
+		else if(manoJ2.get(2).equals("06"))
+		{
+			j23 = f06;
+		}
+		else if(manoJ2.get(2).equals("11"))
+		{
+			j23 = f11;
+		}
+		else if(manoJ2.get(2).equals("12"))
+		{
+			j23 = f12;
+		}
+		else if(manoJ2.get(2).equals("13"))
+		{
+			j23 = f13;
+		}
+		else if(manoJ2.get(2).equals("14"))
+		{
+			j23 = f14;
+		}
+		else if(manoJ2.get(2).equals("15"))
+		{
+			j23 = f15;
+		}
+		else if(manoJ2.get(2).equals("16"))
+		{
+			j23 = f16;
+		}
+		else if(manoJ2.get(2).equals("22"))
+		{
+			j23 = f22;
+		}
+		else if(manoJ2.get(2).equals("23"))
+		{
+			j23 = f23;
+		}
+		else if(manoJ2.get(2).equals("24"))
+		{
+			j23 = f24;
+		}
+		else if(manoJ2.get(2).equals("25"))
+		{
+			j23 = f25;
+		}
+		else if(manoJ2.get(2).equals("26"))
+		{
+			j23 = f26;
+		}
+		else if(manoJ2.get(2).equals("33"))
+		{
+			j23 = f33;
+		}
+		else if(manoJ2.get(2).equals("34"))
+		{
+			j23 = f34;
+		}
+		else if(manoJ2.get(2).equals("35"))
+		{
+			j23 = f35;
+		}
+		else if(manoJ2.get(2).equals("36"))
+		{
+			j23 = f36;
+		}
+		else if(manoJ2.get(2).equals("44"))
+		{
+			j23 = f44;
+		}
+		else if(manoJ2.get(2).equals("45"))
+		{
+			j23 = f45;
+		}
+		else if(manoJ2.get(2).equals("46"))
+		{
+			j23 = f46;
+		}
+		else if(manoJ2.get(2).equals("55"))
+		{
+			j23 = f55;
+		}
+		else if(manoJ2.get(2).equals("56"))
+		{
+			j23 = f56;
+		}
+		else if(manoJ2.get(2).equals("66"))
+		{
+			j23 = f66;
+		}
 		// Ficha 4 Jugador 2
-		
+		if(manoJ2.get(2).equals("00"))
+		{
+			j24 = f00;
+		}
+		else if(manoJ2.get(2).equals("01"))
+		{
+			j24 = f01;
+		}
+		else if(manoJ2.get(2).equals("02"))
+		{
+			j24 = f02;
+		}
+		else if(manoJ2.get(2).equals("03"))
+		{
+			j24 = f03;
+		}
+		else if(manoJ2.get(2).equals("04"))
+		{
+			j24 = f04;
+		}
+		else if(manoJ2.get(2).equals("05"))
+		{
+			j24 = f05;
+		}
+		else if(manoJ2.get(2).equals("06"))
+		{
+			j24 = f06;
+		}
+		else if(manoJ2.get(2).equals("11"))
+		{
+			j24 = f11;
+		}
+		else if(manoJ2.get(2).equals("12"))
+		{
+			j24 = f12;
+		}
+		else if(manoJ2.get(2).equals("13"))
+		{
+			j24 = f13;
+		}
+		else if(manoJ2.get(2).equals("14"))
+		{
+			j24 = f14;
+		}
+		else if(manoJ2.get(2).equals("15"))
+		{
+			j24 = f15;
+		}
+		else if(manoJ2.get(2).equals("16"))
+		{
+			j24 = f16;
+		}
+		else if(manoJ2.get(2).equals("22"))
+		{
+			j24 = f22;
+		}
+		else if(manoJ2.get(2).equals("23"))
+		{
+			j24 = f23;
+		}
+		else if(manoJ2.get(2).equals("24"))
+		{
+			j24 = f24;
+		}
+		else if(manoJ2.get(2).equals("25"))
+		{
+			j24 = f25;
+		}
+		else if(manoJ2.get(2).equals("26"))
+		{
+			j24 = f26;
+		}
+		else if(manoJ2.get(2).equals("33"))
+		{
+			j24 = f33;
+		}
+		else if(manoJ2.get(2).equals("34"))
+		{
+			j24 = f34;
+		}
+		else if(manoJ2.get(2).equals("35"))
+		{
+			j24 = f35;
+		}
+		else if(manoJ2.get(2).equals("36"))
+		{
+			j24 = f36;
+		}
+		else if(manoJ2.get(2).equals("44"))
+		{
+			j24 = f44;
+		}
+		else if(manoJ2.get(2).equals("45"))
+		{
+			j24 = f45;
+		}
+		else if(manoJ2.get(2).equals("46"))
+		{
+			j24 = f46;
+		}
+		else if(manoJ2.get(2).equals("55"))
+		{
+			j24 = f55;
+		}
+		else if(manoJ2.get(2).equals("56"))
+		{
+			j24 = f56;
+		}
+		else if(manoJ2.get(2).equals("66"))
+		{
+			j24 = f66;
+		}
 		// Ficha 5 Jugador 2
 		
 		// Ficha 6 Jugador 2
@@ -872,6 +1316,13 @@ public class Partida extends Frame
 			g.drawImage(j17, 760, 73, null);
 		
 			// Mostrar Ocultas Fichas Resto
+			g.drawImage(fWhite, 490, 660, null);
+			g.drawImage(fWhite, 535, 660, null);
+			g.drawImage(fWhite, 580, 660, null);
+			g.drawImage(fWhite, 625, 660, null);
+			g.drawImage(fWhite, 670, 660, null);
+			g.drawImage(fWhite, 715, 660, null);
+			g.drawImage(fWhite, 760, 660, null);
 		}
 		
 	}
@@ -906,6 +1357,7 @@ public class Partida extends Frame
 		f55 = herramienta.getImage("./imagesFichas/f55.png");
 		f56 = herramienta.getImage("./imagesFichas/f56.png");
 		f66 = herramienta.getImage("./imagesFichas/f66.png");
+		fWhite = herramienta.getImage("./imagesFichas/fWhite.png");
 	}
 	
 	public String nombreJugador1(String nombrejugador1)
