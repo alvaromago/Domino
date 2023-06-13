@@ -50,7 +50,10 @@ public class Partida extends Frame
         g.setFont(font);
         g.setColor(Color.WHITE);
         g.drawString("Turno: " + ronda, 25, 70);
-        g.drawString("Pozo: ", 25, 700);
+        if(pozo != null)
+        {        	
+        	g.drawString("Pozo: ", 25, 700);
+        }
 		g.drawString(nombreJugador1(jugador1), 600, 65);
 		g.drawString(nombreJugador3(jugador3), 40, 200);
 		g.drawString(nombreJugador4(jugador4), 1170, 200);
@@ -3231,7 +3234,7 @@ public class Partida extends Frame
 			}
 		}
 																	/* POZO */
-		if(!pozo.isEmpty())
+		if(pozo != null)
 		{
 			if(pozo.size() == 14)
 			{
@@ -5635,6 +5638,37 @@ public class Partida extends Frame
 			g.drawImage(j26, 715, 660, null);
 			g.drawImage(j27, 760, 660, null);
 			
+			
+			// Mostrar Pozo si necesario
+			if(pozo != null && pozo.size() == 14)
+			{
+				g.drawImage(p1, 105, 650, null);
+				g.drawImage(p2, 105, 650, null);
+				g.drawImage(p3, 105, 650, null);
+				g.drawImage(p4, 105, 650, null);
+				g.drawImage(p5, 105, 650, null);
+				g.drawImage(p6, 105, 650, null);
+				g.drawImage(p7, 105, 650, null);
+				g.drawImage(p8, 105, 650, null);
+				g.drawImage(p9, 105, 650, null);
+				g.drawImage(p10, 105, 650, null);
+				g.drawImage(p11, 105, 650, null);
+				g.drawImage(p12, 105, 650, null);
+				g.drawImage(p13, 105, 650, null);
+				g.drawImage(p14, 105, 650, null);
+			}
+			
+			if(pozo != null && pozo.size() == 7)
+			{
+				g.drawImage(p1, 105, 650, null);
+				g.drawImage(p2, 105, 650, null);
+				g.drawImage(p3, 105, 650, null);
+				g.drawImage(p4, 105, 650, null);
+				g.drawImage(p5, 105, 650, null);
+				g.drawImage(p6, 105, 650, null);
+				g.drawImage(p7, 105, 650, null);
+			}
+			
 			// Comprobar que Jugador 3 existe
 			if(manoJ3 != null)
 			{
@@ -5658,6 +5692,7 @@ public class Partida extends Frame
 				g.drawImage(j46, 1240, 400, null);
 				g.drawImage(j47, 1190, 490, null);
 			}
+			
 			// Mostrar Ocultas Fichas Resto
 						/*g.drawImage(fWhite, 490, 660, null);
 						g.drawImage(fWhite, 535, 660, null);

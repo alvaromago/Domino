@@ -9,11 +9,32 @@ import javax.sound.sampled.AudioSystem;
 import javax.sound.sampled.Clip;
 import javax.sound.sampled.LineUnavailableException;
 import javax.sound.sampled.UnsupportedAudioFileException;
+
+import java.awt.TextArea;
 import java.io.File;
 import java.io.IOException;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
 
 public class Modelo
 {
+	String driver = "com.mysql.cj.jdbc.Driver";
+	String url = "jdbc:mysql://localhost:3306/diseniojuego";
+	String login = "userDomino"; // Usuario MySQL
+	String password = "domino"; // Clave correspondiente
+	String sentencia = "";
+	Connection connection = null;
+	Statement statement = null;
+	ResultSet rs = null;
+	
+	Modelo()
+	{
+		connection = this.conectar();
+	}
+	
 	List<String> fichas = generarFichas();
 	Clip click;
 	List<String> manoJ1;
@@ -21,6 +42,26 @@ public class Modelo
 	List<String> manoJ3;
 	List<String> manoJ4;
 	List<String> pozo;
+	
+	public Connection conectar()
+	{
+		try
+		{
+			// Cargar los controladores para el acceso a la BD
+			Class.forName(driver);
+			// Establecer la conexión con la BD
+			return(DriverManager.getConnection(url, login, password));
+		}
+		catch (ClassNotFoundException cnfe)
+		{
+			System.out.println("Error 1-" + cnfe.getMessage());
+		}
+		catch (SQLException sqle)
+		{
+			System.out.println("Error 2-" + sqle.getMessage());
+		}
+		return null;
+	}
 	
 	void reproducirSonido(String rutaSonido) {
 	    try
@@ -107,6 +148,63 @@ public class Modelo
 	    	manoJ4 = jugadores.get(3);
 	    }
 	    return jugadores;
+	}
+
+	public void rellenarRanking2(TextArea txaListado2)
+	{
+		String sentencia = "select nombreJugador, numTurno from jugadores where numJugadores = 2 order by 2;";
+		try
+		{
+			statement = connection.createStatement(ResultSet.TYPE_SCROLL_SENSITIVE, ResultSet.CONCUR_READ_ONLY);
+			ResultSet resultado = statement.executeQuery(sentencia);
+			while (resultado.next())
+			{
+				txaListado2.append(resultado.getString("nombreJugador") + " - ");
+				txaListado2.append(resultado.getString("numTurno") + "\n");
+			}
+		}
+		catch (SQLException sqle)
+		{
+			System.out.println("Error 3-" + sqle.getMessage());
+		} 
+	}
+
+	public void rellenarRanking3(TextArea txaListado3)
+	{
+		String sentencia = "select nombreJugador, numTurno from jugadores where numJugadores = 3 order by 2;";
+		try
+		{
+			statement = connection.createStatement(ResultSet.TYPE_SCROLL_SENSITIVE, ResultSet.CONCUR_READ_ONLY);
+			ResultSet resultado = statement.executeQuery(sentencia);
+			while (resultado.next())
+			{
+				txaListado3.append(resultado.getString("nombreJugador") + " - ");
+				txaListado3.append(resultado.getString("numTurno") + "\n");
+			}
+		}
+		catch (SQLException sqle)
+		{
+			System.out.println("Error 4-" + sqle.getMessage());
+		}		
+	}
+
+	public void rellenarRanking4(TextArea txaListado4)
+	{
+		String sentencia = "select nombreJugador, numTurno from jugadores where numJugadores = 4 order by 2;";
+		try
+		{
+			statement = connection.createStatement(ResultSet.TYPE_SCROLL_SENSITIVE, ResultSet.CONCUR_READ_ONLY);
+			ResultSet resultado = statement.executeQuery(sentencia);
+			while (resultado.next())
+			{
+				txaListado4.append(resultado.getString("nombreJugador") + " - ");
+				txaListado4.append(resultado.getString("numTurno") + "\n");
+			}
+		}
+		catch (SQLException sqle)
+		{
+			System.out.println("Error 5-" + sqle.getMessage());
+		}		
 	}
 
 }
