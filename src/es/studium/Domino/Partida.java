@@ -3351,120 +3351,2266 @@ public class Partida extends Frame
 				// Ficha 2 Pozo
 				else if(pozo.get(1).equals("00"))
 				{
-					p1 = f00;
+					p2 = f00;
 				}
 				else if(pozo.get(1).equals("01"))
 				{
-					p1 = f01;
+					p2 = f01;
 				}
 				else if(pozo.get(1).equals("02"))
 				{
-					p1 = f02;
+					p2 = f02;
 				}
 				else if(pozo.get(1).equals("03"))
 				{
-					p1 = f03;
+					p2 = f03;
 				}
 				else if(pozo.get(1).equals("04"))
 				{
-					p1 = f04;
+					p2 = f04;
 				}
 				else if(pozo.get(1).equals("05"))
 				{
-					p1 = f05;
+					p2 = f05;
 				}
 				else if(pozo.get(1).equals("06"))
 				{
-					p1 = f06;
+					p2 = f06;
 				}
 				else if(pozo.get(1).equals("11"))
 				{
-					p1 = f11;
+					p2 = f11;
 				}
 				else if(pozo.get(1).equals("12"))
 				{
-					p1 = f12;
+					p2 = f12;
 				}
 				else if(pozo.get(1).equals("13"))
 				{
-					p1 = f13;
+					p2 = f13;
 				}
 				else if(pozo.get(1).equals("14"))
 				{
-					p1 = f14;
+					p2 = f14;
 				}
 				else if(pozo.get(1).equals("15"))
 				{
-					p1 = f15;
+					p2 = f15;
 				}
 				else if(pozo.get(1).equals("16"))
 				{
-					p1 = f16;
+					p2 = f16;
 				}
 				else if(pozo.get(1).equals("22"))
 				{
-					p1 = f22;
+					p2 = f22;
 				}
 				else if(pozo.get(1).equals("23"))
 				{
-					p1 = f23;
+					p2 = f23;
 				}
 				else if(pozo.get(1).equals("24"))
 				{
-					p1 = f24;
+					p2 = f24;
 				}
 				else if(pozo.get(1).equals("25"))
 				{
-					p1 = f25;
+					p2 = f25;
 				}
 				else if(pozo.get(1).equals("26"))
 				{
-					p1 = f26;
+					p2 = f26;
 				}
 				else if(pozo.get(1).equals("33"))
 				{
-					p1 = f33;
+					p2 = f33;
 				}
 				else if(pozo.get(1).equals("34"))
 				{
-					p1 = f34;
+					p2 = f34;
 				}
 				else if(pozo.get(1).equals("35"))
 				{
-					p1 = f35;
+					p2 = f35;
 				}
 				else if(pozo.get(1).equals("36"))
 				{
-					p1 = f36;
+					p2 = f36;
 				}
 				else if(pozo.get(1).equals("44"))
 				{
-					p1 = f44;
+					p2 = f44;
 				}
 				else if(pozo.get(1).equals("45"))
 				{
-					p1 = f45;
+					p2 = f45;
 				}
 				else if(pozo.get(1).equals("46"))
 				{
-					p1 = f46;
+					p2 = f46;
 				}
 				else if(pozo.get(1).equals("55"))
 				{
-					p1 = f55;
+					p2 = f55;
 				}
 				else if(pozo.get(1).equals("56"))
 				{
-					p1 = f56;
+					p2 = f56;
 				}
 				else if(pozo.get(1).equals("66"))
 				{
-					p1 = f66;
+					p2 = f66;
+				}
+				// Ficha 3 Pozo
+				else if(pozo.get(2).equals("00"))
+				{
+					p3 = f00;
+				}
+				else if(pozo.get(2).equals("01"))
+				{
+					p3 = f01;
+				}
+				else if(pozo.get(2).equals("02"))
+				{
+					p3 = f02;
+				}
+				else if(pozo.get(2).equals("03"))
+				{
+					p3 = f03;
+				}
+				else if(pozo.get(2).equals("04"))
+				{
+					p3 = f04;
+				}
+				else if(pozo.get(2).equals("05"))
+				{
+					p3 = f05;
+				}
+				else if(pozo.get(2).equals("06"))
+				{
+					p3 = f06;
+				}
+				else if(pozo.get(2).equals("11"))
+				{
+					p3 = f11;
+				}
+				else if(pozo.get(2).equals("12"))
+				{
+					p3 = f12;
+				}
+				else if(pozo.get(2).equals("13"))
+				{
+					p3 = f13;
+				}
+				else if(pozo.get(2).equals("14"))
+				{
+					p3 = f14;
+				}
+				else if(pozo.get(2).equals("15"))
+				{
+					p3 = f15;
+				}
+				else if(pozo.get(2).equals("16"))
+				{
+					p3 = f16;
+				}
+				else if(pozo.get(2).equals("22"))
+				{
+					p3 = f22;
+				}
+				else if(pozo.get(2).equals("23"))
+				{
+					p3 = f23;
+				}
+				else if(pozo.get(2).equals("24"))
+				{
+					p3 = f24;
+				}
+				else if(pozo.get(2).equals("25"))
+				{
+					p3 = f25;
+				}
+				else if(pozo.get(2).equals("26"))
+				{
+					p3 = f26;
+				}
+				else if(pozo.get(2).equals("33"))
+				{
+					p3 = f33;
+				}
+				else if(pozo.get(2).equals("34"))
+				{
+					p3 = f34;
+				}
+				else if(pozo.get(2).equals("35"))
+				{
+					p3 = f35;
+				}
+				else if(pozo.get(2).equals("36"))
+				{
+					p3 = f36;
+				}
+				else if(pozo.get(2).equals("44"))
+				{
+					p3 = f44;
+				}
+				else if(pozo.get(2).equals("45"))
+				{
+					p3 = f45;
+				}
+				else if(pozo.get(2).equals("46"))
+				{
+					p3 = f46;
+				}
+				else if(pozo.get(2).equals("55"))
+				{
+					p3 = f55;
+				}
+				else if(pozo.get(2).equals("56"))
+				{
+					p3 = f56;
+				}
+				else if(pozo.get(2).equals("66"))
+				{
+					p3 = f66;
+				}
+				// Ficha 4 Pozo
+				else if(pozo.get(3).equals("00"))
+				{
+					p4 = f00;
+				}
+				else if(pozo.get(3).equals("01"))
+				{
+					p4 = f01;
+				}
+				else if(pozo.get(3).equals("02"))
+				{
+					p4 = f02;
+				}
+				else if(pozo.get(3).equals("03"))
+				{
+					p4 = f03;
+				}
+				else if(pozo.get(3).equals("04"))
+				{
+					p4 = f04;
+				}
+				else if(pozo.get(3).equals("05"))
+				{
+					p4 = f05;
+				}
+				else if(pozo.get(3).equals("06"))
+				{
+					p4 = f06;
+				}
+				else if(pozo.get(3).equals("11"))
+				{
+					p4 = f11;
+				}
+				else if(pozo.get(3).equals("12"))
+				{
+					p4 = f12;
+				}
+				else if(pozo.get(3).equals("13"))
+				{
+					p4 = f13;
+				}
+				else if(pozo.get(3).equals("14"))
+				{
+					p4 = f14;
+				}
+				else if(pozo.get(3).equals("15"))
+				{
+					p4 = f15;
+				}
+				else if(pozo.get(3).equals("16"))
+				{
+					p4 = f16;
+				}
+				else if(pozo.get(3).equals("22"))
+				{
+					p4 = f22;
+				}
+				else if(pozo.get(3).equals("23"))
+				{
+					p4 = f23;
+				}
+				else if(pozo.get(3).equals("24"))
+				{
+					p4 = f24;
+				}
+				else if(pozo.get(3).equals("25"))
+				{
+					p4 = f25;
+				}
+				else if(pozo.get(3).equals("26"))
+				{
+					p4 = f26;
+				}
+				else if(pozo.get(3).equals("33"))
+				{
+					p4 = f33;
+				}
+				else if(pozo.get(3).equals("34"))
+				{
+					p4 = f34;
+				}
+				else if(pozo.get(3).equals("35"))
+				{
+					p4 = f35;
+				}
+				else if(pozo.get(3).equals("36"))
+				{
+					p4 = f36;
+				}
+				else if(pozo.get(3).equals("44"))
+				{
+					p4 = f44;
+				}
+				else if(pozo.get(3).equals("45"))
+				{
+					p4 = f45;
+				}
+				else if(pozo.get(3).equals("46"))
+				{
+					p4 = f46;
+				}
+				else if(pozo.get(3).equals("55"))
+				{
+					p4 = f55;
+				}
+				else if(pozo.get(3).equals("56"))
+				{
+					p4 = f56;
+				}
+				else if(pozo.get(3).equals("66"))
+				{
+					p4 = f66;
+				}
+				// Ficha 5 Pozo
+				else if(pozo.get(4).equals("00"))
+				{
+					p5 = f00;
+				}
+				else if(pozo.get(4).equals("01"))
+				{
+					p5 = f01;
+				}
+				else if(pozo.get(4).equals("02"))
+				{
+					p5 = f02;
+				}
+				else if(pozo.get(4).equals("03"))
+				{
+					p5 = f03;
+				}
+				else if(pozo.get(4).equals("04"))
+				{
+					p5 = f04;
+				}
+				else if(pozo.get(4).equals("05"))
+				{
+					p5 = f05;
+				}
+				else if(pozo.get(4).equals("06"))
+				{
+					p5 = f06;
+				}
+				else if(pozo.get(4).equals("11"))
+				{
+					p5 = f11;
+				}
+				else if(pozo.get(4).equals("12"))
+				{
+					p5 = f12;
+				}
+				else if(pozo.get(4).equals("13"))
+				{
+					p5 = f13;
+				}
+				else if(pozo.get(4).equals("14"))
+				{
+					p5 = f14;
+				}
+				else if(pozo.get(4).equals("15"))
+				{
+					p5 = f15;
+				}
+				else if(pozo.get(4).equals("16"))
+				{
+					p5 = f16;
+				}
+				else if(pozo.get(4).equals("22"))
+				{
+					p5 = f22;
+				}
+				else if(pozo.get(4).equals("23"))
+				{
+					p5 = f23;
+				}
+				else if(pozo.get(4).equals("24"))
+				{
+					p5 = f24;
+				}
+				else if(pozo.get(4).equals("25"))
+				{
+					p5 = f25;
+				}
+				else if(pozo.get(4).equals("26"))
+				{
+					p5 = f26;
+				}
+				else if(pozo.get(4).equals("33"))
+				{
+					p5 = f33;
+				}
+				else if(pozo.get(4).equals("34"))
+				{
+					p5 = f34;
+				}
+				else if(pozo.get(4).equals("35"))
+				{
+					p5 = f35;
+				}
+				else if(pozo.get(4).equals("36"))
+				{
+					p5 = f36;
+				}
+				else if(pozo.get(4).equals("44"))
+				{
+					p5 = f44;
+				}
+				else if(pozo.get(4).equals("45"))
+				{
+					p5 = f45;
+				}
+				else if(pozo.get(4).equals("46"))
+				{
+					p5 = f46;
+				}
+				else if(pozo.get(4).equals("55"))
+				{
+					p5 = f55;
+				}
+				else if(pozo.get(4).equals("56"))
+				{
+					p5 = f56;
+				}
+				else if(pozo.get(4).equals("66"))
+				{
+					p5 = f66;
+				}
+				// Ficha 6 Pozo
+				else if(pozo.get(5).equals("00"))
+				{
+					p6 = f00;
+				}
+				else if(pozo.get(5).equals("01"))
+				{
+					p6 = f01;
+				}
+				else if(pozo.get(5).equals("02"))
+				{
+					p6 = f02;
+				}
+				else if(pozo.get(5).equals("03"))
+				{
+					p6 = f03;
+				}
+				else if(pozo.get(5).equals("04"))
+				{
+					p6 = f04;
+				}
+				else if(pozo.get(5).equals("05"))
+				{
+					p6 = f05;
+				}
+				else if(pozo.get(5).equals("06"))
+				{
+					p6 = f06;
+				}
+				else if(pozo.get(5).equals("11"))
+				{
+					p6 = f11;
+				}
+				else if(pozo.get(5).equals("12"))
+				{
+					p6 = f12;
+				}
+				else if(pozo.get(5).equals("13"))
+				{
+					p6 = f13;
+				}
+				else if(pozo.get(5).equals("14"))
+				{
+					p6 = f14;
+				}
+				else if(pozo.get(5).equals("15"))
+				{
+					p6 = f15;
+				}
+				else if(pozo.get(5).equals("16"))
+				{
+					p6 = f16;
+				}
+				else if(pozo.get(5).equals("22"))
+				{
+					p6 = f22;
+				}
+				else if(pozo.get(5).equals("23"))
+				{
+					p6 = f23;
+				}
+				else if(pozo.get(5).equals("24"))
+				{
+					p6 = f24;
+				}
+				else if(pozo.get(5).equals("25"))
+				{
+					p6 = f25;
+				}
+				else if(pozo.get(5).equals("26"))
+				{
+					p6 = f26;
+				}
+				else if(pozo.get(5).equals("33"))
+				{
+					p6 = f33;
+				}
+				else if(pozo.get(5).equals("34"))
+				{
+					p6 = f34;
+				}
+				else if(pozo.get(5).equals("35"))
+				{
+					p6 = f35;
+				}
+				else if(pozo.get(5).equals("36"))
+				{
+					p6 = f36;
+				}
+				else if(pozo.get(5).equals("44"))
+				{
+					p6 = f44;
+				}
+				else if(pozo.get(5).equals("45"))
+				{
+					p6 = f45;
+				}
+				else if(pozo.get(5).equals("46"))
+				{
+					p6 = f46;
+				}
+				else if(pozo.get(5).equals("55"))
+				{
+					p6 = f55;
+				}
+				else if(pozo.get(5).equals("56"))
+				{
+					p6 = f56;
+				}
+				else if(pozo.get(5).equals("66"))
+				{
+					p6 = f66;
+				}
+				// Ficha 7 Pozo
+				else if(pozo.get(6).equals("00"))
+				{
+					p7 = f00;
+				}
+				else if(pozo.get(6).equals("01"))
+				{
+					p7 = f01;
+				}
+				else if(pozo.get(6).equals("02"))
+				{
+					p7 = f02;
+				}
+				else if(pozo.get(6).equals("03"))
+				{
+					p7 = f03;
+				}
+				else if(pozo.get(6).equals("04"))
+				{
+					p7 = f04;
+				}
+				else if(pozo.get(6).equals("05"))
+				{
+					p7 = f05;
+				}
+				else if(pozo.get(6).equals("06"))
+				{
+					p7 = f06;
+				}
+				else if(pozo.get(6).equals("11"))
+				{
+					p7 = f11;
+				}
+				else if(pozo.get(6).equals("12"))
+				{
+					p7 = f12;
+				}
+				else if(pozo.get(6).equals("13"))
+				{
+					p7 = f13;
+				}
+				else if(pozo.get(6).equals("14"))
+				{
+					p7 = f14;
+				}
+				else if(pozo.get(6).equals("15"))
+				{
+					p7 = f15;
+				}
+				else if(pozo.get(6).equals("16"))
+				{
+					p7 = f16;
+				}
+				else if(pozo.get(6).equals("22"))
+				{
+					p7 = f22;
+				}
+				else if(pozo.get(6).equals("23"))
+				{
+					p7 = f23;
+				}
+				else if(pozo.get(6).equals("24"))
+				{
+					p7 = f24;
+				}
+				else if(pozo.get(6).equals("25"))
+				{
+					p7 = f25;
+				}
+				else if(pozo.get(6).equals("26"))
+				{
+					p7 = f26;
+				}
+				else if(pozo.get(6).equals("33"))
+				{
+					p7 = f33;
+				}
+				else if(pozo.get(6).equals("34"))
+				{
+					p7 = f34;
+				}
+				else if(pozo.get(6).equals("35"))
+				{
+					p7 = f35;
+				}
+				else if(pozo.get(6).equals("36"))
+				{
+					p7 = f36;
+				}
+				else if(pozo.get(6).equals("44"))
+				{
+					p7 = f44;
+				}
+				else if(pozo.get(6).equals("45"))
+				{
+					p7 = f45;
+				}
+				else if(pozo.get(6).equals("46"))
+				{
+					p7 = f46;
+				}
+				else if(pozo.get(6).equals("55"))
+				{
+					p7 = f55;
+				}
+				else if(pozo.get(6).equals("56"))
+				{
+					p7 = f56;
+				}
+				else if(pozo.get(6).equals("66"))
+				{
+					p7 = f66;
+				}
+				// Ficha 8 Pozo
+				else if(pozo.get(7).equals("00"))
+				{
+					p8 = f00;
+				}
+				else if(pozo.get(7).equals("01"))
+				{
+					p8 = f01;
+				}
+				else if(pozo.get(7).equals("02"))
+				{
+					p8 = f02;
+				}
+				else if(pozo.get(7).equals("03"))
+				{
+					p8 = f03;
+				}
+				else if(pozo.get(7).equals("04"))
+				{
+					p8 = f04;
+				}
+				else if(pozo.get(7).equals("05"))
+				{
+					p8 = f05;
+				}
+				else if(pozo.get(7).equals("06"))
+				{
+					p8 = f06;
+				}
+				else if(pozo.get(7).equals("11"))
+				{
+					p8 = f11;
+				}
+				else if(pozo.get(7).equals("12"))
+				{
+					p8 = f12;
+				}
+				else if(pozo.get(7).equals("13"))
+				{
+					p8 = f13;
+				}
+				else if(pozo.get(7).equals("14"))
+				{
+					p8 = f14;
+				}
+				else if(pozo.get(7).equals("15"))
+				{
+					p8 = f15;
+				}
+				else if(pozo.get(7).equals("16"))
+				{
+					p8 = f16;
+				}
+				else if(pozo.get(7).equals("22"))
+				{
+					p8 = f22;
+				}
+				else if(pozo.get(7).equals("23"))
+				{
+					p8 = f23;
+				}
+				else if(pozo.get(7).equals("24"))
+				{
+					p8 = f24;
+				}
+				else if(pozo.get(7).equals("25"))
+				{
+					p8 = f25;
+				}
+				else if(pozo.get(7).equals("26"))
+				{
+					p8 = f26;
+				}
+				else if(pozo.get(7).equals("33"))
+				{
+					p8 = f33;
+				}
+				else if(pozo.get(7).equals("34"))
+				{
+					p8 = f34;
+				}
+				else if(pozo.get(7).equals("35"))
+				{
+					p8 = f35;
+				}
+				else if(pozo.get(7).equals("36"))
+				{
+					p8 = f36;
+				}
+				else if(pozo.get(7).equals("44"))
+				{
+					p8 = f44;
+				}
+				else if(pozo.get(7).equals("45"))
+				{
+					p8 = f45;
+				}
+				else if(pozo.get(7).equals("46"))
+				{
+					p8 = f46;
+				}
+				else if(pozo.get(7).equals("55"))
+				{
+					p8 = f55;
+				}
+				else if(pozo.get(7).equals("56"))
+				{
+					p8 = f56;
+				}
+				else if(pozo.get(7).equals("66"))
+				{
+					p8 = f66;
+				}
+				// Ficha 9 Pozo
+				else if(pozo.get(8).equals("00"))
+				{
+					p9 = f00;
+				}
+				else if(pozo.get(8).equals("01"))
+				{
+					p9 = f01;
+				}
+				else if(pozo.get(8).equals("02"))
+				{
+					p9 = f02;
+				}
+				else if(pozo.get(8).equals("03"))
+				{
+					p9 = f03;
+				}
+				else if(pozo.get(8).equals("04"))
+				{
+					p9 = f04;
+				}
+				else if(pozo.get(8).equals("05"))
+				{
+					p9 = f05;
+				}
+				else if(pozo.get(8).equals("06"))
+				{
+					p9 = f06;
+				}
+				else if(pozo.get(8).equals("11"))
+				{
+					p9 = f11;
+				}
+				else if(pozo.get(8).equals("12"))
+				{
+					p9 = f12;
+				}
+				else if(pozo.get(8).equals("13"))
+				{
+					p9 = f13;
+				}
+				else if(pozo.get(8).equals("14"))
+				{
+					p9 = f14;
+				}
+				else if(pozo.get(8).equals("15"))
+				{
+					p9 = f15;
+				}
+				else if(pozo.get(8).equals("16"))
+				{
+					p9 = f16;
+				}
+				else if(pozo.get(8).equals("22"))
+				{
+					p9 = f22;
+				}
+				else if(pozo.get(8).equals("23"))
+				{
+					p9 = f23;
+				}
+				else if(pozo.get(8).equals("24"))
+				{
+					p9 = f24;
+				}
+				else if(pozo.get(8).equals("25"))
+				{
+					p9 = f25;
+				}
+				else if(pozo.get(8).equals("26"))
+				{
+					p9 = f26;
+				}
+				else if(pozo.get(8).equals("33"))
+				{
+					p9 = f33;
+				}
+				else if(pozo.get(8).equals("34"))
+				{
+					p9 = f34;
+				}
+				else if(pozo.get(8).equals("35"))
+				{
+					p9 = f35;
+				}
+				else if(pozo.get(8).equals("36"))
+				{
+					p9 = f36;
+				}
+				else if(pozo.get(8).equals("44"))
+				{
+					p9 = f44;
+				}
+				else if(pozo.get(8).equals("45"))
+				{
+					p9 = f45;
+				}
+				else if(pozo.get(8).equals("46"))
+				{
+					p9 = f46;
+				}
+				else if(pozo.get(8).equals("55"))
+				{
+					p9 = f55;
+				}
+				else if(pozo.get(8).equals("56"))
+				{
+					p9 = f56;
+				}
+				else if(pozo.get(8).equals("66"))
+				{
+					p9 = f66;
+				}
+				// Ficha 10 Pozo
+				else if(pozo.get(9).equals("00"))
+				{
+					p10 = f00;
+				}
+				else if(pozo.get(9).equals("01"))
+				{
+					p10 = f01;
+				}
+				else if(pozo.get(9).equals("02"))
+				{
+					p10 = f02;
+				}
+				else if(pozo.get(9).equals("03"))
+				{
+					p10 = f03;
+				}
+				else if(pozo.get(9).equals("04"))
+				{
+					p10 = f04;
+				}
+				else if(pozo.get(9).equals("05"))
+				{
+					p10 = f05;
+				}
+				else if(pozo.get(9).equals("06"))
+				{
+					p10 = f06;
+				}
+				else if(pozo.get(9).equals("11"))
+				{
+					p10 = f11;
+				}
+				else if(pozo.get(9).equals("12"))
+				{
+					p10 = f12;
+				}
+				else if(pozo.get(9).equals("13"))
+				{
+					p10 = f13;
+				}
+				else if(pozo.get(9).equals("14"))
+				{
+					p10 = f14;
+				}
+				else if(pozo.get(9).equals("15"))
+				{
+					p10 = f15;
+				}
+				else if(pozo.get(9).equals("16"))
+				{
+					p10 = f16;
+				}
+				else if(pozo.get(9).equals("22"))
+				{
+					p10 = f22;
+				}
+				else if(pozo.get(9).equals("23"))
+				{
+					p10 = f23;
+				}
+				else if(pozo.get(9).equals("24"))
+				{
+					p10 = f24;
+				}
+				else if(pozo.get(9).equals("25"))
+				{
+					p10 = f25;
+				}
+				else if(pozo.get(9).equals("26"))
+				{
+					p10 = f26;
+				}
+				else if(pozo.get(9).equals("33"))
+				{
+					p10 = f33;
+				}
+				else if(pozo.get(9).equals("34"))
+				{
+					p10 = f34;
+				}
+				else if(pozo.get(9).equals("35"))
+				{
+					p10 = f35;
+				}
+				else if(pozo.get(9).equals("36"))
+				{
+					p10 = f36;
+				}
+				else if(pozo.get(9).equals("44"))
+				{
+					p10 = f44;
+				}
+				else if(pozo.get(9).equals("45"))
+				{
+					p10 = f45;
+				}
+				else if(pozo.get(9).equals("46"))
+				{
+					p10 = f46;
+				}
+				else if(pozo.get(9).equals("55"))
+				{
+					p10 = f55;
+				}
+				else if(pozo.get(9).equals("56"))
+				{
+					p10 = f56;
+				}
+				else if(pozo.get(9).equals("66"))
+				{
+					p10 = f66;
+				}
+				// Ficha 11 Pozo
+				else if(pozo.get(10).equals("00"))
+				{
+					p11 = f00;
+				}
+				else if(pozo.get(10).equals("01"))
+				{
+					p11 = f01;
+				}
+				else if(pozo.get(10).equals("02"))
+				{
+					p11 = f02;
+				}
+				else if(pozo.get(10).equals("03"))
+				{
+					p11 = f03;
+				}
+				else if(pozo.get(10).equals("04"))
+				{
+					p11 = f04;
+				}
+				else if(pozo.get(10).equals("05"))
+				{
+					p11 = f05;
+				}
+				else if(pozo.get(10).equals("06"))
+				{
+					p11 = f06;
+				}
+				else if(pozo.get(10).equals("11"))
+				{
+					p11 = f11;
+				}
+				else if(pozo.get(10).equals("12"))
+				{
+					p11 = f12;
+				}
+				else if(pozo.get(10).equals("13"))
+				{
+					p11 = f13;
+				}
+				else if(pozo.get(10).equals("14"))
+				{
+					p11 = f14;
+				}
+				else if(pozo.get(10).equals("15"))
+				{
+					p11 = f15;
+				}
+				else if(pozo.get(10).equals("16"))
+				{
+					p11 = f16;
+				}
+				else if(pozo.get(10).equals("22"))
+				{
+					p11 = f22;
+				}
+				else if(pozo.get(10).equals("23"))
+				{
+					p11 = f23;
+				}
+				else if(pozo.get(10).equals("24"))
+				{
+					p11 = f24;
+				}
+				else if(pozo.get(10).equals("25"))
+				{
+					p11 = f25;
+				}
+				else if(pozo.get(10).equals("26"))
+				{
+					p11 = f26;
+				}
+				else if(pozo.get(10).equals("33"))
+				{
+					p11 = f33;
+				}
+				else if(pozo.get(10).equals("34"))
+				{
+					p11 = f34;
+				}
+				else if(pozo.get(10).equals("35"))
+				{
+					p11 = f35;
+				}
+				else if(pozo.get(10).equals("36"))
+				{
+					p11 = f36;
+				}
+				else if(pozo.get(10).equals("44"))
+				{
+					p11 = f44;
+				}
+				else if(pozo.get(10).equals("45"))
+				{
+					p11 = f45;
+				}
+				else if(pozo.get(10).equals("46"))
+				{
+					p11 = f46;
+				}
+				else if(pozo.get(10).equals("55"))
+				{
+					p11 = f55;
+				}
+				else if(pozo.get(10).equals("56"))
+				{
+					p11 = f56;
+				}
+				else if(pozo.get(10).equals("66"))
+				{
+					p11 = f66;
+				}
+				// Ficha 12 Pozo
+				else if(pozo.get(11).equals("00"))
+				{
+					p12 = f00;
+				}
+				else if(pozo.get(11).equals("01"))
+				{
+					p12 = f01;
+				}
+				else if(pozo.get(11).equals("02"))
+				{
+					p12 = f02;
+				}
+				else if(pozo.get(11).equals("03"))
+				{
+					p12 = f03;
+				}
+				else if(pozo.get(11).equals("04"))
+				{
+					p12 = f04;
+				}
+				else if(pozo.get(11).equals("05"))
+				{
+					p12 = f05;
+				}
+				else if(pozo.get(11).equals("06"))
+				{
+					p12 = f06;
+				}
+				else if(pozo.get(11).equals("11"))
+				{
+					p12 = f11;
+				}
+				else if(pozo.get(11).equals("12"))
+				{
+					p12 = f12;
+				}
+				else if(pozo.get(11).equals("13"))
+				{
+					p12 = f13;
+				}
+				else if(pozo.get(11).equals("14"))
+				{
+					p12 = f14;
+				}
+				else if(pozo.get(11).equals("15"))
+				{
+					p12 = f15;
+				}
+				else if(pozo.get(11).equals("16"))
+				{
+					p12 = f16;
+				}
+				else if(pozo.get(11).equals("22"))
+				{
+					p12 = f22;
+				}
+				else if(pozo.get(11).equals("23"))
+				{
+					p12 = f23;
+				}
+				else if(pozo.get(11).equals("24"))
+				{
+					p12 = f24;
+				}
+				else if(pozo.get(11).equals("25"))
+				{
+					p12 = f25;
+				}
+				else if(pozo.get(11).equals("26"))
+				{
+					p12 = f26;
+				}
+				else if(pozo.get(11).equals("33"))
+				{
+					p12 = f33;
+				}
+				else if(pozo.get(11).equals("34"))
+				{
+					p12 = f34;
+				}
+				else if(pozo.get(11).equals("35"))
+				{
+					p12 = f35;
+				}
+				else if(pozo.get(11).equals("36"))
+				{
+					p12 = f36;
+				}
+				else if(pozo.get(11).equals("44"))
+				{
+					p12 = f44;
+				}
+				else if(pozo.get(11).equals("45"))
+				{
+					p12 = f45;
+				}
+				else if(pozo.get(11).equals("46"))
+				{
+					p12 = f46;
+				}
+				else if(pozo.get(11).equals("55"))
+				{
+					p12 = f55;
+				}
+				else if(pozo.get(11).equals("56"))
+				{
+					p12 = f56;
+				}
+				else if(pozo.get(11).equals("66"))
+				{
+					p12 = f66;
+				}
+				// Ficha 13 Pozo
+				else if(pozo.get(12).equals("00"))
+				{
+					p13 = f00;
+				}
+				else if(pozo.get(12).equals("01"))
+				{
+					p13 = f01;
+				}
+				else if(pozo.get(12).equals("02"))
+				{
+					p13 = f02;
+				}
+				else if(pozo.get(12).equals("03"))
+				{
+					p13 = f03;
+				}
+				else if(pozo.get(12).equals("04"))
+				{
+					p13 = f04;
+				}
+				else if(pozo.get(12).equals("05"))
+				{
+					p13 = f05;
+				}
+				else if(pozo.get(12).equals("06"))
+				{
+					p13 = f06;
+				}
+				else if(pozo.get(12).equals("11"))
+				{
+					p13 = f11;
+				}
+				else if(pozo.get(12).equals("12"))
+				{
+					p13 = f12;
+				}
+				else if(pozo.get(12).equals("13"))
+				{
+					p13 = f13;
+				}
+				else if(pozo.get(12).equals("14"))
+				{
+					p13 = f14;
+				}
+				else if(pozo.get(12).equals("15"))
+				{
+					p13 = f15;
+				}
+				else if(pozo.get(12).equals("16"))
+				{
+					p13 = f16;
+				}
+				else if(pozo.get(12).equals("22"))
+				{
+					p13 = f22;
+				}
+				else if(pozo.get(12).equals("23"))
+				{
+					p13 = f23;
+				}
+				else if(pozo.get(12).equals("24"))
+				{
+					p13 = f24;
+				}
+				else if(pozo.get(12).equals("25"))
+				{
+					p13 = f25;
+				}
+				else if(pozo.get(12).equals("26"))
+				{
+					p13 = f26;
+				}
+				else if(pozo.get(12).equals("33"))
+				{
+					p13 = f33;
+				}
+				else if(pozo.get(12).equals("34"))
+				{
+					p13 = f34;
+				}
+				else if(pozo.get(12).equals("35"))
+				{
+					p13 = f35;
+				}
+				else if(pozo.get(12).equals("36"))
+				{
+					p13 = f36;
+				}
+				else if(pozo.get(12).equals("44"))
+				{
+					p13 = f44;
+				}
+				else if(pozo.get(12).equals("45"))
+				{
+					p13 = f45;
+				}
+				else if(pozo.get(12).equals("46"))
+				{
+					p13 = f46;
+				}
+				else if(pozo.get(12).equals("55"))
+				{
+					p13 = f55;
+				}
+				else if(pozo.get(12).equals("56"))
+				{
+					p13 = f56;
+				}
+				else if(pozo.get(12).equals("66"))
+				{
+					p13 = f66;
+				}
+				// Ficha 14 Pozo
+				else if(pozo.get(13).equals("00"))
+				{
+					p14 = f00;
+				}
+				else if(pozo.get(13).equals("01"))
+				{
+					p14 = f01;
+				}
+				else if(pozo.get(13).equals("02"))
+				{
+					p14 = f02;
+				}
+				else if(pozo.get(13).equals("03"))
+				{
+					p14 = f03;
+				}
+				else if(pozo.get(13).equals("04"))
+				{
+					p14 = f04;
+				}
+				else if(pozo.get(13).equals("05"))
+				{
+					p14 = f05;
+				}
+				else if(pozo.get(13).equals("06"))
+				{
+					p14 = f06;
+				}
+				else if(pozo.get(13).equals("11"))
+				{
+					p14 = f11;
+				}
+				else if(pozo.get(13).equals("12"))
+				{
+					p14 = f12;
+				}
+				else if(pozo.get(13).equals("13"))
+				{
+					p14 = f13;
+				}
+				else if(pozo.get(13).equals("14"))
+				{
+					p14 = f14;
+				}
+				else if(pozo.get(13).equals("15"))
+				{
+					p14 = f15;
+				}
+				else if(pozo.get(13).equals("16"))
+				{
+					p14 = f16;
+				}
+				else if(pozo.get(13).equals("22"))
+				{
+					p14 = f22;
+				}
+				else if(pozo.get(13).equals("23"))
+				{
+					p14 = f23;
+				}
+				else if(pozo.get(13).equals("24"))
+				{
+					p14 = f24;
+				}
+				else if(pozo.get(13).equals("25"))
+				{
+					p14 = f25;
+				}
+				else if(pozo.get(13).equals("26"))
+				{
+					p14 = f26;
+				}
+				else if(pozo.get(13).equals("33"))
+				{
+					p14 = f33;
+				}
+				else if(pozo.get(13).equals("34"))
+				{
+					p14 = f34;
+				}
+				else if(pozo.get(13).equals("35"))
+				{
+					p14 = f35;
+				}
+				else if(pozo.get(13).equals("36"))
+				{
+					p14 = f36;
+				}
+				else if(pozo.get(13).equals("44"))
+				{
+					p14 = f44;
+				}
+				else if(pozo.get(13).equals("45"))
+				{
+					p14 = f45;
+				}
+				else if(pozo.get(13).equals("46"))
+				{
+					p14 = f46;
+				}
+				else if(pozo.get(13).equals("55"))
+				{
+					p14 = f55;
+				}
+				else if(pozo.get(13).equals("56"))
+				{
+					p14 = f56;
+				}
+				else if(pozo.get(13).equals("66"))
+				{
+					p14 = f66;
 				}
 			}
 			else if(pozo.size() == 7)
 			{
-				
+				// Ficha 1 Pozo
+				if(pozo.get(0).equals("00"))
+				{
+					p1 = f00;
+				}
+				else if(pozo.get(0).equals("01"))
+				{
+					p1 = f01;
+				}
+				else if(pozo.get(0).equals("02"))
+				{
+					p1 = f02;
+				}
+				else if(pozo.get(0).equals("03"))
+				{
+					p1 = f03;
+				}
+				else if(pozo.get(0).equals("04"))
+				{
+					p1 = f04;
+				}
+				else if(pozo.get(0).equals("05"))
+				{
+					p1 = f05;
+				}
+				else if(pozo.get(0).equals("06"))
+				{
+					p1 = f06;
+				}
+				else if(pozo.get(0).equals("11"))
+				{
+					p1 = f11;
+				}
+				else if(pozo.get(0).equals("12"))
+				{
+					p1 = f12;
+				}
+				else if(pozo.get(0).equals("13"))
+				{
+					p1 = f13;
+				}
+				else if(pozo.get(0).equals("14"))
+				{
+					p1 = f14;
+				}
+				else if(pozo.get(0).equals("15"))
+				{
+					p1 = f15;
+				}
+				else if(pozo.get(0).equals("16"))
+				{
+					p1 = f16;
+				}
+				else if(pozo.get(0).equals("22"))
+				{
+					p1 = f22;
+				}
+				else if(pozo.get(0).equals("23"))
+				{
+					p1 = f23;
+				}
+				else if(pozo.get(0).equals("24"))
+				{
+					p1 = f24;
+				}
+				else if(pozo.get(0).equals("25"))
+				{
+					p1 = f25;
+				}
+				else if(pozo.get(0).equals("26"))
+				{
+					p1 = f26;
+				}
+				else if(pozo.get(0).equals("33"))
+				{
+					p1 = f33;
+				}
+				else if(pozo.get(0).equals("34"))
+				{
+					p1 = f34;
+				}
+				else if(pozo.get(0).equals("35"))
+				{
+					p1 = f35;
+				}
+				else if(pozo.get(0).equals("36"))
+				{
+					p1 = f36;
+				}
+				else if(pozo.get(0).equals("44"))
+				{
+					p1 = f44;
+				}
+				else if(pozo.get(0).equals("45"))
+				{
+					p1 = f45;
+				}
+				else if(pozo.get(0).equals("46"))
+				{
+					p1 = f46;
+				}
+				else if(pozo.get(0).equals("55"))
+				{
+					p1 = f55;
+				}
+				else if(pozo.get(0).equals("56"))
+				{
+					p1 = f56;
+				}
+				else if(pozo.get(0).equals("66"))
+				{
+					p1 = f66;
+				}
+				// Ficha 2 Pozo
+				else if(pozo.get(1).equals("00"))
+				{
+					p2 = f00;
+				}
+				else if(pozo.get(1).equals("01"))
+				{
+					p2 = f01;
+				}
+				else if(pozo.get(1).equals("02"))
+				{
+					p2 = f02;
+				}
+				else if(pozo.get(1).equals("03"))
+				{
+					p2 = f03;
+				}
+				else if(pozo.get(1).equals("04"))
+				{
+					p2 = f04;
+				}
+				else if(pozo.get(1).equals("05"))
+				{
+					p2 = f05;
+				}
+				else if(pozo.get(1).equals("06"))
+				{
+					p2 = f06;
+				}
+				else if(pozo.get(1).equals("11"))
+				{
+					p2 = f11;
+				}
+				else if(pozo.get(1).equals("12"))
+				{
+					p2 = f12;
+				}
+				else if(pozo.get(1).equals("13"))
+				{
+					p2 = f13;
+				}
+				else if(pozo.get(1).equals("14"))
+				{
+					p2 = f14;
+				}
+				else if(pozo.get(1).equals("15"))
+				{
+					p2 = f15;
+				}
+				else if(pozo.get(1).equals("16"))
+				{
+					p2 = f16;
+				}
+				else if(pozo.get(1).equals("22"))
+				{
+					p2 = f22;
+				}
+				else if(pozo.get(1).equals("23"))
+				{
+					p2 = f23;
+				}
+				else if(pozo.get(1).equals("24"))
+				{
+					p2 = f24;
+				}
+				else if(pozo.get(1).equals("25"))
+				{
+					p2 = f25;
+				}
+				else if(pozo.get(1).equals("26"))
+				{
+					p2 = f26;
+				}
+				else if(pozo.get(1).equals("33"))
+				{
+					p2 = f33;
+				}
+				else if(pozo.get(1).equals("34"))
+				{
+					p2 = f34;
+				}
+				else if(pozo.get(1).equals("35"))
+				{
+					p2 = f35;
+				}
+				else if(pozo.get(1).equals("36"))
+				{
+					p2 = f36;
+				}
+				else if(pozo.get(1).equals("44"))
+				{
+					p2 = f44;
+				}
+				else if(pozo.get(1).equals("45"))
+				{
+					p2 = f45;
+				}
+				else if(pozo.get(1).equals("46"))
+				{
+					p2 = f46;
+				}
+				else if(pozo.get(1).equals("55"))
+				{
+					p2 = f55;
+				}
+				else if(pozo.get(1).equals("56"))
+				{
+					p2 = f56;
+				}
+				else if(pozo.get(1).equals("66"))
+				{
+					p2 = f66;
+				}
+				// Ficha 3 Pozo
+				else if(pozo.get(2).equals("00"))
+				{
+					p3 = f00;
+				}
+				else if(pozo.get(2).equals("01"))
+				{
+					p3 = f01;
+				}
+				else if(pozo.get(2).equals("02"))
+				{
+					p3 = f02;
+				}
+				else if(pozo.get(2).equals("03"))
+				{
+					p3 = f03;
+				}
+				else if(pozo.get(2).equals("04"))
+				{
+					p3 = f04;
+				}
+				else if(pozo.get(2).equals("05"))
+				{
+					p3 = f05;
+				}
+				else if(pozo.get(2).equals("06"))
+				{
+					p3 = f06;
+				}
+				else if(pozo.get(2).equals("11"))
+				{
+					p3 = f11;
+				}
+				else if(pozo.get(2).equals("12"))
+				{
+					p3 = f12;
+				}
+				else if(pozo.get(2).equals("13"))
+				{
+					p3 = f13;
+				}
+				else if(pozo.get(2).equals("14"))
+				{
+					p3 = f14;
+				}
+				else if(pozo.get(2).equals("15"))
+				{
+					p3 = f15;
+				}
+				else if(pozo.get(2).equals("16"))
+				{
+					p3 = f16;
+				}
+				else if(pozo.get(2).equals("22"))
+				{
+					p3 = f22;
+				}
+				else if(pozo.get(2).equals("23"))
+				{
+					p3 = f23;
+				}
+				else if(pozo.get(2).equals("24"))
+				{
+					p3 = f24;
+				}
+				else if(pozo.get(2).equals("25"))
+				{
+					p3 = f25;
+				}
+				else if(pozo.get(2).equals("26"))
+				{
+					p3 = f26;
+				}
+				else if(pozo.get(2).equals("33"))
+				{
+					p3 = f33;
+				}
+				else if(pozo.get(2).equals("34"))
+				{
+					p3 = f34;
+				}
+				else if(pozo.get(2).equals("35"))
+				{
+					p3 = f35;
+				}
+				else if(pozo.get(2).equals("36"))
+				{
+					p3 = f36;
+				}
+				else if(pozo.get(2).equals("44"))
+				{
+					p3 = f44;
+				}
+				else if(pozo.get(2).equals("45"))
+				{
+					p3 = f45;
+				}
+				else if(pozo.get(2).equals("46"))
+				{
+					p3 = f46;
+				}
+				else if(pozo.get(2).equals("55"))
+				{
+					p3 = f55;
+				}
+				else if(pozo.get(2).equals("56"))
+				{
+					p3 = f56;
+				}
+				else if(pozo.get(2).equals("66"))
+				{
+					p3 = f66;
+				}
+				// Ficha 4 Pozo
+				else if(pozo.get(3).equals("00"))
+				{
+					p4 = f00;
+				}
+				else if(pozo.get(3).equals("01"))
+				{
+					p4 = f01;
+				}
+				else if(pozo.get(3).equals("02"))
+				{
+					p4 = f02;
+				}
+				else if(pozo.get(3).equals("03"))
+				{
+					p4 = f03;
+				}
+				else if(pozo.get(3).equals("04"))
+				{
+					p4 = f04;
+				}
+				else if(pozo.get(3).equals("05"))
+				{
+					p4 = f05;
+				}
+				else if(pozo.get(3).equals("06"))
+				{
+					p4 = f06;
+				}
+				else if(pozo.get(3).equals("11"))
+				{
+					p4 = f11;
+				}
+				else if(pozo.get(3).equals("12"))
+				{
+					p4 = f12;
+				}
+				else if(pozo.get(3).equals("13"))
+				{
+					p4 = f13;
+				}
+				else if(pozo.get(3).equals("14"))
+				{
+					p4 = f14;
+				}
+				else if(pozo.get(3).equals("15"))
+				{
+					p4 = f15;
+				}
+				else if(pozo.get(3).equals("16"))
+				{
+					p4 = f16;
+				}
+				else if(pozo.get(3).equals("22"))
+				{
+					p4 = f22;
+				}
+				else if(pozo.get(3).equals("23"))
+				{
+					p4 = f23;
+				}
+				else if(pozo.get(3).equals("24"))
+				{
+					p4 = f24;
+				}
+				else if(pozo.get(3).equals("25"))
+				{
+					p4 = f25;
+				}
+				else if(pozo.get(3).equals("26"))
+				{
+					p4 = f26;
+				}
+				else if(pozo.get(3).equals("33"))
+				{
+					p4 = f33;
+				}
+				else if(pozo.get(3).equals("34"))
+				{
+					p4 = f34;
+				}
+				else if(pozo.get(3).equals("35"))
+				{
+					p4 = f35;
+				}
+				else if(pozo.get(3).equals("36"))
+				{
+					p4 = f36;
+				}
+				else if(pozo.get(3).equals("44"))
+				{
+					p4 = f44;
+				}
+				else if(pozo.get(3).equals("45"))
+				{
+					p4 = f45;
+				}
+				else if(pozo.get(3).equals("46"))
+				{
+					p4 = f46;
+				}
+				else if(pozo.get(3).equals("55"))
+				{
+					p4 = f55;
+				}
+				else if(pozo.get(3).equals("56"))
+				{
+					p4 = f56;
+				}
+				else if(pozo.get(3).equals("66"))
+				{
+					p4 = f66;
+				}
+				// Ficha 5 Pozo
+				else if(pozo.get(4).equals("00"))
+				{
+					p5 = f00;
+				}
+				else if(pozo.get(4).equals("01"))
+				{
+					p5 = f01;
+				}
+				else if(pozo.get(4).equals("02"))
+				{
+					p5 = f02;
+				}
+				else if(pozo.get(4).equals("03"))
+				{
+					p5 = f03;
+				}
+				else if(pozo.get(4).equals("04"))
+				{
+					p5 = f04;
+				}
+				else if(pozo.get(4).equals("05"))
+				{
+					p5 = f05;
+				}
+				else if(pozo.get(4).equals("06"))
+				{
+					p5 = f06;
+				}
+				else if(pozo.get(4).equals("11"))
+				{
+					p5 = f11;
+				}
+				else if(pozo.get(4).equals("12"))
+				{
+					p5 = f12;
+				}
+				else if(pozo.get(4).equals("13"))
+				{
+					p5 = f13;
+				}
+				else if(pozo.get(4).equals("14"))
+				{
+					p5 = f14;
+				}
+				else if(pozo.get(4).equals("15"))
+				{
+					p5 = f15;
+				}
+				else if(pozo.get(4).equals("16"))
+				{
+					p5 = f16;
+				}
+				else if(pozo.get(4).equals("22"))
+				{
+					p5 = f22;
+				}
+				else if(pozo.get(4).equals("23"))
+				{
+					p5 = f23;
+				}
+				else if(pozo.get(4).equals("24"))
+				{
+					p5 = f24;
+				}
+				else if(pozo.get(4).equals("25"))
+				{
+					p5 = f25;
+				}
+				else if(pozo.get(4).equals("26"))
+				{
+					p5 = f26;
+				}
+				else if(pozo.get(4).equals("33"))
+				{
+					p5 = f33;
+				}
+				else if(pozo.get(4).equals("34"))
+				{
+					p5 = f34;
+				}
+				else if(pozo.get(4).equals("35"))
+				{
+					p5 = f35;
+				}
+				else if(pozo.get(4).equals("36"))
+				{
+					p5 = f36;
+				}
+				else if(pozo.get(4).equals("44"))
+				{
+					p5 = f44;
+				}
+				else if(pozo.get(4).equals("45"))
+				{
+					p5 = f45;
+				}
+				else if(pozo.get(4).equals("46"))
+				{
+					p5 = f46;
+				}
+				else if(pozo.get(4).equals("55"))
+				{
+					p5 = f55;
+				}
+				else if(pozo.get(4).equals("56"))
+				{
+					p5 = f56;
+				}
+				else if(pozo.get(4).equals("66"))
+				{
+					p5 = f66;
+				}
+				// Ficha 6 Pozo
+				else if(pozo.get(5).equals("00"))
+				{
+					p6 = f00;
+				}
+				else if(pozo.get(5).equals("01"))
+				{
+					p6 = f01;
+				}
+				else if(pozo.get(5).equals("02"))
+				{
+					p6 = f02;
+				}
+				else if(pozo.get(5).equals("03"))
+				{
+					p6 = f03;
+				}
+				else if(pozo.get(5).equals("04"))
+				{
+					p6 = f04;
+				}
+				else if(pozo.get(5).equals("05"))
+				{
+					p6 = f05;
+				}
+				else if(pozo.get(5).equals("06"))
+				{
+					p6 = f06;
+				}
+				else if(pozo.get(5).equals("11"))
+				{
+					p6 = f11;
+				}
+				else if(pozo.get(5).equals("12"))
+				{
+					p6 = f12;
+				}
+				else if(pozo.get(5).equals("13"))
+				{
+					p6 = f13;
+				}
+				else if(pozo.get(5).equals("14"))
+				{
+					p6 = f14;
+				}
+				else if(pozo.get(5).equals("15"))
+				{
+					p6 = f15;
+				}
+				else if(pozo.get(5).equals("16"))
+				{
+					p6 = f16;
+				}
+				else if(pozo.get(5).equals("22"))
+				{
+					p6 = f22;
+				}
+				else if(pozo.get(5).equals("23"))
+				{
+					p6 = f23;
+				}
+				else if(pozo.get(5).equals("24"))
+				{
+					p6 = f24;
+				}
+				else if(pozo.get(5).equals("25"))
+				{
+					p6 = f25;
+				}
+				else if(pozo.get(5).equals("26"))
+				{
+					p6 = f26;
+				}
+				else if(pozo.get(5).equals("33"))
+				{
+					p6 = f33;
+				}
+				else if(pozo.get(5).equals("34"))
+				{
+					p6 = f34;
+				}
+				else if(pozo.get(5).equals("35"))
+				{
+					p6 = f35;
+				}
+				else if(pozo.get(5).equals("36"))
+				{
+					p6 = f36;
+				}
+				else if(pozo.get(5).equals("44"))
+				{
+					p6 = f44;
+				}
+				else if(pozo.get(5).equals("45"))
+				{
+					p6 = f45;
+				}
+				else if(pozo.get(5).equals("46"))
+				{
+					p6 = f46;
+				}
+				else if(pozo.get(5).equals("55"))
+				{
+					p6 = f55;
+				}
+				else if(pozo.get(5).equals("56"))
+				{
+					p6 = f56;
+				}
+				else if(pozo.get(5).equals("66"))
+				{
+					p6 = f66;
+				}
+				// Ficha 7 Pozo
+				else if(pozo.get(6).equals("00"))
+				{
+					p7 = f00;
+				}
+				else if(pozo.get(6).equals("01"))
+				{
+					p7 = f01;
+				}
+				else if(pozo.get(6).equals("02"))
+				{
+					p7 = f02;
+				}
+				else if(pozo.get(6).equals("03"))
+				{
+					p7 = f03;
+				}
+				else if(pozo.get(6).equals("04"))
+				{
+					p7 = f04;
+				}
+				else if(pozo.get(6).equals("05"))
+				{
+					p7 = f05;
+				}
+				else if(pozo.get(6).equals("06"))
+				{
+					p7 = f06;
+				}
+				else if(pozo.get(6).equals("11"))
+				{
+					p7 = f11;
+				}
+				else if(pozo.get(6).equals("12"))
+				{
+					p7 = f12;
+				}
+				else if(pozo.get(6).equals("13"))
+				{
+					p7 = f13;
+				}
+				else if(pozo.get(6).equals("14"))
+				{
+					p7 = f14;
+				}
+				else if(pozo.get(6).equals("15"))
+				{
+					p7 = f15;
+				}
+				else if(pozo.get(6).equals("16"))
+				{
+					p7 = f16;
+				}
+				else if(pozo.get(6).equals("22"))
+				{
+					p7 = f22;
+				}
+				else if(pozo.get(6).equals("23"))
+				{
+					p7 = f23;
+				}
+				else if(pozo.get(6).equals("24"))
+				{
+					p7 = f24;
+				}
+				else if(pozo.get(6).equals("25"))
+				{
+					p7 = f25;
+				}
+				else if(pozo.get(6).equals("26"))
+				{
+					p7 = f26;
+				}
+				else if(pozo.get(6).equals("33"))
+				{
+					p7 = f33;
+				}
+				else if(pozo.get(6).equals("34"))
+				{
+					p7 = f34;
+				}
+				else if(pozo.get(6).equals("35"))
+				{
+					p7 = f35;
+				}
+				else if(pozo.get(6).equals("36"))
+				{
+					p7 = f36;
+				}
+				else if(pozo.get(6).equals("44"))
+				{
+					p7 = f44;
+				}
+				else if(pozo.get(6).equals("45"))
+				{
+					p7 = f45;
+				}
+				else if(pozo.get(6).equals("46"))
+				{
+					p7 = f46;
+				}
+				else if(pozo.get(6).equals("55"))
+				{
+					p7 = f55;
+				}
+				else if(pozo.get(6).equals("56"))
+				{
+					p7 = f56;
+				}
+				else if(pozo.get(6).equals("66"))
+				{
+					p7 = f66;
+				}
 			}
 		}
 		
