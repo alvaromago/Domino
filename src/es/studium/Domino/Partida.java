@@ -55,7 +55,7 @@ public class Partida extends Frame
         	g.drawString("Pozo: ", 25, 700);
         }
 		g.drawString(nombreJugador1(jugador1), 600, 65);
-		g.drawString(nombreJugador3(jugador3), 40, 200);
+		g.drawString(nombreJugador3(jugador3), 27, 200);
 		g.drawString(nombreJugador4(jugador4), 1170, 200);
 		g.drawString(nombreJugador2(jugador2), 600, 780);
 		
@@ -5630,13 +5630,13 @@ public class Partida extends Frame
 			g.drawImage(j17, 760, 73, null);
 		
 			// Mostrar Fichas 2
-			g.drawImage(j21, 490, 660, null);
-			g.drawImage(j22, 535, 660, null);
-			g.drawImage(j23, 580, 660, null);
-			g.drawImage(j24, 625, 660, null);
-			g.drawImage(j25, 670, 660, null);
-			g.drawImage(j26, 715, 660, null);
-			g.drawImage(j27, 760, 660, null);
+			g.drawImage(j21, 490, 665, null);
+			g.drawImage(j22, 535, 665, null);
+			g.drawImage(j23, 580, 665, null);
+			g.drawImage(j24, 625, 665, null);
+			g.drawImage(j25, 670, 665, null);
+			g.drawImage(j26, 715, 665, null);
+			g.drawImage(j27, 760, 665, null);
 			
 			
 			// Mostrar Pozo si necesario
@@ -5694,13 +5694,13 @@ public class Partida extends Frame
 			}
 			
 			// Mostrar Ocultas Fichas Resto
-						/*g.drawImage(fWhite, 490, 660, null);
-						g.drawImage(fWhite, 535, 660, null);
-						g.drawImage(fWhite, 580, 660, null);
-						g.drawImage(fWhite, 625, 660, null);
-						g.drawImage(fWhite, 670, 660, null);
-						g.drawImage(fWhite, 715, 660, null);
-						g.drawImage(fWhite, 760, 660, null);*/
+			/*g.drawImage(fWhite, 490, 660, null);
+			g.drawImage(fWhite, 535, 660, null);
+			g.drawImage(fWhite, 580, 660, null);
+			g.drawImage(fWhite, 625, 660, null);
+			g.drawImage(fWhite, 670, 660, null);
+			g.drawImage(fWhite, 715, 660, null);
+			g.drawImage(fWhite, 760, 660, null);*/
 		}
 		
 	}
