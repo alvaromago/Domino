@@ -20,11 +20,13 @@ public class Partida extends Frame
 	Image j21, j22, j23, j24, j25, j26, j27;
 	Image j31, j32, j33, j34, j35, j36, j37;
 	Image j41, j42, j43, j44, j45, j46, j47;
+	Image p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, p12, p13, p14;
 	Toolkit herramienta;
 	List<String> manoJ1;
 	List<String> manoJ2;
 	List<String> manoJ3;
 	List<String> manoJ4;
+	List<String> pozo;
 	
 	Partida()
 	{
@@ -48,10 +50,11 @@ public class Partida extends Frame
         g.setFont(font);
         g.setColor(Color.WHITE);
         g.drawString("Turno: " + ronda, 25, 70);
+        g.drawString("Pozo: ", 25, 700);
 		g.drawString(nombreJugador1(jugador1), 600, 65);
 		g.drawString(nombreJugador3(jugador3), 40, 200);
 		g.drawString(nombreJugador4(jugador4), 1170, 200);
-		g.drawString(nombreJugador2(jugador2), 600, 770);
+		g.drawString(nombreJugador2(jugador2), 600, 780);
 		
 		 													/*FICHAS JUGADOR 1*/
 		// Ficha 1 Jugador 1
@@ -3227,6 +3230,243 @@ public class Partida extends Frame
 				j47 = f66;
 			}
 		}
+																	/* POZO */
+		if(!pozo.isEmpty())
+		{
+			if(pozo.size() == 14)
+			{
+				// Ficha 1 Pozo
+				if(pozo.get(0).equals("00"))
+				{
+					p1 = f00;
+				}
+				else if(pozo.get(0).equals("01"))
+				{
+					p1 = f01;
+				}
+				else if(pozo.get(0).equals("02"))
+				{
+					p1 = f02;
+				}
+				else if(pozo.get(0).equals("03"))
+				{
+					p1 = f03;
+				}
+				else if(pozo.get(0).equals("04"))
+				{
+					p1 = f04;
+				}
+				else if(pozo.get(0).equals("05"))
+				{
+					p1 = f05;
+				}
+				else if(pozo.get(0).equals("06"))
+				{
+					p1 = f06;
+				}
+				else if(pozo.get(0).equals("11"))
+				{
+					p1 = f11;
+				}
+				else if(pozo.get(0).equals("12"))
+				{
+					p1 = f12;
+				}
+				else if(pozo.get(0).equals("13"))
+				{
+					p1 = f13;
+				}
+				else if(pozo.get(0).equals("14"))
+				{
+					p1 = f14;
+				}
+				else if(pozo.get(0).equals("15"))
+				{
+					p1 = f15;
+				}
+				else if(pozo.get(0).equals("16"))
+				{
+					p1 = f16;
+				}
+				else if(pozo.get(0).equals("22"))
+				{
+					p1 = f22;
+				}
+				else if(pozo.get(0).equals("23"))
+				{
+					p1 = f23;
+				}
+				else if(pozo.get(0).equals("24"))
+				{
+					p1 = f24;
+				}
+				else if(pozo.get(0).equals("25"))
+				{
+					p1 = f25;
+				}
+				else if(pozo.get(0).equals("26"))
+				{
+					p1 = f26;
+				}
+				else if(pozo.get(0).equals("33"))
+				{
+					p1 = f33;
+				}
+				else if(pozo.get(0).equals("34"))
+				{
+					p1 = f34;
+				}
+				else if(pozo.get(0).equals("35"))
+				{
+					p1 = f35;
+				}
+				else if(pozo.get(0).equals("36"))
+				{
+					p1 = f36;
+				}
+				else if(pozo.get(0).equals("44"))
+				{
+					p1 = f44;
+				}
+				else if(pozo.get(0).equals("45"))
+				{
+					p1 = f45;
+				}
+				else if(pozo.get(0).equals("46"))
+				{
+					p1 = f46;
+				}
+				else if(pozo.get(0).equals("55"))
+				{
+					p1 = f55;
+				}
+				else if(pozo.get(0).equals("56"))
+				{
+					p1 = f56;
+				}
+				else if(pozo.get(0).equals("66"))
+				{
+					p1 = f66;
+				}
+				// Ficha 2 Pozo
+				else if(pozo.get(1).equals("00"))
+				{
+					p1 = f00;
+				}
+				else if(pozo.get(1).equals("01"))
+				{
+					p1 = f01;
+				}
+				else if(pozo.get(1).equals("02"))
+				{
+					p1 = f02;
+				}
+				else if(pozo.get(1).equals("03"))
+				{
+					p1 = f03;
+				}
+				else if(pozo.get(1).equals("04"))
+				{
+					p1 = f04;
+				}
+				else if(pozo.get(1).equals("05"))
+				{
+					p1 = f05;
+				}
+				else if(pozo.get(1).equals("06"))
+				{
+					p1 = f06;
+				}
+				else if(pozo.get(1).equals("11"))
+				{
+					p1 = f11;
+				}
+				else if(pozo.get(1).equals("12"))
+				{
+					p1 = f12;
+				}
+				else if(pozo.get(1).equals("13"))
+				{
+					p1 = f13;
+				}
+				else if(pozo.get(1).equals("14"))
+				{
+					p1 = f14;
+				}
+				else if(pozo.get(1).equals("15"))
+				{
+					p1 = f15;
+				}
+				else if(pozo.get(1).equals("16"))
+				{
+					p1 = f16;
+				}
+				else if(pozo.get(1).equals("22"))
+				{
+					p1 = f22;
+				}
+				else if(pozo.get(1).equals("23"))
+				{
+					p1 = f23;
+				}
+				else if(pozo.get(1).equals("24"))
+				{
+					p1 = f24;
+				}
+				else if(pozo.get(1).equals("25"))
+				{
+					p1 = f25;
+				}
+				else if(pozo.get(1).equals("26"))
+				{
+					p1 = f26;
+				}
+				else if(pozo.get(1).equals("33"))
+				{
+					p1 = f33;
+				}
+				else if(pozo.get(1).equals("34"))
+				{
+					p1 = f34;
+				}
+				else if(pozo.get(1).equals("35"))
+				{
+					p1 = f35;
+				}
+				else if(pozo.get(1).equals("36"))
+				{
+					p1 = f36;
+				}
+				else if(pozo.get(1).equals("44"))
+				{
+					p1 = f44;
+				}
+				else if(pozo.get(1).equals("45"))
+				{
+					p1 = f45;
+				}
+				else if(pozo.get(1).equals("46"))
+				{
+					p1 = f46;
+				}
+				else if(pozo.get(1).equals("55"))
+				{
+					p1 = f55;
+				}
+				else if(pozo.get(1).equals("56"))
+				{
+					p1 = f56;
+				}
+				else if(pozo.get(1).equals("66"))
+				{
+					p1 = f66;
+				}
+			}
+			else if(pozo.size() == 7)
+			{
+				
+			}
+		}
 		
 		// Dibujar Fichas Jugador 1
 		if(ronda==1)
@@ -3365,5 +3605,10 @@ public class Partida extends Frame
 	public void leerJ4(List<String> m4)
 	{
 		manoJ4 = m4;
+	}
+	
+	public void leerPozo(List<String> p)
+	{
+		pozo = p;
 	}
 }

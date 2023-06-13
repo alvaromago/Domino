@@ -75,7 +75,7 @@ public class Modelo
 	        for (int j = 0; j < fichasPorJugador; j++)
 	        {
 	            if (fichas.isEmpty()) {
-	                break; // Si no hay más fichas, salimos del bucle interno
+	                break; // Si no hay mï¿½s fichas, salimos del bucle interno
 	            }
 	            
 	            mano.add(fichas.remove(0));

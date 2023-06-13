@@ -90,6 +90,7 @@ public class Controlador implements WindowListener, MouseListener
 				elegirJ.txtJ3.setText("");
 				elegirJ.txtJ4.setText("");
 				this.modelo.crearPartida(2);
+				this.partida.leerPozo(this.modelo.pozo);
 				elegirJ.dispose();
 			}
 			// Si elegimos 3 jugadores
@@ -121,6 +122,7 @@ public class Controlador implements WindowListener, MouseListener
 				elegirJ.txtJ4.setText("");
 				this.modelo.crearPartida(3);
 				this.partida.leerJ3(this.modelo.manoJ3);
+				this.partida.leerPozo(this.modelo.pozo);
 				elegirJ.dispose();
 			}
 			// Si elegimos 4 jugadores
@@ -177,6 +179,11 @@ public class Controlador implements WindowListener, MouseListener
 			
 			// Turno++
 			this.partida.numTurno();
+			System.out.println(this.modelo.manoJ1);
+			System.out.println(this.modelo.manoJ2);
+			System.out.println(this.modelo.manoJ3);
+			System.out.println(this.modelo.manoJ4);
+			System.out.println(this.modelo.pozo);
 		}
 	}
 	

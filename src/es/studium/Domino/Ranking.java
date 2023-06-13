@@ -1,5 +1,6 @@
 package es.studium.Domino;
 
+import java.awt.Color;
 import java.awt.FlowLayout;
 import java.awt.Frame;
 import java.awt.Label;
@@ -24,6 +25,7 @@ public class Ranking extends Frame
         setTitle("Rankings");
         setSize(600, 710);
         setLayout(new FlowLayout());
+        setBackground(new Color(171, 139, 98));
         setResizable(false);
         setLocationRelativeTo(null);
         setVisible(false);
