@@ -4,6 +4,7 @@ import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.awt.event.WindowEvent;
 import java.awt.event.WindowListener;
+import java.io.IOException;
 
 public class Controlador implements WindowListener, MouseListener
 {
@@ -52,7 +53,16 @@ public class Controlador implements WindowListener, MouseListener
 			else if(x>400&&x<625&&y>390&&y<455)
 			{
 				this.modelo.reproducirSonido("./sonidos/click.wav");
-				System.out.println("Ayuda");
+				
+				try
+				{
+					Runtime.getRuntime().exec("hh.exe Ayuda_Domino.chm");
+				}
+				catch (IOException er)
+				{
+					er.printStackTrace();
+				}
+
 			}
 			else if(x>720&&x<820&&y>390&&y<490)
 			{
@@ -167,23 +177,16 @@ public class Controlador implements WindowListener, MouseListener
 			this.partida.leerJ2(this.modelo.manoJ2);
 			
 		}
-		else if (partida.isActive() && x>0&&x<1300&&y>0&&y<800)
-		{
-			// Repartir fichas
-			
-			// Empieza el Jugador 1
-			
-			// Comprobar que puedes poner una ficha
-			
-			// Donde se pone la ficha
-			
+		else if (partida.isActive())
+		{	
 			// Turno++
-			this.partida.numTurno();
-			System.out.println(this.modelo.manoJ1);
+			
+			
+			/*System.out.println(this.modelo.manoJ1);
 			System.out.println(this.modelo.manoJ2);
 			System.out.println(this.modelo.manoJ3);
 			System.out.println(this.modelo.manoJ4);
-			System.out.println(this.modelo.pozo);
+			System.out.println(this.modelo.pozo);*/
 		}
 	}
 	

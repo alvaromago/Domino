@@ -5618,7 +5618,7 @@ public class Partida extends Frame
 		}
 		
 		// Dibujar Fichas Jugador 1
-		if(ronda==1)
+		if(ronda == 1)
 		{
 			// Mostrar Fichas 1				
 			g.drawImage(j11, 490, 73, null);
@@ -5630,13 +5630,13 @@ public class Partida extends Frame
 			g.drawImage(j17, 760, 73, null);
 		
 			// Mostrar Fichas 2
-			g.drawImage(j21, 490, 665, null);
-			g.drawImage(j22, 535, 665, null);
-			g.drawImage(j23, 580, 665, null);
-			g.drawImage(j24, 625, 665, null);
-			g.drawImage(j25, 670, 665, null);
-			g.drawImage(j26, 715, 665, null);
-			g.drawImage(j27, 760, 665, null);
+			g.drawImage(fWhite, 490, 665, null);
+			g.drawImage(fWhite, 535, 665, null);
+			g.drawImage(fWhite, 580, 665, null);
+			g.drawImage(fWhite, 625, 665, null);
+			g.drawImage(fWhite, 670, 665, null);
+			g.drawImage(fWhite, 715, 665, null);
+			g.drawImage(fWhite, 760, 665, null);
 			
 			
 			// Mostrar Pozo si necesario
@@ -5672,37 +5672,27 @@ public class Partida extends Frame
 			// Comprobar que Jugador 3 existe
 			if(manoJ3 != null)
 			{
-				g.drawImage(j31, 25, 220, null);
-				g.drawImage(j32, 75, 220, null);
-				g.drawImage(j33, 25, 310, null);
-				g.drawImage(j34, 75, 310, null);
-				g.drawImage(j35, 25, 400, null);
-				g.drawImage(j36, 75, 400, null);
-				g.drawImage(j37, 25, 490, null);
+				g.drawImage(fWhite, 25, 220, null);
+				g.drawImage(fWhite, 75, 220, null);
+				g.drawImage(fWhite, 25, 310, null);
+				g.drawImage(fWhite, 75, 310, null);
+				g.drawImage(fWhite, 25, 400, null);
+				g.drawImage(fWhite, 75, 400, null);
+				g.drawImage(fWhite, 25, 490, null);
 			}
 			
 			// Comprobar que Jugador 4 existe
 			if(manoJ4 != null)
 			{
-				g.drawImage(j41, 1190, 220, null);
-				g.drawImage(j42, 1240, 220, null);
-				g.drawImage(j43, 1190, 310, null);
-				g.drawImage(j44, 1240, 310, null);
-				g.drawImage(j45, 1190, 400, null);
-				g.drawImage(j46, 1240, 400, null);
-				g.drawImage(j47, 1190, 490, null);
+				g.drawImage(fWhite, 1190, 220, null);
+				g.drawImage(fWhite, 1240, 220, null);
+				g.drawImage(fWhite, 1190, 310, null);
+				g.drawImage(fWhite, 1240, 310, null);
+				g.drawImage(fWhite, 1190, 400, null);
+				g.drawImage(fWhite, 1240, 400, null);
+				g.drawImage(fWhite, 1190, 490, null);
 			}
-			
-			// Mostrar Ocultas Fichas Resto
-			/*g.drawImage(fWhite, 490, 660, null);
-			g.drawImage(fWhite, 535, 660, null);
-			g.drawImage(fWhite, 580, 660, null);
-			g.drawImage(fWhite, 625, 660, null);
-			g.drawImage(fWhite, 670, 660, null);
-			g.drawImage(fWhite, 715, 660, null);
-			g.drawImage(fWhite, 760, 660, null);*/
-		}
-		
+		}	
 	}
 	
 	public void cargarFichas() 
