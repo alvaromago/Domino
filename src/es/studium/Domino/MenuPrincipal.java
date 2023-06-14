@@ -14,7 +14,7 @@ public class MenuPrincipal extends Frame
 	
 	public MenuPrincipal()
 	{
-		setTitle("Domin�");
+		setTitle("Dominó");
 		setSize(1000, 600);
 		// Activamos la herramienta
 		herramienta = getToolkit();

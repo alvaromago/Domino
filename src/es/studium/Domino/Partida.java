@@ -5617,6 +5617,41 @@ public class Partida extends Frame
 			}
 		}
 		
+		for (int i = 0; i<manoJ1.size(); i++)
+		{
+			if(manoJ1.get(i).equals("66"))
+			{
+				ronda = 1;
+				break;
+			}
+		}
+		
+		for (int i = 0; i<manoJ2.size(); i++)
+		{
+			if(manoJ2.get(i).equals("66"))
+			{
+				ronda = 2;
+				break;
+			}
+		}
+		
+		for (int i = 0; i<manoJ3.size(); i++)
+		{
+			if(manoJ3.get(i).equals("66"))
+			{
+				ronda = 3;
+				break;
+			}
+		}
+		
+		for (int i = 0; i<manoJ4.size(); i++)
+		{
+			if(manoJ4.get(i).equals("66"))
+			{
+				ronda = 4;
+				break;
+			}
+		}
 		// Dibujar Fichas Jugador 1
 		if(ronda == 1)
 		{
@@ -5692,7 +5727,27 @@ public class Partida extends Frame
 				g.drawImage(fWhite, 1240, 400, null);
 				g.drawImage(fWhite, 1190, 490, null);
 			}
-		}	
+		}
+		else if (ronda == 2)
+		{
+			// Mostrar Fichas 1				
+						g.drawImage(fWhite, 490, 73, null);
+						g.drawImage(fWhite, 535, 73, null);
+						g.drawImage(fWhite, 580, 73, null);
+						g.drawImage(fWhite, 625, 73, null);
+						g.drawImage(fWhite, 670, 73, null);
+						g.drawImage(fWhite, 715, 73, null);
+						g.drawImage(fWhite, 760, 73, null);
+					
+						// Mostrar Fichas 2
+						g.drawImage(j21, 490, 665, null);
+						g.drawImage(j22, 535, 665, null);
+						g.drawImage(j23, 580, 665, null);
+						g.drawImage(j24, 625, 665, null);
+						g.drawImage(j25, 670, 665, null);
+						g.drawImage(j26, 715, 665, null);
+						g.drawImage(j27, 760, 665, null);
+		}
 	}
 	
 	public void cargarFichas() 

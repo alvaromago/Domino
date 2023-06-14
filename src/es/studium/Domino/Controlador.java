@@ -181,7 +181,6 @@ public class Controlador implements WindowListener, MouseListener
 		{	
 			// Turno++
 			
-			
 			/*System.out.println(this.modelo.manoJ1);
 			System.out.println(this.modelo.manoJ2);
 			System.out.println(this.modelo.manoJ3);
